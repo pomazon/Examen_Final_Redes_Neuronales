@@ -1,0 +1,17 @@
+# Datos: se descargan con src/descargar_datos.py, no se suben
+data/raw/
+data/processed/
+*.zip
+*.rar
+
+# Pesos de modelos: van en Hugging Face
+*.pt
+*.pth
+*.ckpt
+
+# Credenciales
+.env
+
+# Archivos temporales
+__pycache__/
+.ipynb_checkpoints/
