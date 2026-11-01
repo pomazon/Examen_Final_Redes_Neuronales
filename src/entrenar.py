@@ -68,8 +68,9 @@ def probabilidades(modelo, cargador, dispositivo):
     modelo.eval()
     salida = []
     for x, _ in cargador:
-        with torch.autocast(dispositivo, enabled=dispositivo == "cuda"):
-            salida.append(torch.softmax(modelo(x.to(dispositivo)).float(), 1).cpu())
+        # La evaluación va en precisión completa (float32): en media precisión, algunas fotos
+        # de campo producían valores fuera de rango y probabilidades NaN.
+        salida.append(torch.softmax(modelo(x.to(dispositivo)), 1).cpu())
     return torch.cat(salida).numpy()
 
 
