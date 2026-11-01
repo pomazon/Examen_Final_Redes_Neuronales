@@ -1,0 +1,7 @@
+modelo: resnet50
+aumento: basico
+epocas: 15
+lote: 32
+lr: 0.0001
+peso_decay: 0.05
+prob_fondo: 0.8

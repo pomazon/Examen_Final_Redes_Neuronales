@@ -29,6 +29,9 @@ python src/duplicados.py --inventario results/inventario/inventario.csv --raiz d
 python src/particiones.py --inventario results/inventario/inventario.csv --pares results/duplicados/pares.csv
 python src/preparar_imagenes.py --splits data/splits.csv --raiz data/raw --destino data/processed/imagenes
 python src/linea_base.py --splits data/splits.csv --imagenes data/processed/imagenes
+python src/ver_mascaras.py --splits data/splits.csv --imagenes data/processed/imagenes
+python src/entrenar.py --config configs/resnet50_basico.yaml --semilla 0   # cada config y semilla 0, 1, 2
+python src/resumen.py
 ```
 
 ## Datos
