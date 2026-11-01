@@ -21,7 +21,7 @@ from PIL import Image
 from torch.utils.data import DataLoader, Dataset
 from torchvision import models
 
-from aumentos import FondoAleatorio, transformacion
+from aumentos import FondoAleatorio, mascara_hoja, transformacion
 from metricas import CLASES, evaluar
 
 
@@ -30,6 +30,7 @@ class Hojas(Dataset):
         self.rutas = [os.path.join(carpeta, r) for r in df["ruta"]]
         self.y = [CLASES.index(c) for c in df["clase"]]
         self.transform, self.fondo = transform, fondo
+        self.mascaras = {}  # cada máscara se calcula una vez y se reutiliza en las épocas siguientes
 
     def __len__(self):
         return len(self.rutas)
@@ -37,7 +38,9 @@ class Hojas(Dataset):
     def __getitem__(self, i):
         im = Image.open(self.rutas[i]).convert("RGB")
         if self.fondo is not None:
-            im = self.fondo(im)
+            if i not in self.mascaras:
+                self.mascaras[i] = mascara_hoja(im)
+            im = self.fondo(im, self.mascaras[i])
         return self.transform(im), self.y[i]
 
 
@@ -95,7 +98,8 @@ def main():
     fondo = FondoAleatorio(cfg.get("prob_fondo", 0.8), args.semilla) if cfg["aumento"] == "fondo" else None
     g = torch.Generator().manual_seed(args.semilla)
     tr = DataLoader(Hojas(partes["saposoa_train"], args.imagenes, transformacion(cfg["aumento"]), fondo),
-                    batch_size=cfg["lote"], shuffle=True, num_workers=2, generator=g, drop_last=True)
+                    batch_size=cfg["lote"], shuffle=True, num_workers=2, generator=g, drop_last=True,
+                    persistent_workers=True)
     ev = {k: DataLoader(Hojas(v, args.imagenes, transformacion("evaluacion")), batch_size=64, num_workers=2)
           for k, v in partes.items() if k != "saposoa_train"}
 
@@ -106,7 +110,8 @@ def main():
     perdida_fn = torch.nn.CrossEntropyLoss()
 
     inicio = time.time()
-    historial, mejor = [], (-1, None, None)
+    historial, mejor = [], (np.inf, None, None)
+    y_val = np.array([CLASES.index(c) for c in partes["saposoa_val"]["clase"]])
     for epoca in range(1, cfg["epocas"] + 1):
         modelo.train()
         total, n = 0.0, 0
@@ -121,12 +126,15 @@ def main():
             total += perdida.item() * len(y)
             n += len(y)
         sched.step()
-        f1_val = evaluar(partes["saposoa_val"]["clase"], probabilidades(modelo, ev["saposoa_val"], dispositivo),
-                         "saposoa")["f1_macro"]
-        historial.append({"epoca": epoca, "perdida_train": total / n, "f1_val": f1_val})
-        print(f"  época {epoca:2d}  pérdida {total / n:.4f}  F1 val {f1_val:.3f}")
-        if f1_val > mejor[0]:
-            mejor = (f1_val, epoca, copy.deepcopy(modelo.state_dict()))
+        pr_val = probabilidades(modelo, ev["saposoa_val"], dispositivo)
+        f1_val = evaluar(partes["saposoa_val"]["clase"], pr_val, "saposoa")["f1_macro"]
+        perdida_val = float(-np.log(pr_val[np.arange(len(y_val)), y_val] + 1e-12).mean())
+        historial.append({"epoca": epoca, "perdida_train": total / n, "perdida_val": perdida_val, "f1_val": f1_val})
+        print(f"  época {epoca:2d}  pérdida train {total / n:.4f}  pérdida val {perdida_val:.4f}  F1 val {f1_val:.3f}")
+        # Se elige la época con menor pérdida en validación: el F1 llega a 1,0 en pocas
+        # épocas y deja de distinguir entre ellas; la pérdida sigue siendo informativa.
+        if perdida_val < mejor[0]:
+            mejor = (perdida_val, epoca, copy.deepcopy(modelo.state_dict()))
     minutos = (time.time() - inicio) / 60
 
     modelo.load_state_dict(mejor[2])

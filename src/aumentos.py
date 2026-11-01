@@ -9,22 +9,34 @@ fondo   lo mismo que fuerte y, además, reemplaza el fondo blanco de Saposoa por
 import numpy as np
 from PIL import Image
 from scipy import ndimage
+from skimage import color
 from torchvision import transforms
 
 MEDIA, DESV = [0.485, 0.456, 0.406], [0.229, 0.224, 0.225]
-UMBRAL_SATURACION = 60  # 0-255: el fondo blanco o gris tiene saturación baja; la hoja, alta
+UMBRAL_COLOR = 10  # distancia de color (a*, b* en Lab) a partir de la cual un píxel no es fondo
+AREA_VALIDA = (0.03, 0.60)  # fracción de la imagen que puede ocupar una hoja
 
 
 def mascara_hoja(im):
-    """Máscara de la hoja: píxeles saturados, sin huecos, quedándose con la región más grande."""
-    s = np.array(im.convert("HSV"))[..., 1]
-    m = ndimage.binary_opening(s > UMBRAL_SATURACION, iterations=2)
+    """Máscara de la hoja, o None si no se pudo separar de forma confiable.
+
+    El color del fondo se estima con la mediana del borde de la imagen. Un píxel es hoja
+    si su color (sin contar el brillo) se aleja de ese fondo. Ignorar el brillo hace que
+    las sombras, que tienen el mismo color del fondo pero más oscuro, queden como fondo.
+    """
+    lab = color.rgb2lab(np.asarray(im, float) / 255)
+    ab = lab[..., 1:]
+    borde = np.concatenate([ab[:8].reshape(-1, 2), ab[-8:].reshape(-1, 2),
+                            ab[:, :8].reshape(-1, 2), ab[:, -8:].reshape(-1, 2)])
+    distancia = np.linalg.norm(ab - np.median(borde, axis=0), axis=-1)
+    m = ndimage.binary_opening(distancia > UMBRAL_COLOR, iterations=2)
     etiquetas, n = ndimage.label(m)
     if n == 0:
-        return np.ones(s.shape, bool)
+        return None
     tam = ndimage.sum(m, etiquetas, range(1, n + 1))
     m = etiquetas == (np.argmax(tam) + 1)
-    return ndimage.binary_fill_holes(ndimage.binary_closing(m, iterations=3))
+    m = ndimage.binary_fill_holes(ndimage.binary_closing(m, iterations=5))
+    return m if AREA_VALIDA[0] <= m.mean() <= AREA_VALIDA[1] else None
 
 
 class FondoAleatorio:
@@ -38,11 +50,12 @@ class FondoAleatorio:
         chico = self.rng.uniform(0, 255, (self.rng.integers(3, 10), self.rng.integers(3, 10), 3))
         return np.array(Image.fromarray(chico.astype(np.uint8)).resize((ancho, alto), Image.BILINEAR), float)
 
-    def __call__(self, im):
-        if self.rng.random() > self.prob:
+    def __call__(self, im, mascara):
+        """Si no hay máscara confiable, la imagen queda igual."""
+        if mascara is None or self.rng.random() > self.prob:
             return im
         a = np.array(im, float)
-        alfa = ndimage.gaussian_filter(mascara_hoja(im).astype(float), 1.5)[..., None]
+        alfa = ndimage.gaussian_filter(mascara.astype(float), 1.5)[..., None]
         mezcla = alfa * a + (1 - alfa) * self.fondo(*a.shape[:2])
         return Image.fromarray(mezcla.clip(0, 255).astype(np.uint8))
 
