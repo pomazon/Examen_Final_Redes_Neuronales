@@ -1,0 +1,38 @@
+{
+  "config": "resnet50_basico",
+  "modelo": "resnet50",
+  "aumento": "basico",
+  "epocas": 15,
+  "lote": 32,
+  "lr": 0.0001,
+  "peso_decay": 0.05,
+  "prob_fondo": 0.8,
+  "semilla": 0,
+  "mejor_epoca": 11,
+  "minutos_entrenamiento": 1.61,
+  "gpu": "Tesla T4",
+  "saposoa_val": {
+    "exactitud": 1.0,
+    "f1_macro": 1.0,
+    "mcc": 1.0
+  },
+  "saposoa_test": {
+    "exactitud": 1.0,
+    "f1_macro": 1.0,
+    "mcc": 1.0
+  },
+  "rocole": {
+    "exactitud": 0.739329268292683,
+    "f1_macro": 0.739328662553592,
+    "mcc": 0.5103321114237414,
+    "auc": 0.8325219454329775,
+    "pred_ojo_gallo": 0.9611280487804879
+  },
+  "uganda": {
+    "exactitud": 0.6911369740376008,
+    "f1_macro": 0.6910884469892817,
+    "mcc": 0.38353560211790116,
+    "auc": 0.7651854322476364,
+    "pred_ojo_gallo": 0.973142345568487
+  }
+}

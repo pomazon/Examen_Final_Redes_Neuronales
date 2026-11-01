@@ -1,0 +1,1049 @@
+dataset,ruta,md5,clase_original,clase,particion,bloque,area
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093218.jpg,a36493a25a218eca15a31dbe731b57f9,Ojo_Gallo,ojo_gallo,train,ojo_gallo_003,0.201923828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093257.jpg,f15302f452942ef953f401eab30dd66d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_003,0.16341796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093304.jpg,8d87e408ddf2946096c5f5539de90292,Ojo_Gallo,ojo_gallo,train,ojo_gallo_003,0.16166015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093324.jpg,26d6d7a03504849cc67dbccfd388aa21,Ojo_Gallo,ojo_gallo,train,ojo_gallo_003,0.20078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093359.jpg,1c7339002302b97034c8981570e349d2,Ojo_Gallo,ojo_gallo,train,ojo_gallo_003,0.136494140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093405.jpg,a4e324ece811122c8bcb14b70fc354e6,Ojo_Gallo,ojo_gallo,train,ojo_gallo_003,0.213603515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093502.jpg,904f0ee35e8997567678a631862a0189,Ojo_Gallo,ojo_gallo,train,ojo_gallo_003,0.19673828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093509.jpg,c53c82217f512bf5a15b7a8fbc529856,Ojo_Gallo,ojo_gallo,train,ojo_gallo_003,0.189033203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093615.jpg,a0d789789eecf04e938efa14a4d3821d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_003,0.24541015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093623.jpg,8d665d3120834a05e884f9b389f0e527,Ojo_Gallo,ojo_gallo,train,ojo_gallo_003,0.1587890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093725.jpg,d5ed803f704767b69a07f3e62fc6e301,Ojo_Gallo,ojo_gallo,train,ojo_gallo_004,0.22669921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093729.jpg,dc3782130bf06cc99a41fffa290feea7,Ojo_Gallo,ojo_gallo,train,ojo_gallo_004,0.2087890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093736.jpg,d19de2d3f2b89da25f4c92f9225e774e,Ojo_Gallo,ojo_gallo,train,ojo_gallo_004,0.185849609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093848.jpg,e5ac29cfc2093529b24c57bb2c5dc41d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_004,0.176669921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_093956.jpg,6c1e60796ff253dfc2fa30de3757145b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_004,0.201162109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094006.jpg,f4e0d375e6072579f72b1383089dedb9,Ojo_Gallo,ojo_gallo,train,ojo_gallo_004,0.21505859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094032.jpg,d7f963ed6a46893c821373842c563c86,Ojo_Gallo,ojo_gallo,train,ojo_gallo_004,0.239287109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094057.jpg,7ffb27a44b7d2d623d70b0b38e335968,Ojo_Gallo,ojo_gallo,train,ojo_gallo_004,0.183974609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094102.jpg,db9f87959dc29d58e1ea8cb8422e37e2,Ojo_Gallo,ojo_gallo,train,ojo_gallo_004,0.178232421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094107.jpg,43a8d8ba6c76b5cdaf344e310f98f8ef,Ojo_Gallo,ojo_gallo,train,ojo_gallo_004,0.236259765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094130.jpg,8a2de906c14fd72f02c0091cabd34390,Ojo_Gallo,ojo_gallo,train,ojo_gallo_005,0.234619140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094219.jpg,e83f40442ca8c692cb2f398e4645fa7a,Ojo_Gallo,ojo_gallo,train,ojo_gallo_005,0.127080078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094307.jpg,4102844bca30dd470de951fa55e0fa30,Ojo_Gallo,ojo_gallo,train,ojo_gallo_005,0.18466796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094337.jpg,ca0b871119b4b726bd8fe6bf6253ce09,Ojo_Gallo,ojo_gallo,train,ojo_gallo_005,0.165302734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094345.jpg,8f22f6a62cb8fc96cf129998cb1864df,Ojo_Gallo,ojo_gallo,train,ojo_gallo_005,0.14880859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094358.jpg,0efcba1720bb15d7f32ca29434f80ea6,Ojo_Gallo,ojo_gallo,train,ojo_gallo_005,0.176796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094614.jpg,75b213a84b9aeeb736c0be76926bd64b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_005,0.154453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094622.jpg,48d0fc539589fc2b8ab8c4b272e5685f,Ojo_Gallo,ojo_gallo,train,ojo_gallo_005,0.230146484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094627.jpg,96b3c8ab471c42c435d4bf828f6705d1,Ojo_Gallo,ojo_gallo,train,ojo_gallo_005,0.11865234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094634.jpg,08984fb69fa403ef4895eca2cdbe5b4a,Ojo_Gallo,ojo_gallo,train,ojo_gallo_005,0.15935546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095132.jpg,fb4aaea640a838a2916246b1e7107fd3,Ojo_Gallo,ojo_gallo,train,ojo_gallo_007,0.215185546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095138.jpg,55f463c283606a5861cf6546b6a43147,Ojo_Gallo,ojo_gallo,train,ojo_gallo_007,0.188095703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095206.jpg,f6aeeb00e24f03d5989ebe50f17f46cf,Ojo_Gallo,ojo_gallo,train,ojo_gallo_007,0.201943359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095244.jpg,20157cc7a1cb8c8e30847111f57ac666,Ojo_Gallo,ojo_gallo,train,ojo_gallo_007,0.286025390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095331.jpg,5d143c5ad3890a31b2d40679c79b5db4,Ojo_Gallo,ojo_gallo,train,ojo_gallo_007,0.20146484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095346.jpg,b4b722ba01409c7aad2798dc5e3d76cf,Ojo_Gallo,ojo_gallo,train,ojo_gallo_007,0.237548828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095408.jpg,8e96dcdb22fe3744059d91d567c19803,Ojo_Gallo,ojo_gallo,train,ojo_gallo_007,0.204599609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095416.jpg,c3888e5237c9dfd0ee3370ec9ecef3d8,Ojo_Gallo,ojo_gallo,train,ojo_gallo_007,0.20984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095449.jpg,c98b4b58f9419f990221924a7a08d7c1,Ojo_Gallo,ojo_gallo,train,ojo_gallo_007,0.19490234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095512.jpg,b6da91e80af9158c8b39c610a37dae97,Ojo_Gallo,ojo_gallo,train,ojo_gallo_007,0.188876953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095703.jpg,850eb3f687b643ff423caab4eb382a7b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_009,0.1762890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095712.jpg,ab28b3785121a905b2d0bfa99ef3d4ee,Ojo_Gallo,ojo_gallo,train,ojo_gallo_009,0.18138671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095729.jpg,93f002e6ee31b48571e5073ba7c1ad45,Ojo_Gallo,ojo_gallo,train,ojo_gallo_009,0.254912109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095736.jpg,e376c27b71da6cbf5c3b03a1ea6c144d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_009,0.18111328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095755.jpg,009f452075a0e4b9c40d26ed3421e3c4,Ojo_Gallo,ojo_gallo,train,ojo_gallo_009,0.269970703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095810.jpg,c8179a8d5480846acb9bec94a2a82c98,Ojo_Gallo,ojo_gallo,train,ojo_gallo_009,0.2454296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095821.jpg,5dac53fe109953a48ca0b8c0d49498f7,Ojo_Gallo,ojo_gallo,train,ojo_gallo_009,0.17998046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095825.jpg,15496794998a3871aaf25724cf7beef7,Ojo_Gallo,ojo_gallo,train,ojo_gallo_009,0.10517578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095836.jpg,4fd64c515c1a703a7db80ec8b080d4cf,Ojo_Gallo,ojo_gallo,train,ojo_gallo_009,0.192978515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_095949.jpg,ca8594e0bde4e4baccf7a63d63dc3e2d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_009,0.19890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100024.jpg,2379ea672f7585d8af3f3209f14353c1,Ojo_Gallo,ojo_gallo,train,ojo_gallo_010,0.248271484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100037.jpg,c2984ff66176a4ae6f58d032cb51dbd9,Ojo_Gallo,ojo_gallo,train,ojo_gallo_010,0.21787109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100046.jpg,5fc508250cba985262b153f79d1768f1,Ojo_Gallo,ojo_gallo,train,ojo_gallo_010,0.1862890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100416.jpg,7810d5fe2f40b41845737f22fb492b95,Ojo_Gallo,ojo_gallo,train,ojo_gallo_010,0.220107421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100436.jpg,0eda327a3219f34239d64b38c3a3b202,Ojo_Gallo,ojo_gallo,train,ojo_gallo_010,0.202255859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100506.jpg,1aa74e0f166eaa4c0644231fc53838e8,Ojo_Gallo,ojo_gallo,train,ojo_gallo_010,0.22390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100515.jpg,9c58f1a2d4d27ea9ebfd997170212767,Ojo_Gallo,ojo_gallo,train,ojo_gallo_010,0.205380859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100529.jpg,0e771cca41e2d1d6d0081265bebdad30,Ojo_Gallo,ojo_gallo,train,ojo_gallo_010,0.2183203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100535.jpg,d89aaab1032ae5626293b3c2d12f04ce,Ojo_Gallo,ojo_gallo,train,ojo_gallo_010,0.224013671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100540.jpg,711e0f9b95abadf1f174bbeffcc1a39e,Ojo_Gallo,ojo_gallo,train,ojo_gallo_010,0.242919921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100547.jpg,af7aa5e3afdc9e5ace8a08d12716503d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_011,0.30400390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100621.jpg,d18f259990baba5169316883073f70db,Ojo_Gallo,ojo_gallo,train,ojo_gallo_011,0.2215234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100648.jpg,b2d0f7fb62bc276fc04c66d4c45d4778,Ojo_Gallo,ojo_gallo,train,ojo_gallo_011,0.26306640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100711.jpg,5b721a7863b1023e4df057ac2f6f07b4,Ojo_Gallo,ojo_gallo,train,ojo_gallo_011,0.226201171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100808.jpg,a35f4b62128a8112abb5191e108758d6,Ojo_Gallo,ojo_gallo,train,ojo_gallo_011,0.29072265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100822.jpg,a1834ca55ba67eff2f7486320d909b00,Ojo_Gallo,ojo_gallo,train,ojo_gallo_011,0.253984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100906.jpg,060edc8df6bf37bb8036e8c69e0e7a8b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_011,0.226533203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100918.jpg,a1e8003d03fd4964117c8889d964462a,Ojo_Gallo,ojo_gallo,train,ojo_gallo_011,0.26306640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100948.jpg,5540e5c27c172ca64fdd6d2a12b6e924,Ojo_Gallo,ojo_gallo,train,ojo_gallo_011,0.2328515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_100955.jpg,c03cbd1ede9b5d79fb81f638137dec8c,Ojo_Gallo,ojo_gallo,train,ojo_gallo_011,0.214013671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101314.jpg,e57d2ac574e4ed34363e49518dd8589d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_013,0.27248046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101319.jpg,0092e7c1ca496027893bef209c258c40,Ojo_Gallo,ojo_gallo,train,ojo_gallo_013,0.252236328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101337.jpg,961021d89276b269a62f49adc412e876,Ojo_Gallo,ojo_gallo,train,ojo_gallo_013,0.229794921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101342.jpg,507ca7a837402024fb596144b1518759,Ojo_Gallo,ojo_gallo,train,ojo_gallo_013,0.214052734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101430.jpg,f102307f20cbae1645594e86f55ac164,Ojo_Gallo,ojo_gallo,train,ojo_gallo_013,0.17330078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101441.jpg,a1e8b7e3fa49fbb63a65850261a1f7d3,Ojo_Gallo,ojo_gallo,train,ojo_gallo_013,0.29109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101504.jpg,88405573efecf83f71d67518e546e3e7,Ojo_Gallo,ojo_gallo,train,ojo_gallo_013,0.221962890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101509.jpg,acede1f4f324ce6e54311cc961ec9f12,Ojo_Gallo,ojo_gallo,train,ojo_gallo_013,0.204375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101518.jpg,8f24da55a3fb11dd8712f0ddad69790a,Ojo_Gallo,ojo_gallo,train,ojo_gallo_013,0.2224609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101529.jpg,e9575ed8824c0aac11f44e2ee02455dc,Ojo_Gallo,ojo_gallo,train,ojo_gallo_013,0.234296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101559.jpg,e1b5faa55f5686b308f6b76e8d12ba9c,Ojo_Gallo,ojo_gallo,train,ojo_gallo_014,0.248466796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101610.jpg,d96ab06cd0ae6d4aa274a6a8b44d7d62,Ojo_Gallo,ojo_gallo,train,ojo_gallo_014,0.2461328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101624.jpg,6884a596a64d2e219f6792afe17bdb3c,Ojo_Gallo,ojo_gallo,train,ojo_gallo_014,0.205830078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101641.jpg,0fc455c6b4ff16b0ccb41f05d8ea5ab7,Ojo_Gallo,ojo_gallo,train,ojo_gallo_014,0.2336328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101714.jpg,4cd21b968bb2a23f838a4eee00bc7550,Ojo_Gallo,ojo_gallo,train,ojo_gallo_014,0.26263671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101733.jpg,fa7a227f76bef52fc6d875f447909134,Ojo_Gallo,ojo_gallo,train,ojo_gallo_014,0.159130859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101826.jpg,85a58ab9da3b7c9ccca0ffc1ce1e0e7f,Ojo_Gallo,ojo_gallo,train,ojo_gallo_014,0.28015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101831.jpg,a5b42e7628ba87e098f086811dc24f1e,Ojo_Gallo,ojo_gallo,train,ojo_gallo_014,0.31876953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101839.jpg,c90704be29c13e109a8de33ec12eadb5,Ojo_Gallo,ojo_gallo,train,ojo_gallo_014,0.215419921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_101856.jpg,c83b67e11b60a511b55b72cbe2f76852,Ojo_Gallo,ojo_gallo,train,ojo_gallo_014,0.242900390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_102558.jpg,d5f20ed2370e63cf19638239a7cf7f91,Ojo_Gallo,ojo_gallo,train,ojo_gallo_016,0.23556640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_102657.jpg,6860e0fc1d17989419a4c6f38898d1fb,Ojo_Gallo,ojo_gallo,train,ojo_gallo_016,0.19890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_102732.jpg,7f447c7d5365425aa4abbcecdb361b86,Ojo_Gallo,ojo_gallo,train,ojo_gallo_016,0.267763671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_102737.jpg,f392c0da8a7e1f19a8644edd8dbb903d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_016,0.20439453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_102831.jpg,30dea89e04b4eaf3bc279ef1e54b7d31,Ojo_Gallo,ojo_gallo,train,ojo_gallo_016,0.2026171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_102838.jpg,973d2d3e5a063a9df2562bbe58142249,Ojo_Gallo,ojo_gallo,train,ojo_gallo_016,0.2116796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_102905.jpg,4f34a9a1d116b199511f5dd157d48711,Ojo_Gallo,ojo_gallo,train,ojo_gallo_016,0.212568359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_102920.jpg,214b240c24473b664f4c96ba2f08ef7d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_016,0.261416015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103003.jpg,9e33a992703b2781a5749834141e10ed,Ojo_Gallo,ojo_gallo,train,ojo_gallo_016,0.064150390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103018.jpg,54b0db8f39e2883999c6fe10dd599856,Ojo_Gallo,ojo_gallo,train,ojo_gallo_016,0.164873046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103051.jpg,3b48665e284cb222cff1b2d9c4b3fdbf,Ojo_Gallo,ojo_gallo,train,ojo_gallo_017,0.148466796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103110.jpg,338e66c072a676ade6aef58cea508c64,Ojo_Gallo,ojo_gallo,train,ojo_gallo_017,0.186328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103124.jpg,dfc12e707811c176823928b2536bd8c7,Ojo_Gallo,ojo_gallo,train,ojo_gallo_017,0.1412890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103139.jpg,b24b3acac675b54686d2a9c689d3fd13,Ojo_Gallo,ojo_gallo,train,ojo_gallo_017,0.239990234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103154.jpg,b30c07e5bfceb583a693dae53133d626,Ojo_Gallo,ojo_gallo,train,ojo_gallo_017,0.254296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103206.jpg,664ed4b37da64d67f5c155098945f261,Ojo_Gallo,ojo_gallo,train,ojo_gallo_017,0.23048828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103228.jpg,cc3361492371c928c4e8f4ccb56eb31a,Ojo_Gallo,ojo_gallo,train,ojo_gallo_017,0.24705078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103304.jpg,38322a388a810fd24ce05469a8981ac3,Ojo_Gallo,ojo_gallo,train,ojo_gallo_017,0.24572265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103311.jpg,e48213f9167cdc03b8657b1ee7f91d6d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_017,0.181240234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103353.jpg,cbb127a322686ca5ea7e6b8c722aa50e,Ojo_Gallo,ojo_gallo,train,ojo_gallo_017,0.23177734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103409.jpg,0173c4199d0ea5395bf09dd40297b3d1,Ojo_Gallo,ojo_gallo,train,ojo_gallo_018,0.2376171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103437.jpg,8c6964eaa5d6f68e612c5de779bddb48,Ojo_Gallo,ojo_gallo,train,ojo_gallo_018,0.19451171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103445.jpg,bdd3d7e91a018e1aca61bf91ca6c2bf6,Ojo_Gallo,ojo_gallo,train,ojo_gallo_018,0.195751953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103532.jpg,49a3c85fccd59a2a5b8f43fa5ef43d18,Ojo_Gallo,ojo_gallo,train,ojo_gallo_018,0.2503515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103542.jpg,ad838e7d7c790950996f628bf9ab1575,Ojo_Gallo,ojo_gallo,train,ojo_gallo_018,0.31751953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103604.jpg,2cc7d965557e67f755573f79917d333e,Ojo_Gallo,ojo_gallo,train,ojo_gallo_018,0.256494140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103610.jpg,a692eb3f93916b4df718d97abc8816cd,Ojo_Gallo,ojo_gallo,train,ojo_gallo_018,0.25126953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103618.jpg,c78931958e899abe8b554469a58cce79,Ojo_Gallo,ojo_gallo,train,ojo_gallo_018,0.195703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103647.jpg,8f1ed28674f6dffd872ae7b9abca865b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_018,0.309580078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_103728.jpg,92b163e315230a76a76813d18d14d74d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_018,0.253916015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104320.jpg,e8789925f4036f6ecf59102ab5a594b4,Ojo_Gallo,ojo_gallo,train,ojo_gallo_020,0.172314453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104346.jpg,32cdc750bb8b3153f08eaa8e60796df3,Ojo_Gallo,ojo_gallo,train,ojo_gallo_020,0.211904296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104351.jpg,c8e0f711c1e25b87dda3178f4a224ad8,Ojo_Gallo,ojo_gallo,train,ojo_gallo_020,0.202470703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104356.jpg,30ea28975379a7e86b09a8a951baf482,Ojo_Gallo,ojo_gallo,train,ojo_gallo_020,0.164541015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104403.jpg,ba6ea72d3a6590758c226433d3a9e78a,Ojo_Gallo,ojo_gallo,train,ojo_gallo_020,0.153349609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104409.jpg,1e892c27a378660d140ea2e6b27bde77,Ojo_Gallo,ojo_gallo,train,ojo_gallo_020,0.181943359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104456.jpg,7333135f6984bda6efc2b03d91c42483,Ojo_Gallo,ojo_gallo,train,ojo_gallo_020,0.158916015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104554.jpg,74025d006ffd96b35144ee16f294e159,Ojo_Gallo,ojo_gallo,train,ojo_gallo_020,0.174365234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104557.jpg,d788a390e7b60292d822cf8bba43d523,Ojo_Gallo,ojo_gallo,train,ojo_gallo_020,0.2123828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104647.jpg,f28ad65afc63fb6b4266ac5c85a220e2,Ojo_Gallo,ojo_gallo,train,ojo_gallo_020,0.209521484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104706.jpg,9ae98fdb833756cb7ec43077e5aaeb23,Ojo_Gallo,ojo_gallo,train,ojo_gallo_021,0.164482421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104727.jpg,949392e85cbddab9072b8e118a1a9db6,Ojo_Gallo,ojo_gallo,train,ojo_gallo_021,0.14919921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104738.jpg,8c498dc4423e8d1390d1a9553b8eb9f4,Ojo_Gallo,ojo_gallo,train,ojo_gallo_021,0.085908203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104745.jpg,da5a94e0ce30363febf204a8e8a3fb82,Ojo_Gallo,ojo_gallo,train,ojo_gallo_021,0.172197265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104803.jpg,ca7605763e0ab7df6f792fffbea22cb4,Ojo_Gallo,ojo_gallo,train,ojo_gallo_021,0.112353515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104818.jpg,b80286c58f1d7e9696312eb761c490e6,Ojo_Gallo,ojo_gallo,train,ojo_gallo_021,0.212158203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104901.jpg,487ce32d5d0360897ba774e187c75341,Ojo_Gallo,ojo_gallo,train,ojo_gallo_021,0.25853515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104907.jpg,ad2f4aee7bfad781e43cb57811464ae6,Ojo_Gallo,ojo_gallo,train,ojo_gallo_021,0.2252734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104918.jpg,dd0b5d033923db516e8709adc70440b8,Ojo_Gallo,ojo_gallo,train,ojo_gallo_021,0.2961328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_104924.jpg,2f54711e2bb7b9a38a41d595642af5f7,Ojo_Gallo,ojo_gallo,train,ojo_gallo_021,0.3040234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_105517.jpg,ad87392ce4f4624ca53d2647b06565ee,Ojo_Gallo,ojo_gallo,train,ojo_gallo_023,0.1791796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_105537.jpg,3a89a0fc7e2ded808731c7c2d79fea78,Ojo_Gallo,ojo_gallo,train,ojo_gallo_023,0.22083984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_114546.jpg,15a21bee1ee84d96781186661a869dc5,Ojo_Gallo,ojo_gallo,train,ojo_gallo_023,0.270546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_114552.jpg,94d5d0ddbfdf115c33548a57b8485760,Ojo_Gallo,ojo_gallo,train,ojo_gallo_023,0.308876953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_114556.jpg,aacf1f9240789546eb4fab81037d9bf5,Ojo_Gallo,ojo_gallo,train,ojo_gallo_023,0.193935546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_114630.jpg,f5392ccb1bddc63ec7b1533a63339d2c,Ojo_Gallo,ojo_gallo,train,ojo_gallo_023,0.195615234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_114655.jpg,4a03e54a58aadf368ad1f5a057843e77,Ojo_Gallo,ojo_gallo,train,ojo_gallo_023,0.280419921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_114708.jpg,f18c221263cab3740b2b4af3ce5995ba,Ojo_Gallo,ojo_gallo,train,ojo_gallo_023,0.231572265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_114714.jpg,f67e881607f3e8a8c69cb6329711be15,Ojo_Gallo,ojo_gallo,train,ojo_gallo_023,0.21517578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_114830.jpg,1d1e0fcc0fd78ace96f8d743bc8e3d44,Ojo_Gallo,ojo_gallo,train,ojo_gallo_023,0.132802734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_114858.jpg,52b000e6cf285ae2d27d640db53b6c25,Ojo_Gallo,ojo_gallo,train,ojo_gallo_024,0.176484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_114932.jpg,fb46026fcdc442354a6931d2b826bb12,Ojo_Gallo,ojo_gallo,train,ojo_gallo_024,0.11087890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_114939.jpg,a004a91eb1717d355c0e973b4130e1b2,Ojo_Gallo,ojo_gallo,train,ojo_gallo_024,0.23822265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_114946.jpg,320d94a1b20609885e42978eaf4d0f45,Ojo_Gallo,ojo_gallo,train,ojo_gallo_024,0.125673828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_114957.jpg,fc15ea40da1b619f1bade755eaa17c06,Ojo_Gallo,ojo_gallo,train,ojo_gallo_024,0.17912109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115010.jpg,8754a8d18565eeaff61bbc0e868c2966,Ojo_Gallo,ojo_gallo,train,ojo_gallo_024,0.169541015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115017.jpg,e0cf3ee29ecac3314693a2c41d7e7c52,Ojo_Gallo,ojo_gallo,train,ojo_gallo_024,0.12267578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115123.jpg,af1390fb84e345ffe6fe1f59a565557a,Ojo_Gallo,ojo_gallo,train,ojo_gallo_024,0.163505859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115140.jpg,ffee3ccec34d4e37b9965796249ebe62,Ojo_Gallo,ojo_gallo,train,ojo_gallo_024,0.214404296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115201.jpg,1953dc8a2c838386ae35593a5e4ea71d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_024,0.22703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115218.jpg,4e2edeb7f0eb383d20ab62f5a6d425ab,Ojo_Gallo,ojo_gallo,train,ojo_gallo_025,0.178125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115223.jpg,9c8d744c2c692492b42992e05458f3b0,Ojo_Gallo,ojo_gallo,train,ojo_gallo_025,0.155556640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115251.jpg,51e0399021d65061bf37123239b784a1,Ojo_Gallo,ojo_gallo,train,ojo_gallo_025,0.14296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115257.jpg,ba6a5afcdf19387810106c9d5877772b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_025,0.195283203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115305.jpg,c0729752263bfaa4f2173edd432ab250,Ojo_Gallo,ojo_gallo,train,ojo_gallo_025,0.20126953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115313.jpg,b3b9f8e50abd224ba6e5f6c318224e4e,Ojo_Gallo,ojo_gallo,train,ojo_gallo_025,0.23873046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115322.jpg,bafe990b9321c025e95f8ea8e61c2b7f,Ojo_Gallo,ojo_gallo,train,ojo_gallo_025,0.232470703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115331.jpg,16fd00163c371e1b7bec62a7751a1ced,Ojo_Gallo,ojo_gallo,train,ojo_gallo_025,0.147265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115342.jpg,3ce00fd2020f5dcc5576dc5c7cdcc051,Ojo_Gallo,ojo_gallo,train,ojo_gallo_025,0.161953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115401.jpg,11faa1ee15e377d608406a7d46727710,Ojo_Gallo,ojo_gallo,train,ojo_gallo_025,0.203076171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115426.jpg,99c629f97f2823bd6308035114ded3c5,Ojo_Gallo,ojo_gallo,train,ojo_gallo_026,0.1856640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115438.jpg,6bc42cef7c02f3632896f33d554803ea,Ojo_Gallo,ojo_gallo,train,ojo_gallo_026,0.169306640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115503.jpg,d818893756e1fdc1b49f2182fe661731,Ojo_Gallo,ojo_gallo,train,ojo_gallo_026,0.170625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115513.jpg,a433806757b82790b66f11307f7dbacf,Ojo_Gallo,ojo_gallo,train,ojo_gallo_026,0.24169921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115534.jpg,9a33b00fa6cbb3258e5be6aca89f5b34,Ojo_Gallo,ojo_gallo,train,ojo_gallo_026,0.1890234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115618.jpg,740c7affebfd69c0d030b7e04b72d50c,Ojo_Gallo,ojo_gallo,train,ojo_gallo_026,0.267470703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115623.jpg,edb7989ead6288a25a5275e15c14597d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_026,0.236865234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115633.jpg,7b6522aaf7693816b59cf7d5becf4fa0,Ojo_Gallo,ojo_gallo,train,ojo_gallo_026,0.225712890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115719.jpg,923a75f89cb378c6430140e67a6d73e9,Ojo_Gallo,ojo_gallo,train,ojo_gallo_026,0.1311328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115734.jpg,e62719b931262eb9bdb9c4ec2c430ed7,Ojo_Gallo,ojo_gallo,train,ojo_gallo_026,0.17404296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115754.jpg,ef9c450e9071f73936fb54fad7f1fc86,Ojo_Gallo,ojo_gallo,train,ojo_gallo_027,0.224453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115807.jpg,a68e8a1e8884325e0607ddaaeb7e5c43,Ojo_Gallo,ojo_gallo,train,ojo_gallo_027,0.1769140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115815.jpg,b3a36b313f6ff35050b8fe3cb118a4be,Ojo_Gallo,ojo_gallo,train,ojo_gallo_027,0.210859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115822.jpg,fd4c7bd3adb4dd58df14f490633a0339,Ojo_Gallo,ojo_gallo,train,ojo_gallo_027,0.229453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115827.jpg,f4878e44d58ea3a013ac4d0b9af41bc7,Ojo_Gallo,ojo_gallo,train,ojo_gallo_027,0.196875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115857.jpg,230fb57cfb648bb27daf06ee649b7520,Ojo_Gallo,ojo_gallo,train,ojo_gallo_027,0.167353515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115900.jpg,0d44e95dfcc54a37bcada92b243e81ea,Ojo_Gallo,ojo_gallo,train,ojo_gallo_027,0.15875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_115923.jpg,8da99c5f7e2609013793aac8dbba5085,Ojo_Gallo,ojo_gallo,train,ojo_gallo_027,0.1886328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120045.jpg,7d40762d42b3d01f9784bd0013635409,Ojo_Gallo,ojo_gallo,train,ojo_gallo_027,0.246123046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120152.jpg,ade3e1d2ec340887a131088b2a4dade8,Ojo_Gallo,ojo_gallo,train,ojo_gallo_027,0.289033203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120211.jpg,0d8514115c6e5b74ffe0a5f385c96a12,Ojo_Gallo,ojo_gallo,train,ojo_gallo_028,0.2625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120217.jpg,0700b98783e77d900cd8a057997ec7dc,Ojo_Gallo,ojo_gallo,train,ojo_gallo_028,0.259599609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120227.jpg,915e84a98ad08a96b40a29aa3eae4413,Ojo_Gallo,ojo_gallo,train,ojo_gallo_028,0.261533203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120253.jpg,cecfff727d7e2f7e881de168df305a2e,Ojo_Gallo,ojo_gallo,train,ojo_gallo_028,0.251015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120259.jpg,07a51f3ffbfb62a2afbe4fd60f62dde5,Ojo_Gallo,ojo_gallo,train,ojo_gallo_028,0.261171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120332.jpg,0d34ef4890f4f6bd0b2df8a42f6662c3,Ojo_Gallo,ojo_gallo,train,ojo_gallo_028,0.2094140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120401.jpg,6106e761f71c062142f10efc0c2b4763,Ojo_Gallo,ojo_gallo,train,ojo_gallo_028,0.2237890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120417.jpg,3490fec06f36fc769a16b2ebd6935de1,Ojo_Gallo,ojo_gallo,train,ojo_gallo_028,0.21373046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120512.jpg,5d7b272d4ef970783f3cdb5f72998433,Ojo_Gallo,ojo_gallo,train,ojo_gallo_028,0.259755859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120518.jpg,46114e46340da3c3b7619d1e022fc11c,Ojo_Gallo,ojo_gallo,train,ojo_gallo_028,0.22732421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120531.jpg,4628c09aa9124c234c6f3f28511183c3,Ojo_Gallo,ojo_gallo,train,ojo_gallo_029,0.26203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120538.jpg,349dd706faae52d5f84cbb9dd149e307,Ojo_Gallo,ojo_gallo,train,ojo_gallo_029,0.28111328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120544.jpg,75aa2b3710895a1ba42df833a847717f,Ojo_Gallo,ojo_gallo,train,ojo_gallo_029,0.274736328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120552.jpg,6d557438d30c1485081a7bb2acae5d14,Ojo_Gallo,ojo_gallo,train,ojo_gallo_029,0.17708984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120633.jpg,f81ac1264579558024ae916cd0c8225b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_029,0.213095703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120659.jpg,3c63187b150c9837b9298191e4e82653,Ojo_Gallo,ojo_gallo,train,ojo_gallo_029,0.236435546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120717.jpg,23bda185a0e065a95c0278366011d00a,Ojo_Gallo,ojo_gallo,train,ojo_gallo_029,0.291708984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120745.jpg,e9b54d13b0a469a8f2c38ea54b038cc9,Ojo_Gallo,ojo_gallo,train,ojo_gallo_029,0.22849609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120748.jpg,63e922d238c3aa92403cae574b48f413,Ojo_Gallo,ojo_gallo,train,ojo_gallo_029,0.20990234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_120803.jpg,1dcdacc7662371ed921399f0f168e56a,Ojo_Gallo,ojo_gallo,train,ojo_gallo_029,0.264794921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_121103.jpg,1aad2e8d1f9bf29210b0853ca777d688,Ojo_Gallo,ojo_gallo,train,ojo_gallo_031,0.277041015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_121134.jpg,e3b77b487012a947121001518a530723,Ojo_Gallo,ojo_gallo,train,ojo_gallo_031,0.255986328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_130229.jpg,6241b1608d8aa7ac1f1e1e96f8d3fc87,Ojo_Gallo,ojo_gallo,train,ojo_gallo_031,0.1914453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_130232.jpg,c4808d7d4bd74b0594d21383e908b7a9,Ojo_Gallo,ojo_gallo,train,ojo_gallo_031,0.1823828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_130238.jpg,df475af09f0e111646519072095343ec,Ojo_Gallo,ojo_gallo,train,ojo_gallo_031,0.15671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_130241.jpg,9e134a98fc013260d11b812a21140ce8,Ojo_Gallo,ojo_gallo,train,ojo_gallo_031,0.132197265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_130306.jpg,9a31baa3d65824c32883fbea49621bf0,Ojo_Gallo,ojo_gallo,train,ojo_gallo_031,0.036181640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_130322.jpg,bea963e528d1b285e68987a9a42b3601,Ojo_Gallo,ojo_gallo,train,ojo_gallo_031,0.2049609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_130402.jpg,6bfd9ec6131e5812b929b498ed494c6b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_031,0.170791015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_130419.jpg,67a1425e8b9935f3c7c4ba02df170bb0,Ojo_Gallo,ojo_gallo,train,ojo_gallo_031,0.206669921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131241.jpg,6a08e6269bffe48d7f36585b9364f620,Ojo_Gallo,ojo_gallo,train,ojo_gallo_034,0.13744140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131303.jpg,8849e9cce25923fa7d189f81d83bb566,Ojo_Gallo,ojo_gallo,train,ojo_gallo_034,0.221513671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131320.jpg,7610b7185c7fb4bbbb9428e2f4b93a8d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_034,0.241318359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131351.jpg,aa76ca6697a71a623496d6ad87771af4,Ojo_Gallo,ojo_gallo,train,ojo_gallo_034,0.216787109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131356.jpg,59bb412c9c9afd1990b5a92e7d90a0c4,Ojo_Gallo,ojo_gallo,train,ojo_gallo_034,0.2298046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131402.jpg,c04f5a0a5ef05b29b3e4f748d4d28c77,Ojo_Gallo,ojo_gallo,train,ojo_gallo_034,0.21953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131423.jpg,5fa1378fcbb97dded02987458d5b3057,Ojo_Gallo,ojo_gallo,train,ojo_gallo_034,0.106630859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131514.jpg,1b378aa69520331d5c65c48f9cf84cba,Ojo_Gallo,ojo_gallo,train,ojo_gallo_034,0.18146484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131521.jpg,043d74758e3175678b3cdc3231f5a0e7,Ojo_Gallo,ojo_gallo,train,ojo_gallo_034,0.141806640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131525.jpg,c10ff0fa215423f0834a0a8fd72bbd68,Ojo_Gallo,ojo_gallo,train,ojo_gallo_034,0.13146484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131529.jpg,a776aafb3438d055b7daf914f30866d4,Ojo_Gallo,ojo_gallo,train,ojo_gallo_035,0.119375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131620.jpg,5435e9212024315e0a3ab205fefa7e7f,Ojo_Gallo,ojo_gallo,train,ojo_gallo_035,0.21984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131638.jpg,a3da04982a2a36152f4c5cb3b9873818,Ojo_Gallo,ojo_gallo,train,ojo_gallo_035,0.204111328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131655.jpg,2489c2cf49703ab30088d60fddae3e08,Ojo_Gallo,ojo_gallo,train,ojo_gallo_035,0.213505859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131720.jpg,6268fa6428c50566a4167d45784f9329,Ojo_Gallo,ojo_gallo,train,ojo_gallo_035,0.222265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131750.jpg,4c7f3e39820a7a5f149016c6d3cc85f3,Ojo_Gallo,ojo_gallo,train,ojo_gallo_035,0.17609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131753.jpg,2230d3e08f958c75475a8a2bdf896b84,Ojo_Gallo,ojo_gallo,train,ojo_gallo_035,0.199453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131815.jpg,d7e7221eae2a25220ddeea097c0cdb75,Ojo_Gallo,ojo_gallo,train,ojo_gallo_035,0.2382421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131820.jpg,870febadb4dc415127ab4e2aa7ab6af8,Ojo_Gallo,ojo_gallo,train,ojo_gallo_035,0.197353515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131839.jpg,33eb1371458dd197b4e23eee870384b6,Ojo_Gallo,ojo_gallo,train,ojo_gallo_035,0.21611328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131901.jpg,3a022180a5af7abbb8202278bade64d0,Ojo_Gallo,ojo_gallo,train,ojo_gallo_036,0.2265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131914.jpg,440a2068d5fc794b775bbd83abe2a514,Ojo_Gallo,ojo_gallo,train,ojo_gallo_036,0.265
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131923.jpg,346609c8ed1657b9152179cbb5720f05,Ojo_Gallo,ojo_gallo,train,ojo_gallo_036,0.256513671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_131938.jpg,ca5d2839fce45409f00054c261dadfad,Ojo_Gallo,ojo_gallo,train,ojo_gallo_036,0.23712890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132038.jpg,14b44c6f305ade6860aba2513604bc00,Ojo_Gallo,ojo_gallo,train,ojo_gallo_036,0.238359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132125.jpg,4f49fc038b17284299bb2826793a3e02,Ojo_Gallo,ojo_gallo,train,ojo_gallo_036,0.19142578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132200.jpg,a089518f79d889c6830a412ca8c2025d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_036,0.20501953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132216.jpg,0f0134b5ebdbd912af2445742fd86be1,Ojo_Gallo,ojo_gallo,train,ojo_gallo_036,0.142080078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132248.jpg,2beea11cb94dc0f3d3d1f01c9789701d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_036,0.141689453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132305.jpg,c7fb172914015f580d8ec05d95ead387,Ojo_Gallo,ojo_gallo,train,ojo_gallo_036,0.235927734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132354.jpg,2f0f7719665b482c0e743cd164b7f468,Ojo_Gallo,ojo_gallo,train,ojo_gallo_037,0.260283203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132449.jpg,4f61569ce42e2f4ad9d4ba14b720b326,Ojo_Gallo,ojo_gallo,train,ojo_gallo_037,0.233447265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132501.jpg,51637c7d724fb80dd0d365e1c44bd0d1,Ojo_Gallo,ojo_gallo,train,ojo_gallo_037,0.224296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132523.jpg,e922797fe0aaaa4fd2e83f558ac79a5a,Ojo_Gallo,ojo_gallo,train,ojo_gallo_037,0.221123046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132528.jpg,02193ba9e269474bb08f9096f18ca2c5,Ojo_Gallo,ojo_gallo,train,ojo_gallo_037,0.153955078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132534.jpg,a98ce169e8613fb6517561cb2a4a91ba,Ojo_Gallo,ojo_gallo,train,ojo_gallo_037,0.23318359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132632.jpg,f9ddb5e29f41ec2f1cde9e4c3ff224fb,Ojo_Gallo,ojo_gallo,train,ojo_gallo_037,0.19880859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132727.jpg,0881022403e3c8813ac6f7207b498545,Ojo_Gallo,ojo_gallo,train,ojo_gallo_037,0.25125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132732.jpg,8db52a2b2e413ee7214b6eb12d92f3de,Ojo_Gallo,ojo_gallo,train,ojo_gallo_037,0.236943359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132740.jpg,01845a146290d504c59ef17c5d66c3b4,Ojo_Gallo,ojo_gallo,train,ojo_gallo_037,0.302880859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132751.jpg,fab6b07996fe43e6e60be6f296f4eb2f,Ojo_Gallo,ojo_gallo,train,ojo_gallo_038,0.259755859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132832.jpg,390b5aecff9571a1ecc677341e71307b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_038,0.302568359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132854.jpg,60a14eeb8dcfa8d74c14b8d98a5dc641,Ojo_Gallo,ojo_gallo,train,ojo_gallo_038,0.264150390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132859.jpg,994ccc36ec05cc8a20c160b9637b71ff,Ojo_Gallo,ojo_gallo,train,ojo_gallo_038,0.256982421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132910.jpg,a061803c4018199f4a28cabfb2c716ad,Ojo_Gallo,ojo_gallo,train,ojo_gallo_038,0.23150390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132915.jpg,c72dd19ed1dd7cf5f688a96ac98540e3,Ojo_Gallo,ojo_gallo,train,ojo_gallo_038,0.22716796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132921.jpg,745b6855a8d2e092f9b2df41e813f247,Ojo_Gallo,ojo_gallo,train,ojo_gallo_038,0.158828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_132954.jpg,d9842bc49705acca01d97d6cecceb911,Ojo_Gallo,ojo_gallo,train,ojo_gallo_038,0.184033203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133000.jpg,30a4b8cf4956e95c3de5733bc20bbefa,Ojo_Gallo,ojo_gallo,train,ojo_gallo_038,0.23294921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133018.jpg,9e66eddceee5f53f8c51ac11e0415074,Ojo_Gallo,ojo_gallo,train,ojo_gallo_038,0.16478515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133030.jpg,78e1d20b060a4483b7c41dc6f4617b58,Ojo_Gallo,ojo_gallo,train,ojo_gallo_039,0.229072265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133340.jpg,8602cf77c2030e7b3acf1355a87f0d09,Ojo_Gallo,ojo_gallo,train,ojo_gallo_039,0.191396484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133353.jpg,f8fb39e8abaad5f07be6db737e2c9fb0,Ojo_Gallo,ojo_gallo,train,ojo_gallo_039,0.189072265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133423.jpg,9cf5e5113d87860b07315744480470e0,Ojo_Gallo,ojo_gallo,train,ojo_gallo_039,0.1786328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133456.jpg,83e9c1226dbe30db766781b339607882,Ojo_Gallo,ojo_gallo,train,ojo_gallo_039,0.223896484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133515.jpg,ec1ce23f08d0b6827440aeebda14031c,Ojo_Gallo,ojo_gallo,train,ojo_gallo_039,0.187998046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133519.jpg,0d81c04d6cd0d324a779a7444fa1cec8,Ojo_Gallo,ojo_gallo,train,ojo_gallo_039,0.2084375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133527.jpg,30127027d8e41156a54abf0cb2829030,Ojo_Gallo,ojo_gallo,train,ojo_gallo_039,0.17736328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133625.jpg,6cbc73a014eda132a6bf1bbcf8e309aa,Ojo_Gallo,ojo_gallo,train,ojo_gallo_039,0.218681640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133633.jpg,6d720fd6cb2808f3ab7ee47e8decc366,Ojo_Gallo,ojo_gallo,train,ojo_gallo_039,0.16619140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133740.jpg,e49823cb3eafa5cb152072b5b75b14d3,Ojo_Gallo,ojo_gallo,train,ojo_gallo_040,0.235078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133814.jpg,670d35c032eff114564275c14456d32e,Ojo_Gallo,ojo_gallo,train,ojo_gallo_040,0.284501953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133824.jpg,8e5d238da9c8cc543c214bc42b86f640,Ojo_Gallo,ojo_gallo,train,ojo_gallo_040,0.249033203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133840.jpg,cc1fbd6c0826fc0325ce354f7c3cfc36,Ojo_Gallo,ojo_gallo,train,ojo_gallo_040,0.23259765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133850.jpg,0140f15252e055e76940139db1e5339b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_040,0.168779296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133912.jpg,37f7fd568b04bf2cdedc0945d2392d75,Ojo_Gallo,ojo_gallo,train,ojo_gallo_040,0.23904296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133933.jpg,1e1a0bfd54af510eb4c6f4f00b82530d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_040,0.2103125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133943.jpg,ad416ef4d7e1becc20aa79620fca594f,Ojo_Gallo,ojo_gallo,train,ojo_gallo_040,0.20580078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133953.jpg,6d5c10570e33aaa1deaeb12ec607dd68,Ojo_Gallo,ojo_gallo,train,ojo_gallo_040,0.208837890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_133959.jpg,084264b6e5242a60b6e37089439ccb4a,Ojo_Gallo,ojo_gallo,train,ojo_gallo_040,0.229873046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134106.jpg,e52ea3e75cdaca6a2c4cf57f7dd7353c,Ojo_Gallo,ojo_gallo,train,ojo_gallo_041,0.245595703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134335.jpg,b9e708cadb4c849a65020d29d6cd6815,Ojo_Gallo,ojo_gallo,train,ojo_gallo_041,0.234794921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134344.jpg,7112cb9d3a14018154a04861b513ae6b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_041,0.2125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134401.jpg,527eaeadb81fcc9b4c915646bf9e3fcd,Ojo_Gallo,ojo_gallo,train,ojo_gallo_041,0.256923828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134420.jpg,f72eb914307bd9452283f5d1e52488e0,Ojo_Gallo,ojo_gallo,train,ojo_gallo_041,0.231357421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134502.jpg,384ab4538438bac8eed2087e33fa96f5,Ojo_Gallo,ojo_gallo,train,ojo_gallo_041,0.2577734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134506.jpg,145edb45cd40aabcd92f026008b70927,Ojo_Gallo,ojo_gallo,train,ojo_gallo_041,0.20970703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134517.jpg,bada3b846802551f6d3070fcfa4d3641,Ojo_Gallo,ojo_gallo,train,ojo_gallo_041,0.236552734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134527.jpg,c189ca79c98c78c09a8fa805909bf482,Ojo_Gallo,ojo_gallo,train,ojo_gallo_041,0.213671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134557.jpg,c0ad9ee42d6d9adb0cbd16014779dfc7,Ojo_Gallo,ojo_gallo,train,ojo_gallo_041,0.19216796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134615.jpg,1ee7577e6b57ccf6cc6205ac6e86bb1e,Ojo_Gallo,ojo_gallo,train,ojo_gallo_042,0.233701171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134656.jpg,ade52acbdf899ac5c56a123798b38011,Ojo_Gallo,ojo_gallo,train,ojo_gallo_042,0.191201171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134708.jpg,b97509f75e606744793a2f1cfa16b6e5,Ojo_Gallo,ojo_gallo,train,ojo_gallo_042,0.233447265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134713.jpg,eb6e06caef1516f11ff6e9f9959e5d6e,Ojo_Gallo,ojo_gallo,train,ojo_gallo_042,0.249453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134724.jpg,58e73256dd50fc4337fedc45542805d3,Ojo_Gallo,ojo_gallo,train,ojo_gallo_042,0.21220703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134753.jpg,b9f84b492cae5fcbf1ad7e6fa304409d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_042,0.226865234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_134917.jpg,076355a1922b18b87908d6a3f35cf43b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_042,0.259765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135000.jpg,cbc84e212f22fd05378ba969816760cd,Ojo_Gallo,ojo_gallo,train,ojo_gallo_042,0.229599609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135004.jpg,bb9fdeb9c7ea902de95d0c2344b8552d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_042,0.208125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135020.jpg,492d57fcd22129571715089da8f70aa1,Ojo_Gallo,ojo_gallo,train,ojo_gallo_042,0.277470703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135531.jpg,e041e12dc4c8e56dd66e1973d299340d,Ojo_Gallo,ojo_gallo,train,ojo_gallo_045,0.21720703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135538.jpg,3cc79998ff05e0d098a83dde5d6b2201,Ojo_Gallo,ojo_gallo,train,ojo_gallo_045,0.190224609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135551.jpg,dc53c10c3a5c4e30985a60ed354b3a20,Ojo_Gallo,ojo_gallo,train,ojo_gallo_045,0.25103515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135556.jpg,ed3a9a7a3ce0f055ffa4296fa5c2be75,Ojo_Gallo,ojo_gallo,train,ojo_gallo_045,0.220234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135606.jpg,f873c15b0a11da2d4b4d5c00c8f2dff3,Ojo_Gallo,ojo_gallo,train,ojo_gallo_045,0.1780078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135624.jpg,db37c854ca1e0dac6f7893993a9135c3,Ojo_Gallo,ojo_gallo,train,ojo_gallo_045,0.148916015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135755.jpg,ebe22014475637eb2c298eec755f9228,Ojo_Gallo,ojo_gallo,train,ojo_gallo_045,0.158837890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135804.jpg,4dcdf15384a54d2f12e4e11b566a4b35,Ojo_Gallo,ojo_gallo,train,ojo_gallo_045,0.203369140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135827.jpg,999d9a104b34da17a4706017dc9152e8,Ojo_Gallo,ojo_gallo,train,ojo_gallo_045,0.184951171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135845.jpg,a6b88de4f1eb41cbb6076d674ea49c0b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_045,0.167841796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135900.jpg,8e172c9b6219ed027be545900c52ab3f,Ojo_Gallo,ojo_gallo,train,ojo_gallo_046,0.20416015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_135927.jpg,a4c2560b1104fa8f949ee492d96f84ef,Ojo_Gallo,ojo_gallo,train,ojo_gallo_046,0.196455078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140008.jpg,5c4fd5207bb96598e9e6cf58b36d1943,Ojo_Gallo,ojo_gallo,train,ojo_gallo_046,0.155771484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140011.jpg,c457af9ffd73acbeb1e264e79ca0f227,Ojo_Gallo,ojo_gallo,train,ojo_gallo_046,0.177373046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140020.jpg,bee52ef9ac9b9d2c27568c4afda29ba8,Ojo_Gallo,ojo_gallo,train,ojo_gallo_046,0.185146484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140025.jpg,d6baa24c2d8cce0ffc1816a4039e9f21,Ojo_Gallo,ojo_gallo,train,ojo_gallo_046,0.16736328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140038.jpg,dd8d5002d1ab5b878a5519ef76ca2f51,Ojo_Gallo,ojo_gallo,train,ojo_gallo_046,0.16693359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140043.jpg,3917e1f96233c2fdd7d938749ea88112,Ojo_Gallo,ojo_gallo,train,ojo_gallo_046,0.186083984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140128.jpg,80bd43c0b7edd7f50dfd4021db0c8387,Ojo_Gallo,ojo_gallo,train,ojo_gallo_046,0.242626953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140136.jpg,da0fedbe38f7224863941688c75b86a7,Ojo_Gallo,ojo_gallo,train,ojo_gallo_046,0.223212890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140207.jpg,393388c1c2cd63eb7b4006c16c0167f8,Ojo_Gallo,ojo_gallo,train,ojo_gallo_047,0.245146484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140216.jpg,491a35554a0b5e4eba0f525ae1f994f8,Ojo_Gallo,ojo_gallo,train,ojo_gallo_047,0.26634765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140227.jpg,3e1dbebb1d84fc23758b2e777e4eb1e1,Ojo_Gallo,ojo_gallo,train,ojo_gallo_047,0.260361328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140236.jpg,81f341b96c7f068624a4af8212bbb109,Ojo_Gallo,ojo_gallo,train,ojo_gallo_047,0.218330078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140240.jpg,c1158fda8260df6795e122bec33f7187,Ojo_Gallo,ojo_gallo,train,ojo_gallo_047,0.219130859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140502.jpg,a7276b1f41815a6fd5ac98f8e82f7304,Ojo_Gallo,ojo_gallo,train,ojo_gallo_047,0.200546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140505.jpg,b396aa7c302711125b96be61eb38f05b,Ojo_Gallo,ojo_gallo,train,ojo_gallo_047,0.22388671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140508.jpg,b6a69b1fdd65582d8bce6409064be064,Ojo_Gallo,ojo_gallo,train,ojo_gallo_047,0.2862109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140513.jpg,f93a2dba0826501bc3f7cb53651ff2f7,Ojo_Gallo,ojo_gallo,train,ojo_gallo_047,0.23986328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140516.jpg,acf2c560bc5dc62cc06b357172bebe13,Ojo_Gallo,ojo_gallo,train,ojo_gallo_047,0.182841796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140753.jpg,b64c48163d29976f82c28aeba324085e,Ojo_Gallo,ojo_gallo,train,ojo_gallo_049,0.159013671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140759.jpg,07ee2c05b35d0193c04aafda9ce58f1c,Ojo_Gallo,ojo_gallo,train,ojo_gallo_049,0.228505859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140802.jpg,5eac57b1978f4b2b51f5b37f5ab4c38a,Ojo_Gallo,ojo_gallo,train,ojo_gallo_049,0.199833984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140813.jpg,13240255d581d671f4e5a9321ab9f776,Ojo_Gallo,ojo_gallo,train,ojo_gallo_049,0.17373046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140816.jpg,0edfae5d473d40af63b97f4a1c00c300,Ojo_Gallo,ojo_gallo,train,ojo_gallo_049,0.19796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140820.jpg,dad12aff6dc7a565eaffb9c2fe387dc5,Ojo_Gallo,ojo_gallo,train,ojo_gallo_049,0.191708984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140842.jpg,016d0db8e5acf5159a6b8c15536db49a,Ojo_Gallo,ojo_gallo,train,ojo_gallo_049,0.138466796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140850.jpg,e37806cd4d26b4f15166d685fece57eb,Ojo_Gallo,ojo_gallo,train,ojo_gallo_049,0.20486328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140907.jpg,176d581c0d6bbd20db236a0473ba0c0e,Ojo_Gallo,ojo_gallo,train,ojo_gallo_049,0.137421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_140938.jpg,fbcb7d0ef247c53a6d88880840dce789,Ojo_Gallo,ojo_gallo,train,ojo_gallo_049,0.14328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1001.jpg,29dd12a37bbd78f846f991f36aa94fa8,Roya,roya,train,roya_024,0.120751953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1005.jpg,a9a7c22ecba3e09e161e03954f7f9460,Roya,roya,train,roya_024,0.160810546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1010.jpg,9b78280c203c52076f85b6125a54976e,Roya,roya,train,roya_024,0.21
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1018.jpg,3aae45068b436db79e1ee79093123486,Roya,roya,train,roya_024,0.14794921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1022.jpg,4571c73fec9afd54ccf51247ac76d764,Roya,roya,train,roya_024,0.19275390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1028.jpg,bdebd2f6afd5ede965a3e14344a3753d,Roya,roya,train,roya_025,0.204765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1030.jpg,c066cf4c82b5350e835ebafcbb905e01,Roya,roya,train,roya_025,0.202158203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1031.jpg,552a5af79d240af41c46a4715433a56d,Roya,roya,train,roya_025,0.189794921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1033.jpg,df70fbe9a03526eef2b06c86810a9592,Roya,roya,train,roya_025,0.149326171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1038.jpg,84808ae2cbe6c7e5cc334294e002561e,Roya,roya,train,roya_025,0.1196484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1040.jpg,1d4ddd14a96300723b75f92b62ff491c,Roya,roya,train,roya_025,0.17318359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1044.jpg,15b08eb817770912cf5a964e9f8ff35c,Roya,roya,train,roya_025,0.14314453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1047.jpg,0f0f21ea958d5a504327975b595c2dff,Roya,roya,train,roya_025,0.201279296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1056.jpg,731744d43b77186a37a0867eb2b972ef,Roya,roya,train,roya_025,0.1815625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1057.jpg,b41a905fe55ddb02b951c21d8b9be05d,Roya,roya,train,roya_025,0.149951171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1065.jpg,aeb6d566a1561662ec275422bdf55933,Roya,roya,train,roya_026,0.217275390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1066.jpg,69aea72d994edee33fb7fd66f056990b,Roya,roya,train,roya_026,0.25669921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1067.jpg,1e376cff193118c7b2a2189430213e00,Roya,roya,train,roya_026,0.215830078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1070.jpg,0849010d609454af7cacf73331245871,Roya,roya,train,roya_026,0.159833984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1071.jpg,740343092e0099d1cc5bfc81be88f6d0,Roya,roya,train,roya_026,0.1408984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1073.jpg,6ddae9e0612359d047c6ed6e7fb686c9,Roya,roya,train,roya_026,0.137294921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1079.jpg,b048311825c80a5bc8969654e3332b65,Roya,roya,train,roya_026,0.1451953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1089.jpg,2061ef048f09a498d6317df79ddf580c,Roya,roya,train,roya_026,0.13845703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1091.jpg,e7ff7b63f581689c111a584bfab6182b,Roya,roya,train,roya_026,0.19232421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1092.jpg,2db4c4bee5211534266b4ac411581027,Roya,roya,train,roya_026,0.139345703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1094.jpg,1d45a5c95dbaa7a0c31046ac0e997013,Roya,roya,train,roya_027,0.199482421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1096.jpg,2f22651a4b3d09ee31e2de5ce0a5cf0c,Roya,roya,train,roya_027,0.125830078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1100.jpg,7237607f85c701f411462df2f1529dd6,Roya,roya,train,roya_027,0.14646484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1106.jpg,12da59c523aee47a7f2029abd25bbc1a,Roya,roya,train,roya_027,0.18373046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1107.jpg,64375e2fb9ebf5439f42cbde96fddb0f,Roya,roya,train,roya_027,0.179560546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1108.jpg,85b634c4b8d3b932311e871f5169df62,Roya,roya,train,roya_027,0.180390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1114.jpg,5327cf3224644c3c6717b3feafb2168d,Roya,roya,train,roya_027,0.154375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1115.jpg,abd106d2f186d647e1163e1e3f3b2003,Roya,roya,train,roya_027,0.201552734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1119.jpg,1f93eb1fc30d90353b6e1b813e1ce9db,Roya,roya,train,roya_027,0.14931640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1120.jpg,1188070bbd531eaf83356ed10a5bc6ee,Roya,roya,train,roya_027,0.211796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1124.jpg,720d6e83cf8eef83074a889ae59615fc,Roya,roya,train,roya_028,0.145556640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1131.jpg,3be8635c9a2bc5e6cd817176f854be92,Roya,roya,train,roya_028,0.207919921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1133.jpg,5ee90cf8c18b1e4532f70c2267de7a93,Roya,roya,train,roya_028,0.10154296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1142.jpg,e9582416eb5dd637e730b7dff82f4b97,Roya,roya,train,roya_028,0.235712890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1143.jpg,4d95e34a274c1cc71035afa881cf49ed,Roya,roya,train,roya_028,0.1806640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1145.jpg,bd85062408de4594087385acfc554676,Roya,roya,train,roya_028,0.124248046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1156.jpg,7b88c20270c6ac47361686a7295766bb,Roya,roya,train,roya_028,0.18478515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1163.jpg,672efdf9c092b955f9ca2559cc5d6889,Roya,roya,train,roya_028,0.129541015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1168.jpg,0036f69a3ffe8ba4bbe36d4b8d1011a8,Roya,roya,train,roya_028,0.18833984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1175.jpg,da415b9d5277eeb999d0855ad1954551,Roya,roya,train,roya_028,0.1603515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1176.jpg,2a668c6dca1cd1927694935921025798,Roya,roya,train,roya_029,0.222685546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1179.jpg,a603eb869ff12569cc50a6275d3697fa,Roya,roya,train,roya_029,0.18712890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1181.jpg,86848f01f4c018385757aca794b8c4a7,Roya,roya,train,roya_029,0.26814453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1183.jpg,b79db8e94563ff9b0d32a010a6045324,Roya,roya,train,roya_029,0.127529296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1188.jpg,06675e0c678ec6fda1cf935118c41187,Roya,roya,train,roya_029,0.141826171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1189.jpg,50b9234c5e24825138842b993ddf331a,Roya,roya,train,roya_029,0.1439453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1195.jpg,6e16cc564fa0e7868736f1b8759be078,Roya,roya,train,roya_029,0.2194921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1197.jpg,4e26f7e93599468fb4d672ecd37c783b,Roya,roya,train,roya_029,0.12369140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1198.jpg,18686716dc5bb0cefb4b650112f0185c,Roya,roya,train,roya_029,0.114951171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1202.jpg,7272fb0c684f8378147804d20bc11b98,Roya,roya,train,roya_029,0.205830078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1241.jpg,db21675ee0a3110d4d180a9c39a8bbee,Roya,roya,train,roya_031,0.197802734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1242.jpg,01872b129b70d2c59b6a78b95bf3ba38,Roya,roya,train,roya_031,0.1408203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1248.jpg,11f6f4338e6ef6d8cb653266dbd02fd9,Roya,roya,train,roya_031,0.143408203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1251.jpg,542c7612ef5834b1b1028fc861db5506,Roya,roya,train,roya_031,0.108642578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1252.jpg,0d5114ea4e4efddc00150c65f94c43cd,Roya,roya,train,roya_031,0.131435546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1253.jpg,e2046054b062a9bbfce964e209fa8ba8,Roya,roya,train,roya_031,0.21751953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1254.jpg,8d75e62c71e850db3981398757d3a95f,Roya,roya,train,roya_031,0.148583984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1256.jpg,ccb5aa224d35fe69a02eb2abd25babea,Roya,roya,train,roya_031,0.185771484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1266.jpg,28414e8b6b778acb5014890599b954b1,Roya,roya,train,roya_031,0.117529296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1270.jpg,2dc1b0a85a167c184c2f03722bb76eba,Roya,roya,train,roya_031,0.11103515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1328.jpg,924637fbf33bf3191b9e5c79bd747376,Roya,roya,train,roya_034,0.1623046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1330.jpg,d00d6b928aca324a3df1aa99e5a10a1b,Roya,roya,train,roya_034,0.181494140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1334.jpg,5fd48320fb4812d179a88e5ef964bd78,Roya,roya,train,roya_034,0.187001953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1336.jpg,34d08d412490d107708af3c52515a239,Roya,roya,train,roya_034,0.171171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1338.jpg,60c9a7cc45f1a057a10ec3f551a6ddeb,Roya,roya,train,roya_034,0.19029296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1344.jpg,f7755555ed16546d7a23cf49e8aa50bb,Roya,roya,train,roya_034,0.208720703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1345.jpg,e91e24e781b15c675f96482eb7174d22,Roya,roya,train,roya_034,0.174677734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1346.jpg,1ad3320e0f8780f88f8c3859b57d008a,Roya,roya,train,roya_034,0.1904296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1348.jpg,044db5c5d3b798a2c249ef1eeac081f5,Roya,roya,train,roya_034,0.13173828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 135.jpg,4b1fa6da9772d1decc15602faade00c5,Roya,roya,train,roya_003,0.2008203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1363.jpg,5e4cefb61cee12dc191dc74872c7ad64,Roya,roya,train,roya_034,0.176279296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1368.jpg,0551746e6d137c6b3bfc24ab0c34e199,Roya,roya,train,roya_035,0.19873046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1376.jpg,285463f538df56599ca6ec8a69931480,Roya,roya,train,roya_035,0.12212890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1377.jpg,44ebf1c16e166c4e7adbd52e1eb803ff,Roya,roya,train,roya_035,0.1509765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1379.jpg,bc1412601ec330844e8b0783a0e18312,Roya,roya,train,roya_035,0.117080078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1381.jpg,2dc1a213a4a4813e4a06c9db7eab47c7,Roya,roya,train,roya_035,0.193544921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1382.jpg,d7d3fbc161fe23cdc3c0bf36083df16b,Roya,roya,train,roya_035,0.129619140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1386.jpg,58911adcd153f5627e379f5a04540732,Roya,roya,train,roya_035,0.124423828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1392.jpg,8e748f09b6b9c0b880d91d492ec19328,Roya,roya,train,roya_035,0.1533203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1394.jpg,f1a114aad20345d89870392031580240,Roya,roya,train,roya_035,0.1375390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1409.jpg,16c48c47ed1f53942980515ed479c995,Roya,roya,train,roya_035,0.186796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1412.jpg,1c2f17fe09e63157f0cd30b4b1d0ddd2,Roya,roya,train,roya_036,0.155068359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1414.jpg,1d3f55288754db0bbf382341e04bcea6,Roya,roya,train,roya_036,0.1975390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1416.jpg,2dbbe81be6605e4b635dfcca85f2e6fe,Roya,roya,train,roya_036,0.20078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1418.jpg,71bb1d5d144aad81cbc209ce12d314e5,Roya,roya,train,roya_036,0.191806640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1419.jpg,c1806db6d3c521307302ed3aa566ad7a,Roya,roya,train,roya_036,0.1701953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 142.jpg,ae0f04ccac2fed00c5802cd583f53bfb,Roya,roya,train,roya_003,0.1637890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1423.jpg,b385e34ba5e593387d24d5f0de20a069,Roya,roya,train,roya_036,0.136298828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1427.jpg,2df4856e787fa5985c4fb1d72b576e9e,Roya,roya,train,roya_036,0.13861328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1448.jpg,56db08922f70c565550ac83eb4bdcbe9,Roya,roya,train,roya_036,0.1530859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1459.jpg,58d31dfcdb5e9d0a083d5d1dad649a3f,Roya,roya,train,roya_036,0.153720703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1462.jpg,f86ca8ab20123296922ba50b88e9adbe,Roya,roya,train,roya_036,0.238857421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1463.jpg,ff3fb25a8559c0328d1ef0d9cf5f848b,Roya,roya,train,roya_037,0.186298828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1464.jpg,f750201b3aeaf8029bb042176878c515,Roya,roya,train,roya_037,0.173955078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1469.jpg,293df0c8e48f0ddb22fe3da631eba856,Roya,roya,train,roya_037,0.140283203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1470.jpg,101303d7a37cc3def74a12449e2b6055,Roya,roya,train,roya_037,0.188427734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1475.jpg,ef640c4bacbbf1aa73b60c47f213921f,Roya,roya,train,roya_037,0.17794921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1476.jpg,759ebfc02307dce49bb0236900ca89df,Roya,roya,train,roya_037,0.118583984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1477.jpg,082c3933ed01e6fe2ff82f2bafc49106,Roya,roya,train,roya_037,0.129306640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1482.jpg,f4c07e9347a9b27f176f24ab4c1cd4f0,Roya,roya,train,roya_037,0.206982421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1485.jpg,a1234b659d4719ad2fa14a6e6591bf94,Roya,roya,train,roya_037,0.155283203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1492.jpg,940b16c271f34df3ee6ffd3d1eec75ce,Roya,roya,train,roya_037,0.2094140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1496.jpg,3a48a1341099bb22db26281d05459ed7,Roya,roya,train,roya_038,0.106181640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1508.jpg,5d37ec52f4160dd35e266d6a7f3cc62e,Roya,roya,train,roya_038,0.1621484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1509.jpg,6d5dd407734757e7cf22918a72740d69,Roya,roya,train,roya_038,0.089140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1514.jpg,d8c621f6695219c573d27a57de86bf96,Roya,roya,train,roya_038,0.167890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1515.jpg,739c390706d6daaec748e521dde9848e,Roya,roya,train,roya_038,0.18921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1516.jpg,d2b6468cb85a736d0344fbbdd2594652,Roya,roya,train,roya_038,0.165830078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1517.jpg,6a9aeedafe4d15608ba9c01a26b90325,Roya,roya,train,roya_038,0.128173828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1519.jpg,8bc09fb132d421af18a493ebaae81d25,Roya,roya,train,roya_038,0.132392578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1529.jpg,59d2a0166b165e2199c0285d61c49ea6,Roya,roya,train,roya_038,0.211181640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 153.jpg,c9746dc1fa4c29d55a9359432f278a9e,Roya,roya,train,roya_003,0.122802734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1530.jpg,e39c5fa513dd238e0f8da9228f4caaeb,Roya,roya,train,roya_038,0.1999609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1533.jpg,76244a275bf385805ad9db92ddd8cf5d,Roya,roya,train,roya_039,0.152412109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1556.jpg,fa6735818e40ce169c4ded906d703c64,Roya,roya,train,roya_039,0.18923828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1562.jpg,4d4ac5aa64a0c4c46fb26eb33f46cc27,Roya,roya,train,roya_039,0.18447265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1567.jpg,b306c58c62e4f5e149917af788ddcbf0,Roya,roya,train,roya_039,0.119677734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1579.jpg,b2608fff0901d0b287a23d325a438352,Roya,roya,train,roya_039,0.174345703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1583.jpg,f15ac600c88898c3fb3fd8bbcbe8d633,Roya,roya,train,roya_039,0.192958984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1585.jpg,becfad300bd5c02e1394561feeb6718a,Roya,roya,train,roya_039,0.152109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1587.jpg,80dbc0e30e34b1533abc1f0b942ee6e1,Roya,roya,train,roya_039,0.14857421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1589.jpg,c180ce479c461c7a3492f02c73002de8,Roya,roya,train,roya_039,0.21537109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1595.jpg,683430b09c87d267a3fd1158d52cebf7,Roya,roya,train,roya_039,0.16921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1597.jpg,95aee144d98b4d2d91012279680a158d,Roya,roya,train,roya_040,0.166708984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1598.jpg,48293e54405662672b978457f38f6efc,Roya,roya,train,roya_040,0.159658203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1605.jpg,30034e7d8dae943bffa5f27169e46096,Roya,roya,train,roya_040,0.097138671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1608.jpg,3bb86aa1bdf7ec9a4f20aa86737b3d6c,Roya,roya,train,roya_040,0.1001171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1610.jpg,bfefefb785917efb63c52e2cdd08ba2b,Roya,roya,train,roya_040,0.125478515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1611.jpg,4e933daf27c67f00c7ae137c52e0718b,Roya,roya,train,roya_040,0.101748046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1614.jpg,bf2a8a1c8d62669315c6575a7eeb0e0f,Roya,roya,train,roya_040,0.09576171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1618.jpg,23ddc57346f106b754378aec4698ed1b,Roya,roya,train,roya_040,0.125205078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1623.jpg,f69292f0635e5b67b025ef9f4434d7d3,Roya,roya,train,roya_040,0.17357421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1625.jpg,1660dfc2ef11120e8ae9d798882e2654,Roya,roya,train,roya_040,0.200400390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1635.jpg,b332e0031beeb6bdc5abec67644ce246,Roya,roya,train,roya_041,0.1001171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1638.jpg,936817642d92db62b00dd49eb4bc81fd,Roya,roya,train,roya_041,0.142900390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1639.jpg,0d9cc645277a4c9de496e8d8c3ca0f9d,Roya,roya,train,roya_041,0.11552734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1645.jpg,661b075d2e1d6cace3c9cc46e2f2eceb,Roya,roya,train,roya_041,0.127431640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1648.jpg,143b7e1ac36a0f0e23cf7f62cf45a9d8,Roya,roya,train,roya_041,0.096220703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1653.jpg,7dcc0b4c8300aa14172a9ad3831f5889,Roya,roya,train,roya_041,0.13744140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1656.jpg,4f0899145b255f56f8faca7145de44e7,Roya,roya,train,roya_041,0.134833984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1658.jpg,1f3d248c90efa0a134bc1de1db466063,Roya,roya,train,roya_041,0.114248046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1664.jpg,7629d12824b8c7b7ebb6c9fc8c8efa2f,Roya,roya,train,roya_041,0.13271484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1665.jpg,00f9f9d8cb10fa6fa46f2ecf7bbe9607,Roya,roya,train,roya_041,0.18091796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1667.jpg,b7d2eebcc754dd2dd100623c2a9ef3fd,Roya,roya,train,roya_042,0.165244140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 167.jpg,1636dd08dcfa4b94246b42d31b5bb32d,Roya,roya,train,roya_003,0.100595703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1670.jpg,343f8db128597a0f28c7e8ef16dbd652,Roya,roya,train,roya_042,0.161748046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1672.jpg,dd6c18f536bb080990d0cb130dec07fe,Roya,roya,train,roya_042,0.157431640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1673.jpg,368d28670158bc71aa308b2b41170703,Roya,roya,train,roya_042,0.12544921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1685.jpg,3558eb0c58565c3da0cda5d2920cfadc,Roya,roya,train,roya_042,0.1812109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1686.jpg,102123d5182bd59f2e35ee73a5024d76,Roya,roya,train,roya_042,0.15408203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1687.jpg,8c504ad3ca0c20ba8d7b736656b5f072,Roya,roya,train,roya_042,0.194169921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 169.jpg,b3c01adc41bb10df2b477ff495c47fdc,Roya,roya,train,roya_003,0.088125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1690.jpg,e83bdb033e11b3dc94c785ecb6d5ec18,Roya,roya,train,roya_042,0.145849609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1695.jpg,a0f197734421080853319a2d4520033d,Roya,roya,train,roya_042,0.179111328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1698.jpg,9a93de479cd56bb530b64660e1b5dbfc,Roya,roya,train,roya_042,0.173818359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 172.jpg,184c2998be6e01a00683526ab6872896,Roya,roya,train,roya_003,0.17080078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 177.jpg,144467abeda732066cde883a0143cd3c,Roya,roya,train,roya_003,0.111298828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1798.jpg,a740bd0dac2fcdf3178623fe4f436e31,Roya,roya,train,roya_045,0.177890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1801.jpg,e2cb87c82e7930071acca0e1c06a6719,Roya,roya,train,roya_045,0.213076171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1806.jpg,b033ff29d08eeaf1fb6bab0098cec754,Roya,roya,train,roya_045,0.182705078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1815.jpg,ee16b2b89a52945d40dadb4571e64ffb,Roya,roya,train,roya_045,0.145380859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1817.jpg,f03a8cd4e8b80bab8db64fd7e022f6b0,Roya,roya,train,roya_045,0.131826171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 182.jpg,392d82cae2e087b6b9a73d9b6d5de1cd,Roya,roya,train,roya_003,0.142138671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1820.jpg,7877bdbf4abc137ed3e9906ba0eb8157,Roya,roya,train,roya_045,0.132841796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1825.jpg,60feeee1cb4ed16ebb4f76423cc3393d,Roya,roya,train,roya_045,0.172080078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1827.jpg,ea434e2245c4773ef102345b75e7613a,Roya,roya,train,roya_045,0.157705078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1830.jpg,34e741df57a57feb2793fc16464c797c,Roya,roya,train,roya_045,0.116787109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1834.jpg,46af53d2d47fda4ab2e2fbef7eafadbb,Roya,roya,train,roya_045,0.1651953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1836.jpg,58d2a89ba0b2f32c4804765869320fa4,Roya,roya,train,roya_046,0.1471875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1840.jpg,c90d06f87606503d6d921fb4053a1e97,Roya,roya,train,roya_046,0.15078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1845.jpg,6d3aa6a09a7cea09bb4e5bbf608faf63,Roya,roya,train,roya_046,0.17064453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1849.jpg,4a24319747c113afb1276c409ae12199,Roya,roya,train,roya_046,0.095068359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1853.jpg,260f146a250a24f89b38334aba197650,Roya,roya,train,roya_046,0.205322265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1858.jpg,bd9ed773858d8252bb62e66824400bb6,Roya,roya,train,roya_046,0.17759765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1859.jpg,b38751ca1e010984205d88f143618468,Roya,roya,train,roya_046,0.14306640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1860.jpg,c40a013f2d097c0ea62a9bd18de5d167,Roya,roya,train,roya_046,0.1544140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1861.jpg,7de34a4e4db6cdf7b31decd994f11dac,Roya,roya,train,roya_046,0.15158203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1865.jpg,9b693c45d8e48db50c3561e44e87ea3f,Roya,roya,train,roya_046,0.187119140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1874.jpg,db1090d1d0870e8f1b1730f18e23a458,Roya,roya,train,roya_047,0.168359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1875.jpg,d3125711857375e3d21ebf1ab660d8c9,Roya,roya,train,roya_047,0.131015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1877.jpg,a7573a1e4d1fda1bf7f1abc82c9406b2,Roya,roya,train,roya_047,0.17673828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1880.jpg,3d215f6e1a7e7e771c10fd25f250e664,Roya,roya,train,roya_047,0.130244140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1887.jpg,20fc319d75a8cd11d11ab6b91e2aff2d,Roya,roya,train,roya_047,0.16626953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1895.jpg,5304606ddc2f97612340f269a3308060,Roya,roya,train,roya_047,0.150908203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1899.jpg,c07673053a804f0be7190c4dadfda1d7,Roya,roya,train,roya_047,0.15650390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 190.jpg,7c6bb4c9fd585b2eccd59ea590749cca,Roya,roya,train,roya_003,0.154130859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1907.jpg,4828978f4685ae389783ee9ff999783f,Roya,roya,train,roya_047,0.19619140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1915.jpg,cc23790da5e8c0af92b8aa81b280f821,Roya,roya,train,roya_047,0.10283203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1917.jpg,b9fae638bd151995cba58cb357656d14,Roya,roya,train,roya_047,0.121904296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1965.jpg,f6adcaf026faa74f02b5e7eb6173628f,Roya,roya,train,roya_049,0.114052734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1975.jpg,41e86b4a4b344da912edd057788f5c1e,Roya,roya,train,roya_049,0.177373046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1978.jpg,a95fbe5582d25ccd2172ead2129c58f4,Roya,roya,train,roya_049,0.250380859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1982.jpg,36cce4b2935c985670aa0e28d6d01ccf,Roya,roya,train,roya_049,0.137275390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1984.jpg,cc9e5f5a0233829e5bad982c312c2740,Roya,roya,train,roya_049,0.19884765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1986.jpg,0cc96c3f081a892656e2e0f1e15a7b96,Roya,roya,train,roya_049,0.221279296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1991.jpg,f6daa7a2b9cf464b4e783707f9e0b23f,Roya,roya,train,roya_049,0.1248046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1992.jpg,6a071975c09f2fd778b45c9f95540f4d,Roya,roya,train,roya_049,0.143359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 1999.jpg,897ca9a0b8cb641b9bab70faa70d886a,Roya,roya,train,roya_049,0.143818359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 207.jpg,38ff775b6cfaa07e2b4d126e1aa1beb3,Roya,roya,train,roya_003,0.1734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 218.jpg,a2e1507ef650818026af39def19c5a00,Roya,roya,train,roya_004,0.12427734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 229.jpg,badfa0cf76f30f65df4fdb8141e3be89,Roya,roya,train,roya_004,0.177822265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 231.jpg,7dc27f236c9cd5b24eb5fb6cb5c7f714,Roya,roya,train,roya_004,0.1881640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 233.jpg,51ee9a7928cb370cd716498aca2a87a0,Roya,roya,train,roya_004,0.085771484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 235.jpg,0e578ea563e83972605b51879d35ddfe,Roya,roya,train,roya_004,0.09935546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 239.jpg,049545d87c544bd8659f89261786fc78,Roya,roya,train,roya_004,0.117041015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 243.jpg,f6ddbd4ca53043f1989521193abfb5d8,Roya,roya,train,roya_004,0.15037109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 244.jpg,f52b6bf9cbcc7018a4a544d8b9c9296a,Roya,roya,train,roya_004,0.153359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 254.jpg,a358cdd1c2ec4df368123389001ec40f,Roya,roya,train,roya_004,0.126279296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 255.jpg,042d98d3973dcb55b97ce5534fcfa3e2,Roya,roya,train,roya_004,0.206611328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 260.jpg,a6f591d61fe5e2d39fb1c005f6127460,Roya,roya,train,roya_005,0.115390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 264.jpg,a5082a66150a2d2b4da55d3487b7a787,Roya,roya,train,roya_005,0.220947265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 265.jpg,bdc0ca31f3cbbef70444c50b947dcde5,Roya,roya,train,roya_005,0.1440625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 266.jpg,2db582bdc1f57e503a082bdda1130014,Roya,roya,train,roya_005,0.110595703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 274.jpg,21f30eaed3089e3f8d5dab6855898291,Roya,roya,train,roya_005,0.193330078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 281.jpg,3d9cc6048cb4f6a5946c6706e421904e,Roya,roya,train,roya_005,0.100703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 284.jpg,35f661fc34a703d6f853e999a60d5e17,Roya,roya,train,roya_005,0.1193359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 286.jpg,d304f4c508b4c6b87a0d50e45070bc00,Roya,roya,train,roya_005,0.164833984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 290.jpg,925e280776b52dc97efd16f3e0d43a4f,Roya,roya,train,roya_005,0.214912109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 293.jpg,146d915985b9b4ee734512603758041f,Roya,roya,train,roya_005,0.1966015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 332.jpg,864ee2d24c0ae669f352101e01b8cff1,Roya,roya,train,roya_007,0.170126953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 335.jpg,0c3b4e40a3e00684cdb4cbed5877bac8,Roya,roya,train,roya_007,0.104765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 337.jpg,ebffefb3ae0e1293f4823f58b68b8326,Roya,roya,train,roya_007,0.197509765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 339.jpg,7e0dbccc11b6b4958e3c536a992121e7,Roya,roya,train,roya_007,0.1218359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 341.jpg,cb4926df9708f9aea0bb8b20d84daa7c,Roya,roya,train,roya_007,0.134013671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 342.jpg,98a4d43962e75fc03326386719f80a1d,Roya,roya,train,roya_007,0.1299609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 347.jpg,257dd47d72b248e2913b18230454b475,Roya,roya,train,roya_007,0.17271484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 352.jpg,28dae0a4f1fca065a5b75be055242070,Roya,roya,train,roya_007,0.146904296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 355.jpg,bcb17f82531f051deda9440ff83ffeb1,Roya,roya,train,roya_007,0.18251953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 357.jpg,f80bbe7759b3880fd9d21f88379036e4,Roya,roya,train,roya_007,0.15767578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 409.jpg,95d5d60baa85cfee513512ed98d10396,Roya,roya,train,roya_009,0.135390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 411.jpg,3ea6a9af6b3ad84dafb8ac2a4e3f4e7d,Roya,roya,train,roya_009,0.171923828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 413.jpg,397fdd106580b809b0ec31c44c505684,Roya,roya,train,roya_009,0.18185546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 416.jpg,94b84608d5163229037ae2b98e4ef1c3,Roya,roya,train,roya_009,0.14703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 418.jpg,a1616429d83f85c0a1cb3542f29f7e6d,Roya,roya,train,roya_009,0.1440625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 423.jpg,16a643f67e81ce82e02149711ea7237f,Roya,roya,train,roya_009,0.157548828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 439.jpg,8030b6a5294d6755f4cf782015f27441,Roya,roya,train,roya_009,0.137109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 440.jpg,b5667484db4b0e8e6c1dad46ba06216b,Roya,roya,train,roya_009,0.1769140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 446.jpg,e03e5fdec2685c2f584eb97b7a4e63f9,Roya,roya,train,roya_009,0.129130859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 448.jpg,0a692110edbecb1d23390cdedc2e5b93,Roya,roya,train,roya_009,0.188349609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 449.jpg,e1b11d415302a8ba78bba3c088b807bf,Roya,roya,train,roya_010,0.196376953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 451.jpg,436be5ce308e66d04938492864193382,Roya,roya,train,roya_010,0.21689453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 468.jpg,5de3d61edc7f6b6fa7a14c1c2e7d96b6,Roya,roya,train,roya_010,0.192646484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 471.jpg,85c4c72ad26892602bf436d179511a4e,Roya,roya,train,roya_010,0.194306640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 472.jpg,d3fe1b64640dc9c922056159acd9f15a,Roya,roya,train,roya_010,0.2253125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 474.jpg,12b9ef2b151f050fdd542399ab9c77d6,Roya,roya,train,roya_010,0.205771484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 475.jpg,3b179edda5930c2ac2de18ad916bf078,Roya,roya,train,roya_010,0.153056640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 478.jpg,f03b908f02e7a85993978976a960b4f0,Roya,roya,train,roya_010,0.17279296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 480.jpg,13d42428ce3a653a64af095b7ce40958,Roya,roya,train,roya_010,0.1338671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 489.jpg,dbef32481666c458a0ffb1b736a55d23,Roya,roya,train,roya_010,0.23916015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 492.jpg,63791f5901a48e3883a4e579ece44eda,Roya,roya,train,roya_011,0.14146484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 497.jpg,4234337ee55ad06b3c3482084cf25828,Roya,roya,train,roya_011,0.144755859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 499.jpg,4ecaf865f7bfbe052f884c2fd1ef2470,Roya,roya,train,roya_011,0.19921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 504.jpg,34f6fe788bbc0dc771c10e7ac0fddb2f,Roya,roya,train,roya_011,0.13578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 507.jpg,b2dd6026a65a1a30903234d3bd2c0eef,Roya,roya,train,roya_011,0.179052734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 517.jpg,6afb11bfc1a69205ddb14e3682bcd3f4,Roya,roya,train,roya_011,0.13423828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 531.jpg,820e69eec7669c0ed11bcebc3c138fab,Roya,roya,train,roya_011,0.147646484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 537.jpg,3e78cefb65b911236ddc559163b84a59,Roya,roya,train,roya_011,0.16689453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 538.jpg,2cc4a79174d570af9df02a9e0712d319,Roya,roya,train,roya_011,0.161083984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 539.jpg,40cf1069e2803744ac4e8088711e742f,Roya,roya,train,roya_011,0.14173828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 566.jpg,55e29828d2a63f0649a3cb912ad7ca3c,Roya,roya,train,roya_013,0.141279296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 571.jpg,20254fa4a81f1bd8f76b3c4396fd91b1,Roya,roya,train,roya_013,0.13048828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 572.jpg,91c218926ead5a6a904bfd4230abf437,Roya,roya,train,roya_013,0.17234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 574.jpg,35abb65b1a1f6b7003ee4445052441d7,Roya,roya,train,roya_013,0.12138671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 577.jpg,4221986541ebeb1b380638a349d7f78b,Roya,roya,train,roya_013,0.109189453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 588.jpg,198e1323f19a1ddb0132f39893996324,Roya,roya,train,roya_013,0.184072265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 591.jpg,08e6c92f66bb2045c72e1bc978bf0777,Roya,roya,train,roya_013,0.199658203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 595.jpg,207ba14aaa2b091bcd20b0bd30ab3978,Roya,roya,train,roya_013,0.174482421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 596.jpg,caa3e0ea80bcf919a51c806e39b61a54,Roya,roya,train,roya_013,0.135458984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 599.jpg,a8dce8596ebf0636e71d8b1408848468,Roya,roya,train,roya_013,0.15029296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 602.jpg,2d3f6237aa2eea69364eaa5bb22683c7,Roya,roya,train,roya_014,0.1800390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 605.jpg,02f7141c99d588840eeed11bcf009bbc,Roya,roya,train,roya_014,0.178369140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 606.jpg,2e20ed839ba6d3497db99f263347fad0,Roya,roya,train,roya_014,0.162021484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 610.jpg,e84155f3cb988cc6704304a169fba825,Roya,roya,train,roya_014,0.129443359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 614.jpg,fc86c7d294cf34dce70085ab3c5064a1,Roya,roya,train,roya_014,0.1877734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 616.jpg,2254924622e879ef517b4c9cc0d1acc6,Roya,roya,train,roya_014,0.09625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 617.jpg,4e21c290bbc5138ee942f450130bea14,Roya,roya,train,roya_014,0.1947265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 620.jpg,85c563e13a8b26a45b33aa338ff55a7a,Roya,roya,train,roya_014,0.12318359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 621.jpg,cee3389b7d66d42904c5600159cf2558,Roya,roya,train,roya_014,0.184052734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 631.jpg,0b00b9b6c224b1a76f3b81c541a7f892,Roya,roya,train,roya_014,0.181611328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 681.jpg,78b5750ef7aa415737bc10f0519ed478,Roya,roya,train,roya_016,0.1799609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 682.jpg,47bb291c79519ab57f8a68eae7e25d4d,Roya,roya,train,roya_016,0.112861328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 683.jpg,340822718c2cc83513a3257f6404cc46,Roya,roya,train,roya_016,0.103369140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 684.jpg,a69daed2d55e58a17e554cc50114a939,Roya,roya,train,roya_016,0.154033203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 687.jpg,b7863c007d7515fa62e9b473374de3dd,Roya,roya,train,roya_016,0.2308203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 688.jpg,d9f480f3e7d54d949eded1b0b3119c4a,Roya,roya,train,roya_016,0.156171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 690.jpg,f675df923cbf1ad8e921ae663ca47451,Roya,roya,train,roya_016,0.14173828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 697.jpg,16ef8342cab104a8db7ab2c65e3f9065,Roya,roya,train,roya_016,0.256181640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 701.jpg,31e5b08c2c607e23402c1ae7b5e81046,Roya,roya,train,roya_016,0.17337890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 705.jpg,5d22b73ac48fb5e09e8534ab3c534964,Roya,roya,train,roya_016,0.1546484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 710.jpg,0477ba9e10eca5efd31c5f23e418ade8,Roya,roya,train,roya_017,0.19693359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 714.jpg,c9a0e2182801f02ccc3183b0af1c42e1,Roya,roya,train,roya_017,0.23759765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 720.jpg,e168df5543cfb10b0732d559cf7b4891,Roya,roya,train,roya_017,0.128876953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 721.jpg,58d1bf0bdcbada8a11bac7e01aaa7e53,Roya,roya,train,roya_017,0.182470703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 725.jpg,ae9815e12ace962f7a82d680d99cecae,Roya,roya,train,roya_017,0.118828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 727.jpg,eb9292ef48e7f1f537b4b8be37f31e9b,Roya,roya,train,roya_017,0.075693359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 732.jpg,1ad1e8f5bf1ee46b1258adf6e9ab1652,Roya,roya,train,roya_017,0.158095703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 734.jpg,c1f8bc196e06453b1ac38cffdafce74a,Roya,roya,train,roya_017,0.193427734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 741.jpg,1dcf3a06e968ca6186b833ef4edb729e,Roya,roya,train,roya_017,0.063623046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 742.jpg,bed1467774194e4f9627fd0d86f312af,Roya,roya,train,roya_017,0.152421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 743.jpg,11e7af9f64e8f4123769bd2f0684c150,Roya,roya,train,roya_018,0.080322265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 751.jpg,eda9ca6668e7bf60dc47eb963b00c4f5,Roya,roya,train,roya_018,0.161533203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 757.jpg,7109d57049a18826ddeacdb5d0ab5df6,Roya,roya,train,roya_018,0.081728515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 764.jpg,96b664fb287c937e4e23d00180e80541,Roya,roya,train,roya_018,0.15296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 765.jpg,79463a68239f021019396571477eb823,Roya,roya,train,roya_018,0.12041015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 767.jpg,6c98dd243a89c98b7946b02e9fe51730,Roya,roya,train,roya_018,0.16748046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 770.jpg,b36a71d9d9a1935f02745612296aadce,Roya,roya,train,roya_018,0.1307421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 772.jpg,b564a83f901541d0178c4e8237c5fbc0,Roya,roya,train,roya_018,0.13568359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 773.jpg,b37e0294f776396632c443b33a4cca7b,Roya,roya,train,roya_018,0.13703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 777.jpg,923d7da3e791ad06f3c7411fb5e659ad,Roya,roya,train,roya_018,0.12466796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 809.jpg,a7b6b1a8016997044ef40b6f28e9ea66,Roya,roya,train,roya_020,0.224619140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 813.jpg,e5a8207265df9de4835ed20f86a4ccb2,Roya,roya,train,roya_020,0.17294921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 825.jpg,90aabe5163b10d8bb1e6adc268196602,Roya,roya,train,roya_020,0.12009765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 845.jpg,99d0ab2b4cffa52f44d55aefd4ebfacc,Roya,roya,train,roya_020,0.2105859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 852.jpg,8e3a5055f233ad9679e524f1bbb0e333,Roya,roya,train,roya_020,0.127744140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 853.jpg,c40cad9199b47e02cda621b5c031cbb9,Roya,roya,train,roya_020,0.099853515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 854.jpg,59a746db9adffa8af2f215eb79f7c771,Roya,roya,train,roya_020,0.1055078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 858.jpg,011c93c2f2108e629ffbe03f549833b1,Roya,roya,train,roya_020,0.20560546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 864.jpg,ac8bd5c62c9043e30208d59dde315831,Roya,roya,train,roya_020,0.154697265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 869.jpg,f9194eb21477affa3744d009e5ce2406,Roya,roya,train,roya_020,0.115390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 872.jpg,398acd5e417b9277b61dc5f80d59af9e,Roya,roya,train,roya_021,0.173251953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 877.jpg,12d0b2425fc8272af32a4dc5cb815d30,Roya,roya,train,roya_021,0.211845703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 879.jpg,52e8e7906be250368d61348a1fb676d0,Roya,roya,train,roya_021,0.177333984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 881.jpg,e0777a619338c59901a8328e9961e4e5,Roya,roya,train,roya_021,0.194599609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 889.jpg,1df7ffbbbf180246ff0521b5e5e7a76e,Roya,roya,train,roya_021,0.152822265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 890.jpg,80599dc7d755f017ea7208e507220902,Roya,roya,train,roya_021,0.178271484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 893.jpg,ea13e3d33ea355198493f7892fbb3b32,Roya,roya,train,roya_021,0.17431640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 896.jpg,67bc390f7b89e7c5f583bbb731a55841,Roya,roya,train,roya_021,0.199931640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 902.jpg,68003d84108204e1cb74e13c2df40d64,Roya,roya,train,roya_021,0.15361328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 904.jpg,b522052ea3eef6490de826da5ac0da9d,Roya,roya,train,roya_021,0.21001953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 943.jpg,ee6b2aca3f5ce8a563da8c7e64aa4ea7,Roya,roya,train,roya_023,0.128134765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 948.jpg,c0217bb14d0dc9f4e109ee4631aae58d,Roya,roya,train,roya_023,0.181591796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 950.jpg,fee8739d8bf1a9d4bf6824ce757041d0,Roya,roya,train,roya_023,0.148505859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 956.jpg,d9a150121523da1423824434e1f95daf,Roya,roya,train,roya_023,0.15671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 968.jpg,0d5edbaad6c6b4b88d34f26a9af131a8,Roya,roya,train,roya_023,0.162841796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 971.jpg,666bc0726a2faf9f7be5eb84457ba454,Roya,roya,train,roya_023,0.198828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 975.jpg,e793cea9bc98af4beda404b8d66d8306,Roya,roya,train,roya_023,0.143720703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 976.jpg,0687f6341a5ce637ac9a2ec17f58eeb0,Roya,roya,train,roya_023,0.155419921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 980.jpg,e967e2c080f65e3883bc68106c17cce6,Roya,roya,train,roya_023,0.151484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 981.jpg,8fe316e5ef872b90f17dba4d40e4fd06,Roya,roya,train,roya_023,0.197294921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 982.jpg,5aea8361008f3f146a54c8c47673866a,Roya,roya,train,roya_024,0.171240234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 983.jpg,760bfb8fb44c66dc00efbf654859169b,Roya,roya,train,roya_024,0.1954296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 991.jpg,5fbdb0daf7971449019a55a9c4940fcf,Roya,roya,train,roya_024,0.125283203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 993.jpg,f5b7ab9961118e2084de8c17af9f86a8,Roya,roya,train,roya_024,0.16048828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 999.jpg,27d1b6a4c5a6c85db54819fe1d937e47,Roya,roya,train,roya_024,0.114609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 100.jpg,2d3cc386713f50f7181bf292176b3f8d,Sanas,sana,train,sana_005,0.1040234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 103.jpg,f0c3d5d4c4241a6b903f20e478c9cf94,Sanas,sana,train,sana_005,0.195517578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 104.jpg,5dbf196b894306c81d22fdfe8470af94,Sanas,sana,train,sana_005,0.174833984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 106.jpg,915ee5bbbeca84daf5e967dcd41a4bfd,Sanas,sana,train,sana_005,0.116123046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 107.jpg,a23f9c091bcb8790377c14ac71884bac,Sanas,sana,train,sana_005,0.140380859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 124.jpg,dd4e120c7a8607365050cf1420ce256b,Sanas,sana,train,sana_007,0.197548828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 125.jpg,4042f6b78d144dec21b467711f27a865,Sanas,sana,train,sana_007,0.202841796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 127.jpg,401b2e8feb5f16044f27e760be025fdf,Sanas,sana,train,sana_007,0.153974609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 129.jpg,32fb58492d201ae565f34ea03b928ada,Sanas,sana,train,sana_007,0.1049609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 131.jpg,71264de1c2e44497bdf06caa3276f4ed,Sanas,sana,train,sana_007,0.14470703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 133.jpg,1c29e7fdc2a93a949f81afa2c99e5e9a,Sanas,sana,train,sana_007,0.239365234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 135.jpg,7dace2501aaab1345f7019f068480ccb,Sanas,sana,train,sana_007,0.1675390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 138.jpg,f1fddcb305e75a8e61ac1783be17b6aa,Sanas,sana,train,sana_007,0.114296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 141.jpg,dc3cd81043d2bff1b4f6e1d5da195509,Sanas,sana,train,sana_007,0.2683203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 143.jpg,db4c21232075dc42ce36b7af5b7b2685,Sanas,sana,train,sana_007,0.139521484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 173.jpg,c58481ccb80dfefa63a8065a33d7beeb,Sanas,sana,train,sana_009,0.199072265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 177.jpg,14ca706b2d283823f0be0be1c25198e4,Sanas,sana,train,sana_009,0.200498046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 178.jpg,8273c91bbdea18aef98d67f6583f4813,Sanas,sana,train,sana_009,0.18236328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 183.jpg,d7533340d04a46247f21ba00a2081197,Sanas,sana,train,sana_009,0.201201171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 187.jpg,59c313c175db449fc8b12df9e15b5175,Sanas,sana,train,sana_009,0.1551953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 188.jpg,1965c9e73dfea157232773767f65fc18,Sanas,sana,train,sana_009,0.183896484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 191.jpg,01661d624baab8ed29e0293114f4078e,Sanas,sana,train,sana_009,0.17626953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 192.jpg,2933bf57cc4b15fcdf181a5e9d698134,Sanas,sana,train,sana_009,0.1670703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 193.jpg,d2152663fd45475802bc2ead1ac6a339,Sanas,sana,train,sana_009,0.138955078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 194.jpg,895117610e2706a83ebc19402dcc02f4,Sanas,sana,train,sana_009,0.201474609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 197.jpg,77d70c483f707eb5d44f9a58a0d84e27,Sanas,sana,train,sana_010,0.209560546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 198.jpg,063c588a8857026e92fdb3ee535ad1c8,Sanas,sana,train,sana_010,0.228798828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 199.jpg,e0b24c047f4730e5c9ce978896aac932,Sanas,sana,train,sana_010,0.135087890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 201.jpg,bfbd4eddac0ca093e67b094e7705893c,Sanas,sana,train,sana_010,0.203759765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 203.jpg,029ec0741a5a15e19adcf6c7ce58fabc,Sanas,sana,train,sana_010,0.172841796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 204.jpg,240900f549af7046badaadf0cb3d27e8,Sanas,sana,train,sana_010,0.2391015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 205.jpg,ba6a0ef54d703c9e6629c84d082b768e,Sanas,sana,train,sana_010,0.229111328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 206.jpg,252e32c2049f17bc21c07ce8ed960033,Sanas,sana,train,sana_010,0.15306640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 207.jpg,0f559e038f67fc5dac419cc321455fa7,Sanas,sana,train,sana_010,0.174892578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 208.jpg,947db8b64263a84939004084d9674700,Sanas,sana,train,sana_010,0.175908203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 214.jpg,1607787fc27180579a4e035667d180d6,Sanas,sana,train,sana_011,0.143701171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 215.jpg,c0efa83ce53280b64f4f886a498520c5,Sanas,sana,train,sana_011,0.201923828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 221.jpg,66a051362d874f3600bc6291ec9263f8,Sanas,sana,train,sana_011,0.182373046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 222.jpg,bb489c2605ded2468ccde557617ee3c7,Sanas,sana,train,sana_011,0.234501953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 223.jpg,33bc9cc3dde394a6a35a747658aa68b6,Sanas,sana,train,sana_011,0.194404296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 224.jpg,ca0d284a15f3bf44f68d9fe27b8466a5,Sanas,sana,train,sana_011,0.25404296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 225.jpg,f38c576873f5544a0746a2509d83723e,Sanas,sana,train,sana_011,0.142001953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 227.jpg,590fb8435e8ea4208488ea7bc7906c74,Sanas,sana,train,sana_011,0.2384765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 229.jpg,858c9703d23016897ed1c9d322143fcf,Sanas,sana,train,sana_011,0.13611328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 237.jpg,e0cb9ed7307885fdbb6b14277c775811,Sanas,sana,train,sana_011,0.16861328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 252.jpg,0d286b8f248fdcb5ee6fa070472da453,Sanas,sana,train,sana_013,0.20955078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 253.jpg,e83e78020cf2b27bbbdbed186034a545,Sanas,sana,train,sana_013,0.207724609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 254.jpg,87d009262af7c840c0a2d9074f8f09de,Sanas,sana,train,sana_013,0.21318359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 255.jpg,42aa1cac9d902706bcefb47c2f38e496,Sanas,sana,train,sana_013,0.20037109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 257.jpg,255ca049aa9444d90ca2db4321795674,Sanas,sana,train,sana_013,0.17029296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 258.jpg,cb87a9bff4247126cb69a48d16dee42d,Sanas,sana,train,sana_013,0.180830078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 259.jpg,2a1b285f67879545bd0c120bb797c254,Sanas,sana,train,sana_013,0.228896484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 260.jpg,37e09f846b0864f2ad675714bce36297,Sanas,sana,train,sana_013,0.186865234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 261.jpg,91d35f147a21fa2eb031676327cb74d4,Sanas,sana,train,sana_013,0.19140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 264.jpg,48450f308a9878fcd161d150defe0f11,Sanas,sana,train,sana_013,0.160205078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 267.jpg,77964138a6c75a0145a9ef992128b312,Sanas,sana,train,sana_014,0.200673828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 268.jpg,103084ba6fa3c3a327d7c90557854fa8,Sanas,sana,train,sana_014,0.172587890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 269.jpg,f76ec230ef76e381f0adeb6b94b7e3ba,Sanas,sana,train,sana_014,0.142421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 272.jpg,c0ad0e1497f4c811a9f68016b99a4cd1,Sanas,sana,train,sana_014,0.173466796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 275.jpg,8449510453ef438d5041d774cf807a7b,Sanas,sana,train,sana_014,0.220576171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 276.jpg,e3fa4700f2596c8b79508d354b43dcd8,Sanas,sana,train,sana_014,0.1994140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 278.jpg,acfd2c1259ca7cfa2d73d66080b34c22,Sanas,sana,train,sana_014,0.23095703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 279.jpg,f3d773e80c665a099961b234202d0794,Sanas,sana,train,sana_014,0.142294921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 288.jpg,29598c892c7ba8dca80a57706b360130,Sanas,sana,train,sana_014,0.211240234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 293.jpg,366fa050af2e9f4de3d72c4211d2ae29,Sanas,sana,train,sana_014,0.16029296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 314.jpg,baf0b6d9b892c5f5e895c8a46d936cbf,Sanas,sana,train,sana_016,0.234599609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 316.jpg,26fb7ad96bde6ab9872ead36f31ec8ee,Sanas,sana,train,sana_016,0.257890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 320.jpg,507ec43d6f1255a2ced3536c6faadd82,Sanas,sana,train,sana_016,0.1757421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 323.jpg,e039dd03349825d11cee0cf86340d04a,Sanas,sana,train,sana_016,0.174736328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 332.jpg,1fca62747ab02991110da089ca72873f,Sanas,sana,train,sana_016,0.222646484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 339.jpg,977abcdf052c048a06f8fbb274c9fcc4,Sanas,sana,train,sana_016,0.196650390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 340.jpg,063cab995cf00da73917b65b95e5e5c1,Sanas,sana,train,sana_016,0.238212890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 341.jpg,e4ceda40fa93ff0314b5b06c3610d35b,Sanas,sana,train,sana_016,0.22111328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 342.jpg,60430862de5af13d967a90f5a2e5ef19,Sanas,sana,train,sana_016,0.1994140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 345.jpg,c6d117ec56ff91e96a8139dad66f5bd8,Sanas,sana,train,sana_016,0.197099609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 346.jpg,f4c4a661b733f67cbd9b180cb2a9ea89,Sanas,sana,train,sana_017,0.248701171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 347.jpg,c20f27f5d5916d3e24f51049770d74d1,Sanas,sana,train,sana_017,0.1909765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 349.jpg,ebad0d39feeebe06bcf6530db3c35989,Sanas,sana,train,sana_017,0.233916015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 350.jpg,95e0d0a990cceda39cbaaa5a604a47a2,Sanas,sana,train,sana_017,0.217744140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 351.jpg,ff6a006178bcd8967057aa60aeac600a,Sanas,sana,train,sana_017,0.223642578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 352.jpg,1248accbcf0f87d9f637cfb31d897ece,Sanas,sana,train,sana_017,0.272041015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 354.jpg,c39b39817f3a3efc304e057a29913424,Sanas,sana,train,sana_017,0.197001953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 355.jpg,ac9c20eb2158a9206a7092854dd2d2df,Sanas,sana,train,sana_017,0.1861328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 356.jpg,a20109149e7646acb55c46be057e4b4f,Sanas,sana,train,sana_017,0.2398828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 359.jpg,0fc8deb6af6f8e5bb637432b2fa1331e,Sanas,sana,train,sana_017,0.274775390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 360.jpg,66ded62d9caaa68b570d2db5335a6513,Sanas,sana,train,sana_018,0.254091796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 361.jpg,c05e02a1abcf8a6f12697b73b202d059,Sanas,sana,train,sana_018,0.224013671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 365.jpg,1dfb1ac040de106a97befadc3eb6df45,Sanas,sana,train,sana_018,0.264794921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 369.jpg,5ed0f5496800fee6e15e2058ce1a4d3e,Sanas,sana,train,sana_018,0.17078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 374.jpg,02eeef1584263e91710d71db847ba8e4,Sanas,sana,train,sana_018,0.23943359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 375.jpg,df867520cb5d73a3cabd950edbfea66d,Sanas,sana,train,sana_018,0.224111328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 377.jpg,84dd9813d470e29c0ad37ae54c7deff1,Sanas,sana,train,sana_018,0.158720703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 379.jpg,de3699e64241eb7927bd0cdba71ce300,Sanas,sana,train,sana_018,0.135322265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 380.jpg,0553e760b046edc7a86d1e6a91f146cc,Sanas,sana,train,sana_018,0.225791015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 382.jpg,534ab893844708362603a92b9ac6b9a3,Sanas,sana,train,sana_018,0.167900390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 399.jpg,ef760bc9118aad1592093c77b0c07569,Sanas,sana,train,sana_020,0.27392578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 400.jpg,a5100cb9a656bd059d713fa1573b2c26,Sanas,sana,train,sana_020,0.126474609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 401.jpg,235a641d40c1d56b014e8b5318d00c17,Sanas,sana,train,sana_020,0.122412109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 403.jpg,c7757c497912634d288ed7dfa0b1f393,Sanas,sana,train,sana_020,0.22384765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 408.jpg,7ad0d179249897c6eca3a54d3a3de413,Sanas,sana,train,sana_020,0.216767578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 410.jpg,8275a1fab61ae1d56dd85a5006860ee4,Sanas,sana,train,sana_020,0.17359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 411.jpg,97f5861e7c6f827df1f50f1f74e603de,Sanas,sana,train,sana_020,0.235810546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 413.jpg,349902ff0c61176be8378b61b8ad2baa,Sanas,sana,train,sana_020,0.28103515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 414.jpg,af0078f4c888056ad052b66b5d23f922,Sanas,sana,train,sana_020,0.2909765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 417.jpg,ee20bb97b643099e49fc10c3fb4973dd,Sanas,sana,train,sana_020,0.23708984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 419.jpg,ab021b557dd7f3170b0c4a5e21c6f844,Sanas,sana,train,sana_021,0.23140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 420.jpg,9d7b0ffbadad23fe7df40d5147abea5a,Sanas,sana,train,sana_021,0.278515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 421.jpg,15e1437d5e8f304ce312194c01c704c3,Sanas,sana,train,sana_021,0.21966796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 422.jpg,b37e171f90abc23df61ea9f351e9a75f,Sanas,sana,train,sana_021,0.233642578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 423.jpg,0763fcc4a066feed240258d32e80cee9,Sanas,sana,train,sana_021,0.241513671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 425.jpg,aefa24b307a6634941466a8c39f8b043,Sanas,sana,train,sana_021,0.243896484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 426.jpg,45fb692253391d0d4b8180831e4d1ccb,Sanas,sana,train,sana_021,0.169130859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 427.jpg,bf5ce38cbe03ef377f26449d141079df,Sanas,sana,train,sana_021,0.204853515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 428.jpg,97d701a312a9e4bbbe0b17d9ba6a7ba4,Sanas,sana,train,sana_021,0.169189453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 431.jpg,6c70258962e3589fbc2498abb3e0f3b8,Sanas,sana,train,sana_021,0.218798828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 453.jpg,57bc6a254095c66576779a56a515f6e3,Sanas,sana,train,sana_023,0.19166015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 455.jpg,bdda60d21e3a895915258f94eb4e7544,Sanas,sana,train,sana_023,0.159404296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 457.jpg,65ab68c7e43d78f1b37f95b67984841c,Sanas,sana,train,sana_023,0.250712890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 462.jpg,be204b1077429506afb9586a3e85fe6f,Sanas,sana,train,sana_023,0.13302734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 464.jpg,75a39f57caa12341f175a140faad9e14,Sanas,sana,train,sana_023,0.217138671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 466.jpg,500be69d8970926c7424174a9e609acd,Sanas,sana,train,sana_023,0.143779296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 467.jpg,4c4c1c0e8dc0ee2a461fa32b3aae2d6f,Sanas,sana,train,sana_023,0.184365234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 469.jpg,4e4283909cb979f9093b1b7e7611bb1d,Sanas,sana,train,sana_023,0.24775390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 471.jpg,932a80d0130ebc969fb6509f73101367,Sanas,sana,train,sana_023,0.21279296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 472.jpg,48dd9b3ec49ced4cab4751bee25affee,Sanas,sana,train,sana_023,0.157099609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 473.jpg,8d8216f5d9de2335b39a30fddbdd0b51,Sanas,sana,train,sana_024,0.208720703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 476.jpg,8310aea58708ff75b8bb7a3db3acc930,Sanas,sana,train,sana_024,0.1465234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 477.jpg,4222456c23b4eea577e2f265d50a1c6e,Sanas,sana,train,sana_024,0.257314453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 481.jpg,60d9df0b41da5d3ef4fd6961f33b3e9f,Sanas,sana,train,sana_024,0.264169921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 486.jpg,678f9ac461a96c512b993de50e56b35b,Sanas,sana,train,sana_024,0.22615234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 488.jpg,c81a5c63dcfc341b05faad90108867ae,Sanas,sana,train,sana_024,0.207548828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 489.jpg,0c85abbbc4d5dba041eb02662e302d45,Sanas,sana,train,sana_024,0.226015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 490.jpg,96fed7a89367063252de9da6e364b103,Sanas,sana,train,sana_024,0.244599609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 492.jpg,4dd757ff2f38159893eca00d0f2279a8,Sanas,sana,train,sana_024,0.250244140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 494.jpg,cb9196873da7a798f853dbd8833eae77,Sanas,sana,train,sana_024,0.1999609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 496.jpg,894ecc61a08890c9e5bf2e1cb7adae61,Sanas,sana,train,sana_025,0.29419921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 498.jpg,4eae56919bbc5f129c0b4e47f1ce5db7,Sanas,sana,train,sana_025,0.13529296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 500.jpg,332e132c4fc758d6ffe181acd56315cb,Sanas,sana,train,sana_025,0.201103515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 507.jpg,434bb227ba7929dc76379a723f22ae33,Sanas,sana,train,sana_025,0.17666015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 509.jpg,1853a0e63e5cc214556cdd7d34d3ec44,Sanas,sana,train,sana_025,0.221318359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 511.jpg,da9d10979200d62d1c4f78ad24c34fea,Sanas,sana,train,sana_025,0.18638671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 512.jpg,e4798de9cc844bb95a9b71da812f1c41,Sanas,sana,train,sana_025,0.187939453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 513.jpg,3e434480bad7c608dbb0b99b47d4befb,Sanas,sana,train,sana_025,0.25845703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 514.jpg,8ccd3ce8659076c63be92afee46d45f8,Sanas,sana,train,sana_025,0.19078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 515.jpg,28d9b1b837f7560bfebe86ae958f5c7e,Sanas,sana,train,sana_025,0.260087890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 516.jpg,3c4c00aa14fd9224edd3391d9f2095a3,Sanas,sana,train,sana_026,0.247392578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 519.jpg,cf9661e5e9e73b60710668f9dccdb90d,Sanas,sana,train,sana_026,0.23490234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 524.jpg,a7fffb29d301ab41e2c6feb45f35462b,Sanas,sana,train,sana_026,0.239287109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 525.jpg,e2adda888e26e5b682d0757d66c067d9,Sanas,sana,train,sana_026,0.30900390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 526.jpg,731bf5a47efad4aa1b4f4457670c7cb0,Sanas,sana,train,sana_026,0.280185546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 527.jpg,04bf512ca117a565e3d8abe69efbabbf,Sanas,sana,train,sana_026,0.306337890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 528.jpg,733c9b4a9fa60edee94d28f67995a543,Sanas,sana,train,sana_026,0.266748046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 530.jpg,bacf457b6fd2b3c2dc653fc26bda6933,Sanas,sana,train,sana_026,0.213779296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 531.jpg,8eef36dc192cf3ff3d23809b9a976d15,Sanas,sana,train,sana_026,0.1933984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 532.jpg,109034e53e3b9c9ece7a57c5a8f6aed0,Sanas,sana,train,sana_026,0.2129296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 533.jpg,6b4a614e5fcf8b2c8821127e9c5db2a6,Sanas,sana,train,sana_027,0.234775390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 536.jpg,956ca13ee7ab3d3860f5376d8b6add45,Sanas,sana,train,sana_027,0.2496484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 537.jpg,f9faa120973678d058a95f3aee1a619e,Sanas,sana,train,sana_027,0.18115234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 539.jpg,343cb180f3944107d477a0dbdf089727,Sanas,sana,train,sana_027,0.21927734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 548.jpg,db86331cc5e5e199c6b3e4a345556981,Sanas,sana,train,sana_027,0.268291015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 549.jpg,53e0d17cc1fad767912819483034d619,Sanas,sana,train,sana_027,0.217451171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 551.jpg,c34ad933ac3693a8bb722fcf47ee25bd,Sanas,sana,train,sana_027,0.160390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 553.jpg,3b6d182b998a78c9abf69143d48d554c,Sanas,sana,train,sana_027,0.184716796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 555.jpg,56b166ae5ba4ec691a54c6ca79fabacd,Sanas,sana,train,sana_027,0.19126953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 556.jpg,fa19a6fb7f203fa986b7dabe68ab764e,Sanas,sana,train,sana_027,0.198994140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 557.jpg,a1af3ff06e48cc2196ac5ea5da57e258,Sanas,sana,train,sana_028,0.24845703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 558.jpg,22c6809a8cb93ba5733c9fb3e28c5d54,Sanas,sana,train,sana_028,0.3110546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 560.jpg,01c65e64b23a797d60d26adca7196379,Sanas,sana,train,sana_028,0.255927734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 565.jpg,abfb15bfd4189e16644b29969b402702,Sanas,sana,train,sana_028,0.2845703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 567.jpg,2d85a2f8d8d607a26db0095eae1c8ca9,Sanas,sana,train,sana_028,0.293662109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 569.jpg,4199c9440c14f577b3caa75194886c53,Sanas,sana,train,sana_028,0.2325
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 571.jpg,3f421ceb15d46daae40c204641da2975,Sanas,sana,train,sana_028,0.267646484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 572.jpg,75e9a3b618b41701dc702e9088784c13,Sanas,sana,train,sana_028,0.2491015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 574.jpg,353ec8fc32e7380598ad54ba3bf6a421,Sanas,sana,train,sana_028,0.24431640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 575.jpg,ecab3088abf7fc3f2aba8464d9fef83e,Sanas,sana,train,sana_028,0.25240234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 576.jpg,f01482a71f15ec62cc52dbe40296eef1,Sanas,sana,train,sana_029,0.2155859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 577.jpg,ef2a895a0f0ce7600a8ca159a4210dd7,Sanas,sana,train,sana_029,0.24978515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 580.jpg,5f255088bfdf923535fc9743a87e6b7b,Sanas,sana,train,sana_029,0.23984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 581.jpg,320edd2f26127b8fc87bbd4f6945082a,Sanas,sana,train,sana_029,0.193564453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 582.jpg,4c3f13f2d7b5e316f7ab715a9e739512,Sanas,sana,train,sana_029,0.179169921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 583.jpg,83cd21ac544b7ad8677c13178e8222be,Sanas,sana,train,sana_029,0.18072265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 585.jpg,07261efd85205fd96daedc6ec4474f7d,Sanas,sana,train,sana_029,0.216318359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 586.jpg,1aa21460e6735aeb6a4598765e75d033,Sanas,sana,train,sana_029,0.2054296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 588.jpg,d3f56322aaba1391d044193196a4d3d1,Sanas,sana,train,sana_029,0.2588671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 591.jpg,7f0fb3ba0a6138e1de0be677c883b541,Sanas,sana,train,sana_029,0.267939453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 60.jpg,497b59b592269bb6d3d3e96090ccd2ce,Sanas,sana,train,sana_003,0.0925
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 611.jpg,cf7aff0e202879c463ecd08f579c6635,Sanas,sana,train,sana_031,0.280654296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 614.jpg,0a83fc6270984fcd5a70adf2a6063374,Sanas,sana,train,sana_031,0.255107421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 615.jpg,74098d32c3aa7cc9de7983bc3e5baf58,Sanas,sana,train,sana_031,0.231513671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 617.jpg,c06b73c8ede83edfad244dfb727d26f1,Sanas,sana,train,sana_031,0.144990234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 619.jpg,8772cecf20186118eab1a81372530f25,Sanas,sana,train,sana_031,0.283115234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 62.jpg,4a1cea529850d47adaab37b336c710fd,Sanas,sana,train,sana_003,0.132529296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 621.jpg,ee8caff2757afe6049f3e44b9e7abdc4,Sanas,sana,train,sana_031,0.226796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 622.jpg,cd034f9cc2eb1f02400a0a9ee9a514e9,Sanas,sana,train,sana_031,0.222822265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 624.jpg,3c281e229b0f442ddfb411fbd043ee46,Sanas,sana,train,sana_031,0.274189453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 626.jpg,00a7aaf1adb1dc58ff9955a9a1ea1cbf,Sanas,sana,train,sana_031,0.275283203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 627.jpg,bcac7330402894eb4169e7412e25cc2d,Sanas,sana,train,sana_031,0.2169140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 63.jpg,e4dd6521d1f1617ffe239c55770312db,Sanas,sana,train,sana_003,0.193095703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 64.jpg,58307a98c021371a070f8b7244b1ac30,Sanas,sana,train,sana_003,0.1646875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 667.jpg,04331de0dcc8f40649022023c99b2cc2,Sanas,sana,train,sana_034,0.23435546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 668.jpg,1b0eedf54f18f06f24530a21715432ba,Sanas,sana,train,sana_034,0.226748046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 67.jpg,95007f68394f9b607def3fbeb51df52e,Sanas,sana,train,sana_003,0.1662109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 670.jpg,2a5509c0a7ed9105baaea1f3fd32f24c,Sanas,sana,train,sana_034,0.18689453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 671.jpg,5c79d653e34ec981c2c7de28e223645c,Sanas,sana,train,sana_034,0.180390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 672.jpg,0ebfa3848e82b2290c2031c6c5fd588a,Sanas,sana,train,sana_034,0.264541015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 674.jpg,231377189625445cb2e4489c15263041,Sanas,sana,train,sana_034,0.23541015625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 675.jpg,6bd5f4f2f420610ab4e107f6c702351f,Sanas,sana,train,sana_034,0.223935546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 677.jpg,96dbd5d625d02e8754b93316eea7fb67,Sanas,sana,train,sana_034,0.26052734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 68.jpg,3cf168c8b72eb1c2caea1d1708d0e5e1,Sanas,sana,train,sana_003,0.1966796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 682.jpg,0f83bf08f028fc6845deaa2ac1dc79e7,Sanas,sana,train,sana_034,0.243759765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 684.jpg,00575f2359a36ca44bf79b8a3675129d,Sanas,sana,train,sana_034,0.18107421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 685.jpg,74b3cb22502577195a8a668ae3a99540,Sanas,sana,train,sana_035,0.210478515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 687.jpg,01e769fdc0c3aeafdecad61f26b89a4c,Sanas,sana,train,sana_035,0.20482421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 689.jpg,38157e3a5ed0357a3d40ad3b9c0e4ff6,Sanas,sana,train,sana_035,0.2054296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 69.jpg,260c446afbef0cf0c20abaa709f3d093,Sanas,sana,train,sana_003,0.235185546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 691.jpg,d810a6dcaa20727236a0ee73845970e4,Sanas,sana,train,sana_035,0.194482421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 693.jpg,5d08b07f61c72c8ef418d9f860e83d20,Sanas,sana,train,sana_035,0.19939453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 694.jpg,cf02c8168d336439a688bc3f447485cc,Sanas,sana,train,sana_035,0.144970703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 696.jpg,75a52c24906dac167896984bafe6b82e,Sanas,sana,train,sana_035,0.1806640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 697.jpg,781adc130bd53174d014a99bff817927,Sanas,sana,train,sana_035,0.268798828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 70.jpg,9d9b4783b8a3c65fff38a3b471289caf,Sanas,sana,train,sana_003,0.189169921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 700.jpg,da8914a7ab92a48956cb3691be7c1653,Sanas,sana,train,sana_035,0.22455078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 701.jpg,dfa8a7277f7441951afe3ea45678a4b1,Sanas,sana,train,sana_035,0.154150390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 703.jpg,9101b028baa072b2ff4bcb966d234308,Sanas,sana,train,sana_036,0.133203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 705.jpg,950db54c1b1da05fe060c52b78a895d9,Sanas,sana,train,sana_036,0.163720703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 708.jpg,150726dbf82b833f84884ca8633c66ec,Sanas,sana,train,sana_036,0.0876171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 711.jpg,49e9642cab7cf755d6f60f3817288154,Sanas,sana,train,sana_036,0.164453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 715.jpg,d408eb337f17ea8b14ac50d181cb1031,Sanas,sana,train,sana_036,0.16046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 717.jpg,335785fa2a2c1531fdd77c94be3b2cbe,Sanas,sana,train,sana_036,0.164775390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 718.jpg,4aa6e0e44c0640a2123ca50a70bc2100,Sanas,sana,train,sana_036,0.16349609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 72.jpg,57b02a23c1a1ff7305f5f53b9897dbfc,Sanas,sana,train,sana_003,0.196318359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 720.jpg,5dd142cecc4161d03e881642e8fae660,Sanas,sana,train,sana_036,0.16181640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 721.jpg,e839e634c88eca32f4b54ad32720cd0c,Sanas,sana,train,sana_036,0.16171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 723.jpg,3a7e21155c90aed56ccedea58d1b9f7a,Sanas,sana,train,sana_036,0.174716796875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 725.jpg,d87fdbaf7f58caa1a9f1e731d7037393,Sanas,sana,train,sana_037,0.180068359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 728.jpg,46c277e178dcae61b92382f4f15327a6,Sanas,sana,train,sana_037,0.108427734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 73.jpg,65800c9b2acf53eae353a9c9eb72b91a,Sanas,sana,train,sana_003,0.203876953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 730.jpg,8fa3949a02fd3cb172d642b7e8c8ff7f,Sanas,sana,train,sana_037,0.16310546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 731.jpg,ba8a867674412f2ee4aab527b5bc0f56,Sanas,sana,train,sana_037,0.1273828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 732.jpg,3b815ec24c905286ac1b756ff530ad72,Sanas,sana,train,sana_037,0.138427734375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 735.jpg,bb1e9363bd14b566d366b5414f419685,Sanas,sana,train,sana_037,0.1206640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 737.jpg,a4e14690fc6c4b9aea724da405019176,Sanas,sana,train,sana_037,0.15740234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 739.jpg,5bd87793b0d8a27a53de7d8f8bc4be60,Sanas,sana,train,sana_037,0.114404296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 74.jpg,f1647fa4e7edf5ce231dc51219926bf2,Sanas,sana,train,sana_004,0.1448046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 741.jpg,43ed29e80e395199815315e3eb4800d2,Sanas,sana,train,sana_037,0.1273828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 743.jpg,82bc688e21f4c754f957ec602dfaf984,Sanas,sana,train,sana_037,0.1505859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 745.jpg,3c29edb07607929954e42446dc33b41c,Sanas,sana,train,sana_038,0.148671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 749.jpg,aa8d1da7b78959969208cd75f7fa9bd2,Sanas,sana,train,sana_038,0.1807421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 75.jpg,6c90c2a9bec7471b46850da6cdad1c0a,Sanas,sana,train,sana_004,0.105263671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 750.jpg,9069b1dfd59486101dcfa2c8c6f8173f,Sanas,sana,train,sana_038,0.112451171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 752.jpg,c721553a374ca4cf6a6914e0109767e9,Sanas,sana,train,sana_038,0.139462890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 755.jpg,ca1f54f381ea94f074a8a85c2130148e,Sanas,sana,train,sana_038,0.120908203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 757.jpg,331a977157022c93a2c2b8b89d4df015,Sanas,sana,train,sana_038,0.143408203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 761.jpg,e0641fcb386f0105163c5fb20de5ebdd,Sanas,sana,train,sana_038,0.1404296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 762.jpg,d5a28b027b927015a72672f7f2df5c2b,Sanas,sana,train,sana_038,0.13359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 765.jpg,0b4ab347ed83ada324f89fc90fe08766,Sanas,sana,train,sana_038,0.1343359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 766.jpg,ae049732c548e6ec06c6d16183e443b2,Sanas,sana,train,sana_038,0.134482421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 77.jpg,94f3734122a8a7f0f7c5c6c2afb6c7d8,Sanas,sana,train,sana_004,0.112080078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 771.jpg,59fc7b30c1b6197d9dbc642e0fca6aed,Sanas,sana,train,sana_039,0.187548828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 774.jpg,bf7dcbb2b7a113fac89b539f74709eff,Sanas,sana,train,sana_039,0.168564453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 775.jpg,b612732af70130ba1a004c6e0a3ad7e7,Sanas,sana,train,sana_039,0.17908203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 776.jpg,5eea0489c9650b73f32c49f70199f726,Sanas,sana,train,sana_039,0.1247265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 777.jpg,2168be6684ad2743aa62364be353f718,Sanas,sana,train,sana_039,0.108154296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 779.jpg,9bcd84eb9368211a48ac8b30f86e25b8,Sanas,sana,train,sana_039,0.1931640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 78.jpg,2252cfe7734c8186044712f2c6235242,Sanas,sana,train,sana_004,0.150029296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 781.jpg,dad1c117de6c1e94dd84969f80bcdee4,Sanas,sana,train,sana_039,0.160205078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 786.jpg,ba226db040ed25e0c75d97cfab70b002,Sanas,sana,train,sana_039,0.14833984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 788.jpg,b22965b5dd4a4239f4048e9873850be8,Sanas,sana,train,sana_039,0.149736328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 79.jpg,2d574d3b7885656fe1671a1f45d7388b,Sanas,sana,train,sana_004,0.147607421875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 790.jpg,5069cf2642ee4fd8aa6366ba2db2e6cf,Sanas,sana,train,sana_039,0.1226953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 792.jpg,7e04c85e3cc8f7c7cffd1c1a0ebb90ab,Sanas,sana,train,sana_040,0.15564453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 794.jpg,2856e9ae35cb1f8ff4bb765e3a3c1c3d,Sanas,sana,train,sana_040,0.137119140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 795.jpg,99240879c61a9edf338019d94d0b2af1,Sanas,sana,train,sana_040,0.187119140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 80.jpg,89c59cedab08f806b13b61aadbd9f33d,Sanas,sana,train,sana_004,0.22154296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 803.jpg,9f1037bf4dfb617e66dc0043c1d7e155,Sanas,sana,train,sana_040,0.15681640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 805.jpg,bdd61fa85e0525c7fb215a866ee2e709,Sanas,sana,train,sana_040,0.215283203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 808.jpg,2ec7c3bb65b043af502c02e80f2a38bd,Sanas,sana,train,sana_040,0.202529296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 809.jpg,fef435be8c9813fe29bb928fb73a443d,Sanas,sana,train,sana_040,0.182587890625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 81.jpg,124b5f6f36a1f389d6dc73b2c5f46988,Sanas,sana,train,sana_004,0.16669921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 813.jpg,c75f3fe5c55dbe631e371274f88f73d3,Sanas,sana,train,sana_040,0.201640625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 814.jpg,bb3a403ad856a4805aff78a3d15ea050,Sanas,sana,train,sana_040,0.175390625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 816.jpg,aa0c1ae6e66cd6dc8dd6da9adb51ad54,Sanas,sana,train,sana_040,0.198759765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 817.jpg,e17a54b810959c207016815d8f0d27a7,Sanas,sana,train,sana_041,0.20544921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 818.jpg,e4b7069846abc4ca0104de2df4eb95a2,Sanas,sana,train,sana_041,0.166279296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 819.jpg,312e7d46f59b0041d0de3b1e84c51f96,Sanas,sana,train,sana_041,0.18478515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 820.jpg,19857a3098b0d2dc40c84398cd48d7c1,Sanas,sana,train,sana_041,0.131875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 822.jpg,55835814c7c3181299f812540f2a6ee1,Sanas,sana,train,sana_041,0.22234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 824.jpg,ba9e7a6a337b7a03e8dcc76fe39eb688,Sanas,sana,train,sana_041,0.208896484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 826.jpg,fc9d1c1b1748a6af49d7b04554bf9196,Sanas,sana,train,sana_041,0.1633203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 827.jpg,7fea53594469dd64e9c75bc3e918949b,Sanas,sana,train,sana_041,0.2209375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 828.jpg,8f82bf9e6018a576c673172411a98a95,Sanas,sana,train,sana_041,0.24564453125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 830.jpg,67967a42bbcb64d9852b704ae279f006,Sanas,sana,train,sana_041,0.21373046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 832.jpg,2f47aac30e6760150b7de2e7c315db4e,Sanas,sana,train,sana_042,0.13384765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 837.jpg,6dfca91c28861fc50d6d5c49d23d1a9f,Sanas,sana,train,sana_042,0.147919921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 838.jpg,1598bd56ea01eb9ef070445d1e3ca6d3,Sanas,sana,train,sana_042,0.170859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 839.jpg,ff970d58dbdfd624cec0bd880d5bde00,Sanas,sana,train,sana_042,0.17513671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 84.jpg,f3e488a87ffdf2d76e2f2b838efcac44,Sanas,sana,train,sana_004,0.10876953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 841.jpg,d9e7b9cae5c79e0db8d1e3fba34c9024,Sanas,sana,train,sana_042,0.1847265625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 842.jpg,758552f4cc75591946509a5a40a96441,Sanas,sana,train,sana_042,0.1484765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 843.jpg,5f07e5d6c83a560f0d8918e95bfb80f7,Sanas,sana,train,sana_042,0.186435546875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 844.jpg,07cfdc480ca0ea2b1ecd441cad8757a1,Sanas,sana,train,sana_042,0.16779296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 845.jpg,60136904a1bba6831dcff5680c4c6820,Sanas,sana,train,sana_042,0.143671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 846.jpg,d592e1d138c9d8645aef08b8d475e0d5,Sanas,sana,train,sana_042,0.15994140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 86.jpg,4b6aad5256e4436c0b5dc04842a0e8ff,Sanas,sana,train,sana_004,0.1623828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 87.jpg,13240f07c998ba1a8e067149710cf664,Sanas,sana,train,sana_004,0.192919921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 89.jpg,c8d29e26e9090ad7b42b10f25b81fb8d,Sanas,sana,train,sana_005,0.2348046875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 897.jpg,83dadacbccf0236fc45ec1c79b14f1d0,Sanas,sana,train,sana_045,0.1828515625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 900.jpg,69262d6471974b6ec18d97013ce9a47c,Sanas,sana,train,sana_045,0.162646484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 902.jpg,b1225d7920b76c0d15a6b9f046868c6a,Sanas,sana,train,sana_045,0.1530078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 903.jpg,cf2fc8530131253065792fc2566a56e6,Sanas,sana,train,sana_045,0.219443359375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 905.jpg,0581c3e32edef14e8ec663eecbdb5005,Sanas,sana,train,sana_045,0.1455859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 906.jpg,1839a28b2ee2926b9942756e75caa439,Sanas,sana,train,sana_045,0.13287109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 91.jpg,ab57c0c68280293fdabf3663b367d6d2,Sanas,sana,train,sana_005,0.18078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 910.jpg,a2d1d222d4091dffb6098fb029bf138c,Sanas,sana,train,sana_045,0.12267578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 912.jpg,959ff8c8632e80cbf2f76688387ff657,Sanas,sana,train,sana_045,0.120380859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 913.jpg,02929ff0899e36acc3cbdd915f5eadb8,Sanas,sana,train,sana_045,0.18576171875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 914.jpg,83a9368e9997638c97e4edfaa3a0640e,Sanas,sana,train,sana_045,0.104599609375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 917.jpg,2397218969266759dc4ae598b377c2ba,Sanas,sana,train,sana_046,0.13296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 919.jpg,13494409b110cfd6fb1d3fd49778a885,Sanas,sana,train,sana_046,0.140703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 921.jpg,53dd471f0b8cb98901d8b82625ff412e,Sanas,sana,train,sana_046,0.133369140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 928.jpg,90292476908a5ade584b531fba0df0f2,Sanas,sana,train,sana_046,0.190908203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 931.jpg,026e8d892b34fd43d7473435f29be70a,Sanas,sana,train,sana_046,0.12828125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 932.jpg,88eaa4b74b391ded3a3f6876371c15ef,Sanas,sana,train,sana_046,0.130615234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 933.jpg,5c9526f29fdb8015e35e7a4bdf7a244f,Sanas,sana,train,sana_046,0.171669921875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 934.jpg,7a312392c5ff95a38d2c44afec6b88da,Sanas,sana,train,sana_046,0.144365234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 935.jpg,3e0fc3b6170ccb9def91749e0f2bbb3f,Sanas,sana,train,sana_046,0.183876953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 936.jpg,f08113ecc33e64d954b5fa0f47969f54,Sanas,sana,train,sana_046,0.14142578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 937.jpg,d8793c36882e85b16a4e1a3988f43231,Sanas,sana,train,sana_047,0.17958984375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 938.jpg,9c2ff6894e663780f71bff2bcf366108,Sanas,sana,train,sana_047,0.1815625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 939.jpg,73f0da03ec8ca243083618bd3e5bd6bc,Sanas,sana,train,sana_047,0.15021484375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 94.jpg,1578906750b7d1e031f3ac92c11483f3,Sanas,sana,train,sana_005,0.12994140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 940.jpg,04361ac3d0ee5266f4e475fe3cdedeaf,Sanas,sana,train,sana_047,0.134375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 943.jpg,bcdba1e1c5c96f8d147452a565ad29bd,Sanas,sana,train,sana_047,0.243779296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 950.jpg,e8de5ca559363b4671c9db3938ddf158,Sanas,sana,train,sana_047,0.1186328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 951.jpg,4ac8a67540af734253e506c7a6b578ff,Sanas,sana,train,sana_047,0.118740234375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 953.jpg,5ff878622d8c7ef8eb9421b13dc85013,Sanas,sana,train,sana_047,0.134404296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 956.jpg,d170ca79fb398fb22f2ee296bf760ffd,Sanas,sana,train,sana_047,0.10142578125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 957.jpg,50c57d401b18666780361ea4dcc0724b,Sanas,sana,train,sana_047,0.10220703125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 97.jpg,3c3c8e20b1c018ef54c5d46aebb1761d,Sanas,sana,train,sana_005,0.233388671875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 977.jpg,635d4c90c3001a6ce7271a704ca08566,Sanas,sana,train,sana_049,0.1637109375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 979.jpg,494e2c050efbf7492b06c055be797963,Sanas,sana,train,sana_049,0.135859375
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 980.jpg,fec15b35d451214461649e2d2c9917c3,Sanas,sana,train,sana_049,0.18869140625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 983.jpg,7a462d0443a3f70740c1849eb27962e2,Sanas,sana,train,sana_049,0.120361328125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 987.jpg,895c96e9c75271930f2cc7e55502912a,Sanas,sana,train,sana_049,0.10279296875
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 99.jpg,5c126ffaccd72f56fc45ea14d63e06af,Sanas,sana,train,sana_005,0.113330078125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 990.jpg,25c0930a4260144ae18bbd9920cbe748,Sanas,sana,train,sana_049,0.1201953125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 991.jpg,f9b97734eeb7f34a9f6064b52c9f31ea,Sanas,sana,train,sana_049,0.16408203125
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 993.jpg,58d23fa946a17a08fb0e64b1a16aa225,Sanas,sana,train,sana_049,0.12759765625
+saposoa,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 994.jpg,985698609876d79487ff51d2403a5050,Sanas,sana,train,sana_049,0.116142578125
