@@ -1,0 +1,38 @@
+{
+  "config": "vit_b_16_basico",
+  "modelo": "vit_b_16",
+  "aumento": "basico",
+  "epocas": 15,
+  "lote": 32,
+  "lr": 3e-05,
+  "peso_decay": 0.05,
+  "prob_fondo": 0.8,
+  "semilla": 2,
+  "mejor_epoca": 9,
+  "minutos_entrenamiento": 3.71,
+  "gpu": "Tesla T4",
+  "saposoa_val": {
+    "exactitud": 0.9958333333333333,
+    "f1_macro": 0.9958331705665585,
+    "mcc": 0.9937758799171886
+  },
+  "saposoa_test": {
+    "exactitud": 1.0,
+    "f1_macro": 1.0,
+    "mcc": 1.0
+  },
+  "rocole": {
+    "exactitud": 0.510670731707317,
+    "f1_macro": 0.44738250947377256,
+    "mcc": 0.24521078184315684,
+    "auc": 0.9048374851720048,
+    "pred_ojo_gallo": 0.45884146341463417
+  },
+  "uganda": {
+    "exactitud": 0.5165622202327663,
+    "f1_macro": 0.4065104966113302,
+    "mcc": 0.1046061112807163,
+    "auc": 0.7341795697407413,
+    "pred_ojo_gallo": 0.7179946284691137
+  }
+}
