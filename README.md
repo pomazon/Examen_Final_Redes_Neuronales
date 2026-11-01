@@ -23,6 +23,8 @@ git clone https://github.com/pomazon/Examen_Final_Redes_Neuronales.git
 cd Examen_Final_Redes_Neuronales
 pip install -r requirements.txt
 python src/descargar_datos.py --destino data/raw
+python src/inventario.py --raiz data/raw --salida results/inventario
+python src/ver_muestras.py --inventario results/inventario/inventario.csv --raiz data/raw
 ```
 
 ## Datos

@@ -1,71 +1,47 @@
-"""Inventario de las imágenes: conteo por clase, tamaños, archivos dañados y duplicados.
+"""Inventario de las imágenes descargadas.
+
+Revisa cada imagen y guarda una tabla con su dataset, clase, tamaño, huella md5 y si se
+puede abrir. Imprime un resumen: imágenes por clase, tamaños, archivos que no se pueden
+leer, copias exactas y archivos que no son imágenes.
 
 Uso:
     python src/inventario.py --raiz data/raw --salida results/inventario
 """
 import argparse
+import glob
 import hashlib
 import os
 
-import imagehash
-import numpy as np
 import pandas as pd
 from PIL import Image
 
-EXT_IMG = {".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff"}
+EXT_IMG = {".jpg", ".jpeg", ".png"}
 
 
 def titulo(texto):
     print("\n" + "=" * 70 + "\n" + texto + "\n" + "=" * 70)
 
 
-def arbol(ruta, nivel_max=3):
-    base = ruta.rstrip("/").count("/")
-    for actual, _, archivos in os.walk(ruta):
-        nivel = actual.count("/") - base
-        if nivel > nivel_max:
-            continue
-        n_img = sum(os.path.splitext(a)[1].lower() in EXT_IMG for a in archivos)
-        print(f"{'    ' * nivel}{os.path.basename(actual)}/  "
-              f"({n_img} imágenes, {len(archivos)} archivos)")
+def etiquetas_rocole(raiz):
+    """RoCoLe guarda las fotos juntas y la clase de cada una en un Excel aparte."""
+    xlsx = glob.glob(os.path.join(raiz, "rocole", "*", "Annotations", "*classes*.xlsx"))
+    if not xlsx:
+        return {}
+    t = pd.read_excel(xlsx[0])
+    return dict(zip(t["File"], t["Multiclass.Label"]))
 
 
-def leer_imagenes(raiz, datasets):
-    filas, otros = [], []
-    for ds in datasets:
-        for actual, _, archivos in os.walk(os.path.join(raiz, ds)):
-            for a in archivos:
-                ruta = os.path.join(actual, a)
-                ext = os.path.splitext(a)[1].lower()
-                if ext not in EXT_IMG:
-                    otros.append({"dataset": ds, "archivo": os.path.relpath(ruta, raiz)})
-                    continue
-                fila = {"dataset": ds, "ruta": os.path.relpath(ruta, raiz),
-                        "carpeta": os.path.basename(actual), "ext": ext,
-                        "bytes": os.path.getsize(ruta)}
-                try:
-                    with open(ruta, "rb") as f:
-                        fila["md5"] = hashlib.md5(f.read()).hexdigest()
-                    with Image.open(ruta) as im:
-                        fila["ancho"], fila["alto"], fila["modo"] = im.width, im.height, im.mode
-                        fila["phash"] = str(imagehash.phash(im.convert("RGB")))
-                    fila["corrupta"] = False
-                except Exception as e:
-                    fila["corrupta"] = True
-                    fila["error"] = str(e)[:80]
-                filas.append(fila)
-    return pd.DataFrame(filas), pd.DataFrame(otros)
-
-
-def contar_casi_duplicados(phashes, umbral):
-    # Distancia de Hamming entre pHash. Hasta 4 bits = prácticamente la misma imagen.
-    h = np.array([int(x, 16) for x in phashes], dtype=np.uint64)
-    pares = 0
-    for i in range(len(h) - 1):
-        x = np.bitwise_xor(h[i], h[i + 1:])
-        dist = np.unpackbits(x.view(np.uint8).reshape(-1, 8), axis=1).sum(axis=1)
-        pares += int((dist <= umbral).sum())
-    return pares
+def revisar(ruta):
+    """Devuelve md5, ancho, alto y error (None si la imagen se abre completa)."""
+    with open(ruta, "rb") as f:
+        md5 = hashlib.md5(f.read()).hexdigest()
+    try:
+        with Image.open(ruta) as im:
+            ancho, alto = im.size
+            im.load()  # decodifica toda la imagen: detecta archivos cortados
+        return md5, ancho, alto, None
+    except Exception as e:
+        return md5, None, None, type(e).__name__ + ": " + str(e).split("'")[0][:60]
 
 
 def main():
@@ -73,49 +49,67 @@ def main():
     p.add_argument("--raiz", default="data/raw")
     p.add_argument("--salida", default="results/inventario")
     p.add_argument("--datasets", nargs="*", default=["saposoa", "rocole", "uganda"])
-    p.add_argument("--umbral", type=int, default=4)
     args = p.parse_args()
     os.makedirs(args.salida, exist_ok=True)
 
+    rocole = etiquetas_rocole(args.raiz)
+    filas, otros = [], []
     for ds in args.datasets:
-        titulo(f"ÁRBOL: {ds}")
-        arbol(os.path.join(args.raiz, ds))
+        for actual, _, archivos in os.walk(os.path.join(args.raiz, ds)):
+            for a in sorted(archivos):
+                ruta = os.path.join(actual, a)
+                if os.path.splitext(a)[1].lower() not in EXT_IMG:
+                    otros.append({"dataset": ds, "archivo": os.path.relpath(ruta, args.raiz)})
+                    continue
+                md5, ancho, alto, error = revisar(ruta)
+                clase = rocole.get(a) if ds == "rocole" else os.path.basename(actual)
+                filas.append({"dataset": ds, "ruta": os.path.relpath(ruta, args.raiz),
+                              "clase_original": clase, "bytes": os.path.getsize(ruta),
+                              "md5": md5, "ancho": ancho, "alto": alto,
+                              "legible": error is None, "error": error})
+            print(f"\r{ds}: {sum(f['dataset'] == ds for f in filas)} imágenes revisadas", end="")
+        print()
 
-    df, otros = leer_imagenes(args.raiz, args.datasets)
-    df.to_csv(os.path.join(args.salida, "inventario_imagenes.csv"), index=False)
-    ok = df[~df["corrupta"]]
+    df = pd.DataFrame(filas)
+    df.to_csv(os.path.join(args.salida, "inventario.csv"), index=False)
+    ok = df[df["legible"]]
 
-    titulo("IMÁGENES POR DATASET Y CARPETA")
-    print(df.groupby(["dataset", "carpeta"]).size().to_string())
+    titulo("IMÁGENES POR DATASET Y CLASE")
+    print(df.groupby(["dataset", "clase_original"], dropna=False).size().to_string())
 
     titulo("TAMAÑO EN PÍXELES (mín / mediana / máx)")
-    print(ok.groupby("dataset")[["ancho", "alto"]]
-          .agg(["min", "median", "max"]).to_string())
+    print(ok.groupby("dataset")[["ancho", "alto"]].agg(["min", "median", "max"]).to_string())
 
-    titulo("FORMATO Y MODO DE COLOR")
-    print(ok.groupby(["dataset", "ext", "modo"]).size().to_string())
+    titulo("IMÁGENES QUE NO SE PUEDEN ABRIR")
+    mal = df[~df["legible"]]
+    if len(mal):
+        print(mal.groupby(["dataset", "error"]).agg(cantidad=("ruta", "size"),
+                                                   bytes_max=("bytes", "max")).to_string())
+    else:
+        print("Ninguna")
 
-    titulo("IMÁGENES DAÑADAS")
-    print(df.groupby("dataset")["corrupta"].sum().to_string())
-
-    titulo("DUPLICADOS EXACTOS (mismo md5)")
-    dup = ok[ok.duplicated("md5", keep=False)]
-    print("Archivos repetidos:", len(dup))
-    print("Grupos entre datasets distintos:",
-          int((dup.groupby("md5")["dataset"].nunique() > 1).sum()))
-    print("Grupos con carpetas distintas:",
-          int((dup.groupby("md5")["carpeta"].nunique() > 1).sum()))
-
-    titulo(f"CASI-DUPLICADOS (pHash, distancia <= {args.umbral})")
-    for ds in args.datasets:
-        sub = ok[ok["dataset"] == ds]
-        print(f"{ds}: {len(sub)} imágenes, "
-              f"{contar_casi_duplicados(sub['phash'], args.umbral)} pares")
+    titulo("COPIAS EXACTAS (mismo md5)")
+    for ds, sub in ok.groupby("dataset"):
+        distintas = sub["md5"].nunique()
+        print(f"{ds}: {len(sub)} legibles, {distintas} distintas, {len(sub) - distintas} copias sobrantes")
+    conflicto = ok.groupby("md5")["clase_original"].nunique()
+    conflicto = conflicto[conflicto > 1].index
+    print("\nCopias con clases distintas (misma foto en dos clases):")
+    if len(conflicto):
+        print(ok[ok["md5"].isin(conflicto)].groupby(["dataset", "md5", "clase_original"])
+              .size().to_string())
+    else:
+        print("Ninguna")
 
     titulo("ARCHIVOS QUE NO SON IMÁGENES")
-    print(otros.to_string() if len(otros) else "Ninguno")
+    print(pd.DataFrame(otros).to_string(index=False) if otros else "Ninguno")
 
-    print("\nDetalle por imagen:", os.path.join(args.salida, "inventario_imagenes.csv"))
+    titulo("IMÁGENES UTILIZABLES (legibles, sin copias, sin clases en conflicto)")
+    util = ok[~ok["md5"].isin(conflicto)].drop_duplicates("md5")
+    print(pd.crosstab(util["dataset"], util["clase_original"].fillna("sin etiqueta"),
+                      margins=True, margins_name="total").to_string())
+
+    print("\nTabla por imagen:", os.path.join(args.salida, "inventario.csv"))
 
 
 if __name__ == "__main__":
