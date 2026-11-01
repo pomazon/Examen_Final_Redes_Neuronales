@@ -10,6 +10,7 @@ import numpy as np
 from PIL import Image
 from scipy import ndimage
 from skimage import color
+from skimage.morphology import convex_hull_image
 from torchvision import transforms
 
 MEDIA, DESV = [0.485, 0.456, 0.406], [0.229, 0.224, 0.225]
@@ -36,8 +37,13 @@ def mascara_hoja(im):
     if n == 0:
         return None
     tam = ndimage.sum(m, etiquetas, range(1, n + 1))
-    m = etiquetas == (np.argmax(tam) + 1)
-    m = ndimage.binary_fill_holes(ndimage.binary_closing(m, iterations=5))
+    # Los reflejos de las hojas brillantes pueden partir la hoja en pedazos: se juntan
+    # los pedazos grandes (al menos 0,5 % de la imagen) y se toma su envolvente convexa,
+    # porque una hoja de café es aproximadamente convexa.
+    grandes = np.isin(etiquetas, np.where(tam >= 0.005 * m.size)[0] + 1)
+    if not grandes.any():
+        return None
+    m = convex_hull_image(grandes)
     return m if AREA_VALIDA[0] <= m.mean() <= AREA_VALIDA[1] else None
 
 
