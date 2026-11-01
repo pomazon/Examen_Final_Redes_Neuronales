@@ -1,33 +1,42 @@
-"""Limpia los datos, unifica las etiquetas y genera las particiones sin fuga.
+"""Limpia los datos, unifica las etiquetas y arma las particiones sin fuga.
 
-- Saposoa se divide en entrenamiento / validación / prueba (70 / 15 / 15),
-  estratificado por clase y por grupos de duplicados: las imágenes de un mismo
-  grupo quedan siempre en la misma partición.
-- RoCoLe y Uganda se usan solo como prueba externa, con las clases comunes
-  (sana y roya).
+Saposoa (entrenamiento, validación y prueba):
+    Las fotos se ordenan por su orden de captura (número o fecha del nombre) y se
+    agrupan en bloques de fotos consecutivas. Cada bloque va entero a una sola
+    partición, para que las tomas repetidas de una misma hoja no queden repartidas.
+
+RoCoLe y Uganda (prueba externa):
+    Se unen las fotos casi iguales (similitud mayor o igual al umbral de cada
+    dataset) y se deja una por grupo.
 
 Uso:
-    python src/particiones.py --raiz data/raw --inventario results/inventario --umbral 0.97
+    python src/particiones.py --inventario results/inventario/inventario.csv \
+        --pares results/duplicados/pares.csv --vectores data/processed
 """
 import argparse
-import glob
 import os
+import re
 
 import numpy as np
 import pandas as pd
 
-# Etiqueta original -> etiqueta unificada. None = se excluye de la prueba externa.
+# Etiqueta original -> etiqueta del proyecto. None: la clase no existe en Saposoa.
 MAPEO = {
     "saposoa": {"Sanas": "sana", "Roya": "roya", "Ojo_Gallo": "ojo_gallo"},
-    "uganda": {"Health leaves": "sana", "leaf rust": "roya", "phoma": None},
     "rocole": {"healthy": "sana", "rust_level_1": "roya", "rust_level_2": "roya",
                "rust_level_3": "roya", "rust_level_4": "roya", "red_spider_mite": None},
+    "uganda": {"Health leaves": "sana", "leaf rust": "roya", "phoma": None},
 }
+UMBRAL_EXTERNO = {"rocole": 0.975, "uganda": 0.93}  # elegidos mirando los pares de ejemplo
 PROPORCION = {"train": 0.70, "val": 0.15, "test": 0.15}
 
 
+def orden_captura(ruta):
+    """'Sana 257.jpg' -> 257 ; '20251129_132523.jpg' -> 20251129132523"""
+    return int("".join(re.findall(r"\d+", os.path.basename(ruta))) or 0)
+
+
 def agrupar(n, i, j):
-    """Union-find: devuelve el id de grupo de cada uno de los n elementos."""
     padre = list(range(n))
 
     def raiz(k):
@@ -40,110 +49,137 @@ def agrupar(n, i, j):
         ra, rb = raiz(a), raiz(b)
         if ra != rb:
             padre[rb] = ra
-    return [raiz(k) for k in range(n)]
+    return np.array([raiz(k) for k in range(n)])
 
 
-def repartir_grupos(grupos, semilla):
-    """Asigna cada grupo a la partición que más imágenes le falten, en orden aleatorio."""
+def repartir(unidades, semilla):
+    """Asigna cada unidad (bloque o imagen) a la partición a la que más le falta."""
     rng = np.random.default_rng(semilla)
-    orden = rng.permutation(len(grupos))
-    total = sum(t for _, t in grupos)
-    meta = {k: v * total for k, v in PROPORCION.items()}
-    actual = {k: 0 for k in PROPORCION}
-    asignacion = {}
-    for idx in orden:
-        g, t = grupos[idx]
-        destino = max(PROPORCION, key=lambda k: meta[k] - actual[k])
-        asignacion[g] = destino
-        actual[destino] += t
-    return asignacion
+    total = sum(t for _, t in unidades)
+    falta = {k: v * total for k, v in PROPORCION.items()}
+    asignado = {}
+    for idx in rng.permutation(len(unidades)):
+        u, t = unidades[idx]
+        destino = max(falta, key=falta.get)
+        asignado[u] = destino
+        falta[destino] -= t
+    return asignado
+
+
+def max_sim_con_train(df, vec):
+    """Para cada imagen de val/test, la mayor similitud con una imagen de train de su clase."""
+    salida = []
+    for clase, sub in df.groupby("clase"):
+        tr = np.stack([vec[r] for r in sub.loc[sub["particion"] == "train", "ruta"]])
+        ot = sub[sub["particion"] != "train"]
+        if len(ot):
+            salida.append((np.stack([vec[r] for r in ot["ruta"]]) @ tr.T).max(axis=1))
+    return np.concatenate(salida)
 
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--raiz", default="data/raw")
-    p.add_argument("--inventario", default="results/inventario")
-    p.add_argument("--umbral", type=float, default=0.97,
-                   help="similitud coseno a partir de la cual dos imágenes son duplicadas")
+    p.add_argument("--inventario", default="results/inventario/inventario.csv")
+    p.add_argument("--pares", default="results/duplicados/pares.csv")
+    p.add_argument("--vectores", default="data/processed")
+    p.add_argument("--bloque", type=int, default=10, help="fotos consecutivas por bloque")
     p.add_argument("--semilla", type=int, default=42)
     p.add_argument("--salida", default="data/splits.csv")
+    p.add_argument("--reporte", default="results/particiones")
     args = p.parse_args()
+    os.makedirs(args.reporte, exist_ok=True)
+    excluidas = []
 
-    inv = pd.read_csv(os.path.join(args.inventario, "inventario_imagenes.csv"))
-    registro = []
+    inv = pd.read_csv(args.inventario)
+    excluidas.append(("no se pueden abrir", inv[~inv["legible"]]))
+    df = inv[inv["legible"]].copy()
+    df["clase"] = [MAPEO[d].get(c) for d, c in zip(df["dataset"], df["clase_original"])]
+    df["clase_txt"] = df["clase"].fillna("otra")
 
-    # 1. Imágenes dañadas
-    danadas = inv["corrupta"].astype(bool)
-    registro.append(("dañadas", inv[danadas].groupby("dataset").size().to_dict()))
-    inv = inv[~danadas].copy()
+    # 1. Copias exactas: si todas tienen la misma clase (ya unificada) se deja una;
+    #    si tienen clases distintas no se sabe cuál es la correcta y se excluyen todas.
+    conflicto = df.groupby("md5")["clase_txt"].transform("nunique") > 1
+    excluidas.append(("copia exacta con clases distintas", df[conflicto]))
+    df = df[~conflicto]
+    excluidas.append(("copia exacta sobrante", df[df.duplicated("md5")]))
+    df = df.drop_duplicates("md5").copy()
 
-    # 2. Etiqueta original (RoCoLe la trae en un Excel aparte)
-    inv["clase_original"] = inv["carpeta"]
-    xlsx = glob.glob(os.path.join(args.raiz, "rocole", "*", "Annotations", "*classes*.xlsx"))[0]
-    etq = pd.read_excel(xlsx).set_index("File")["Multiclass.Label"]
-    es_rc = inv["dataset"] == "rocole"
-    inv.loc[es_rc, "clase_original"] = inv.loc[es_rc, "ruta"].map(lambda r: etq.get(os.path.basename(r)))
-    sin_etq = inv["clase_original"].isna()
-    registro.append(("sin etiqueta", inv[sin_etq].groupby("dataset").size().to_dict()))
-    inv = inv[~sin_etq]
-
-    # 3. Copias exactas con etiquetas distintas: se excluyen todas
-    conflicto = inv.groupby("md5")["clase_original"].transform("nunique") > 1
-    registro.append(("copias exactas con etiquetas distintas",
-                     inv[conflicto].groupby("dataset").size().to_dict()))
-    inv = inv[~conflicto]
-
-    # 4. Copias exactas: se deja una
-    copia = inv.duplicated("md5", keep="first")
-    registro.append(("copias exactas sobrantes", inv[copia].groupby("dataset").size().to_dict()))
-    inv = inv[~copia].copy()
-
-    # 5. Etiqueta unificada
-    inv["clase"] = [MAPEO[d].get(c) for d, c in zip(inv["dataset"], inv["clase_original"])]
-    fuera = inv["clase"].isna()
-    registro.append(("clases sin equivalente en Saposoa",
-                     inv[fuera].groupby(["dataset", "clase_original"]).size().to_dict()))
-    inv = inv[~fuera].copy()
-
-    # 6. Grupos de duplicados (similitud CNN >= umbral, dentro de cada dataset)
-    pares = pd.read_csv(os.path.join(args.inventario, "pares_similares_cnn.csv"))
-    pares = pares[pares["similitud"] >= args.umbral]
-    inv["grupo"] = ""
-    for ds, sub in inv.groupby("dataset"):
+    # 2. Fotos casi iguales en RoCoLe y Uganda
+    pares = pd.read_csv(args.pares)
+    df["grupo"] = df["ruta"]
+    for ds, umbral in UMBRAL_EXTERNO.items():
+        sub = df[df["dataset"] == ds]
         pos = {r: k for k, r in enumerate(sub["ruta"])}
-        pp = pares[(pares["dataset"] == ds) & pares["ruta_a"].isin(pos) & pares["ruta_b"].isin(pos)]
+        pp = pares[(pares["dataset"] == ds) & (pares["similitud"] >= umbral)
+                   & pares["ruta_a"].isin(pos) & pares["ruta_b"].isin(pos)]
         g = agrupar(len(sub), pp["ruta_a"].map(pos), pp["ruta_b"].map(pos))
-        inv.loc[sub.index, "grupo"] = [f"{ds}_{x}" for x in g]
+        df.loc[sub.index, "grupo"] = [f"{ds}_{x}" for x in g]
+    externa = df["dataset"] != "saposoa"
+    conflicto = externa & (df.groupby("grupo")["clase_txt"].transform("nunique") > 1)
+    excluidas.append(("casi igual a otra foto de clase distinta", df[conflicto]))
+    df = df[~conflicto]
+    sobrante = (df["dataset"] != "saposoa") & df.duplicated("grupo")
+    excluidas.append(("casi igual a otra foto (se deja una)", df[sobrante]))
+    df = df[~sobrante]
 
-    # Grupos que mezclan clases: no se puede saber cuál etiqueta es la correcta
-    mezcla = inv.groupby("grupo")["clase"].transform("nunique") > 1
-    registro.append(("grupos de duplicados con clases mezcladas",
-                     inv[mezcla].groupby("dataset").size().to_dict()))
-    inv = inv[~mezcla].copy()
+    # 3. Clases que no existen en Saposoa
+    excluidas.append(("clase sin equivalente en Saposoa", df[df["clase"].isna()]))
+    df = df[df["clase"].notna()].copy()
 
-    # 7. Particiones
-    inv["particion"] = "externa"
-    sap = inv["dataset"] == "saposoa"
-    for clase, sub in inv[sap].groupby("clase"):
-        grupos = list(sub.groupby("grupo").size().items())
-        asign = repartir_grupos(grupos, args.semilla)
-        inv.loc[sub.index, "particion"] = sub["grupo"].map(asign)
+    # 4. Particiones de Saposoa por bloques de capturas consecutivas
+    df["particion"] = "externa"
+    df["bloque"] = ""
+    sap = df[df["dataset"] == "saposoa"].copy()
+    sap["orden"] = sap["ruta"].map(orden_captura)
+    for clase, sub in sap.groupby("clase"):
+        sub = sub.sort_values("orden")
+        bloques = [f"{clase}_{k // args.bloque:03d}" for k in range(len(sub))]
+        sap.loc[sub.index, "bloque"] = bloques
+        asign = repartir(list(pd.Series(bloques).value_counts().sort_index().items()), args.semilla)
+        sap.loc[sub.index, "particion"] = [asign[b] for b in bloques]
+    df.loc[sap.index, ["particion", "bloque"]] = sap[["particion", "bloque"]]
 
-    # Comprobación: ningún grupo está en dos particiones
-    assert (inv.groupby("grupo")["particion"].nunique() == 1).all()
+    # 5. Verificación con los vectores de la ResNet50
+    npz = np.load(os.path.join(args.vectores, "vectores_saposoa.npz"), allow_pickle=True)
+    vec = dict(zip(npz["rutas"], npz["v"]))
+    sap = df[df["dataset"] == "saposoa"].copy()
+    sap["orden"] = sap["ruta"].map(orden_captura)
 
-    cols = ["dataset", "ruta", "md5", "clase_original", "clase", "grupo", "particion"]
-    inv[cols].sort_values(["dataset", "particion", "clase", "ruta"]).to_csv(args.salida, index=False)
+    print("¿Las fotos consecutivas se parecen más que dos fotos al azar? (similitud media)")
+    rng = np.random.default_rng(args.semilla)
+    for clase, sub in sap.groupby("clase"):
+        r = sub.sort_values("orden")["ruta"].values
+        v = np.stack([vec[x] for x in r])
+        vecinas = (v[:-1] * v[1:]).sum(axis=1)
+        a, b = rng.integers(0, len(v), 2000), rng.integers(0, len(v), 2000)
+        azar = (v[a] * v[b]).sum(axis=1)[a != b]
+        print(f"  {clase:10s} consecutivas: {vecinas.mean():.3f}   al azar: {azar.mean():.3f}")
 
-    print(f"Umbral de duplicado: similitud >= {args.umbral}   Semilla: {args.semilla}\n")
-    print("Imágenes excluidas:")
-    for motivo, n in registro:
-        print(f"  {motivo}: {n if n else 0}")
+    aleatoria = sap.copy()
+    for clase, sub in aleatoria.groupby("clase"):
+        asign = repartir([(r, 1) for r in sub["ruta"]], args.semilla)
+        aleatoria.loc[sub.index, "particion"] = sub["ruta"].map(asign)
+    print("\nMayor similitud de cada imagen de val/test con alguna de train (misma clase):")
+    for nombre, d in [("por bloques", sap), ("al azar, por imagen", aleatoria)]:
+        m = max_sim_con_train(d, vec)
+        print(f"  {nombre:20s} mediana {np.median(m):.3f}   ≥0,95: {(m >= 0.95).mean():5.1%}"
+              f"   ≥0,96: {(m >= 0.96).mean():5.1%}")
+
+    # 6. Guardar
+    cols = ["dataset", "ruta", "md5", "clase_original", "clase", "particion", "bloque"]
+    df[cols].sort_values(["dataset", "particion", "clase", "ruta"]).to_csv(args.salida, index=False)
+    exc = pd.concat([e.assign(motivo=m) for m, e in excluidas if len(e)])
+    exc[["dataset", "ruta", "clase_original", "motivo"]].to_csv(
+        os.path.join(args.reporte, "excluidas.csv"), index=False)
+
+    print(f"\nImágenes excluidas (bloque de {args.bloque}, semilla {args.semilla}):")
+    print(pd.crosstab(exc["motivo"], exc["dataset"], margins=True, margins_name="total").to_string())
     print("\nImágenes por dataset, partición y clase:")
-    print(pd.crosstab([inv["dataset"], inv["particion"]], inv["clase"], margins=True).to_string())
-    print("\nGrupos con más de una imagen en Saposoa:",
-          int((inv[sap].groupby("grupo").size() > 1).sum()))
-    print("\nParticiones guardadas en:", args.salida)
+    tabla = pd.crosstab([df["dataset"], df["particion"]], df["clase"], margins=True, margins_name="total")
+    print(tabla.to_string())
+    tabla.to_csv(os.path.join(args.reporte, "conteo.csv"))
+    print("\nParticiones:", args.salida)
+    print("Excluidas:", os.path.join(args.reporte, "excluidas.csv"))
 
 
 if __name__ == "__main__":

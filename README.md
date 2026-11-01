@@ -26,6 +26,7 @@ python src/descargar_datos.py --destino data/raw
 python src/inventario.py --raiz data/raw --salida results/inventario
 python src/ver_muestras.py --inventario results/inventario/inventario.csv --raiz data/raw
 python src/duplicados.py --inventario results/inventario/inventario.csv --raiz data/raw
+python src/particiones.py --inventario results/inventario/inventario.csv --pares results/duplicados/pares.csv
 ```
 
 ## Datos

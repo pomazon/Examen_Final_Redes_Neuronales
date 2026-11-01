@@ -85,10 +85,12 @@ def main():
     p.add_argument("--inventario", default="results/inventario/inventario.csv")
     p.add_argument("--raiz", default="data/raw")
     p.add_argument("--salida", default="results/duplicados")
+    p.add_argument("--vectores", default="data/processed")
     p.add_argument("--minimo", type=float, default=0.90)
     p.add_argument("--semilla", type=int, default=42)
     args = p.parse_args()
     os.makedirs(args.salida, exist_ok=True)
+    os.makedirs(args.vectores, exist_ok=True)
     rng = np.random.default_rng(args.semilla)
 
     dispositivo = "cuda" if torch.cuda.is_available() else "cpu"
@@ -105,6 +107,7 @@ def main():
         sub = sub.reset_index(drop=True)
         print(f"\n{ds}: {len(sub)} imágenes distintas")
         v = vectores([os.path.join(args.raiz, r) for r in sub["ruta"]], modelo, dispositivo)
+        np.savez(os.path.join(args.vectores, f"vectores_{ds}.npz"), v=v, rutas=sub["ruta"].values)
 
         s = v @ v.T
         i, j = np.triu_indices(len(v), k=1)
@@ -127,6 +130,10 @@ def main():
         if muestras:
             figura(pd.concat(muestras), args.raiz, os.path.join(args.salida, f"{ds}_pares.png"),
                    f"{ds}: 3 pares al azar por tramo de similitud")
+        if len(pares):
+            figura(pares.nlargest(10, "similitud"), args.raiz,
+                   os.path.join(args.salida, f"{ds}_mas_parecidos.png"),
+                   f"{ds}: los 10 pares más parecidos")
 
     archivo = os.path.join(args.salida, "pares.csv")
     pd.concat(todos).to_csv(archivo, index=False)
