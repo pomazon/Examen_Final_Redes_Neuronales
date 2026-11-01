@@ -28,6 +28,7 @@ python src/ver_muestras.py --inventario results/inventario/inventario.csv --raiz
 python src/duplicados.py --inventario results/inventario/inventario.csv --raiz data/raw
 python src/particiones.py --inventario results/inventario/inventario.csv --pares results/duplicados/pares.csv
 python src/preparar_imagenes.py --splits data/splits.csv --raiz data/raw --destino data/processed/imagenes
+python src/linea_base.py --splits data/splits.csv --imagenes data/processed/imagenes
 ```
 
 ## Datos
