@@ -14,6 +14,7 @@ from torchvision import transforms
 
 MEDIA, DESV = [0.485, 0.456, 0.406], [0.229, 0.224, 0.225]
 UMBRAL_COLOR = 10  # distancia de color (a*, b* en Lab) a partir de la cual un píxel no es fondo
+CROMA_MIN = 12     # intensidad de color mínima de la hoja: las sombras son casi grises
 AREA_VALIDA = (0.03, 0.60)  # fracción de la imagen que puede ocupar una hoja
 
 
@@ -21,15 +22,16 @@ def mascara_hoja(im):
     """Máscara de la hoja, o None si no se pudo separar de forma confiable.
 
     El color del fondo se estima con la mediana del borde de la imagen. Un píxel es hoja
-    si su color (sin contar el brillo) se aleja de ese fondo. Ignorar el brillo hace que
-    las sombras, que tienen el mismo color del fondo pero más oscuro, queden como fondo.
+    si su color (sin contar el brillo) se aleja de ese fondo y además tiene color
+    (croma) suficiente. Las sombras son casi grises: quedan como fondo.
     """
     lab = color.rgb2lab(np.asarray(im, float) / 255)
     ab = lab[..., 1:]
     borde = np.concatenate([ab[:8].reshape(-1, 2), ab[-8:].reshape(-1, 2),
                             ab[:, :8].reshape(-1, 2), ab[:, -8:].reshape(-1, 2)])
     distancia = np.linalg.norm(ab - np.median(borde, axis=0), axis=-1)
-    m = ndimage.binary_opening(distancia > UMBRAL_COLOR, iterations=2)
+    croma = np.linalg.norm(ab, axis=-1)
+    m = ndimage.binary_opening((distancia > UMBRAL_COLOR) & (croma > CROMA_MIN), iterations=2)
     etiquetas, n = ndimage.label(m)
     if n == 0:
         return None
