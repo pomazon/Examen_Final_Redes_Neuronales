@@ -74,4 +74,9 @@ Demostración en Colab con ViT-B/16 (fuerte + fondo): [notebooks/demo.ipynb](not
 
 ## Equipo
 
-Pendiente.
+Grupo 2, sección A:
+
+- Alexander André Chávez Cabana
+- Alex Reynaldo Pomazón Solórzano
+- Andhersson Manuel Salazar Fernández
+- Christian André Urviola García
