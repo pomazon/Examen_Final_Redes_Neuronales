@@ -1,0 +1,7 @@
+config,gpu,corridas,minutos_por_corrida,minutos_total
+resnet50_basico,Tesla T4,3,1.6,4.9
+resnet50_fondo,Tesla T4,3,4.8,14.3
+resnet50_fuerte,Tesla T4,3,2.6,7.8
+vit_b_16_basico,Tesla T4,3,3.6,10.8
+vit_b_16_fondo,Tesla T4,3,5.8,17.3
+vit_b_16_fuerte,Tesla T4,3,4.0,12.0
