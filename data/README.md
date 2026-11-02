@@ -32,4 +32,10 @@ Se fija la versión de cada conjunto: si los autores publican una nueva, los res
 
 ## Cambios respecto a los originales
 
-CC BY 4.0 exige indicar los cambios. Se completará en los pasos de limpieza y particiones.
+CC BY 4.0 exige indicar los cambios. Los datos originales no se modifican: se descargan tal cual y los cambios se aplican sobre copias.
+
+- **Etiquetas unificadas** en tres clases: sana, roya y ojo de gallo. RoCoLe: `healthy` → sana; `rust_level_1` a `rust_level_4` → roya. Uganda: `Health leaves` → sana; `leaf rust` → roya.
+- **Clases excluidas** por no existir en Saposoa: `red_spider_mite` (RoCoLe) y `phoma` (Uganda).
+- **Imágenes excluidas:** las que no se pueden abrir, las copias exactas (mismo md5) y las casi iguales (similitud ≥ umbral con vectores de ResNet50), dejando una de cada grupo; si las copias tenían clases distintas, se excluyen todas. Lista y motivo en `results/particiones/excluidas.csv`.
+- **Tamaño:** se reducen para que el lado menor mida 320 px (sin agrandar las pequeñas) y se guardan como JPEG calidad 95.
+- **`data/ejemplos/`:** siete de esas imágenes reducidas, para el notebook de demostración. `fuentes.csv` indica de qué archivo original sale cada una.
