@@ -32,6 +32,9 @@ python src/linea_base.py --splits data/splits.csv --imagenes data/processed/imag
 python src/ver_mascaras.py --splits data/splits.csv --imagenes data/processed/imagenes
 python src/entrenar.py --config configs/resnet50_basico.yaml --semilla 0   # cada config y semilla 0, 1, 2
 python src/resumen.py
+python src/gradcam.py --modelos resnet50_basico resnet50_fuerte resnet50_fondo vit_b_16_basico vit_b_16_fuerte vit_b_16_fondo
+python src/errores.py --modelos resnet50_basico resnet50_fuerte resnet50_fondo vit_b_16_basico vit_b_16_fuerte vit_b_16_fondo
+python src/costo.py
 ```
 
 ## Datos

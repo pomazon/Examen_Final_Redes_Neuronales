@@ -44,12 +44,13 @@ class Hojas(Dataset):
         return self.transform(im), self.y[i]
 
 
-def crear_modelo(nombre):
+def crear_modelo(nombre, preentrenado=True):
+    """preentrenado=False sirve para cargar luego pesos ya entrenados sin descargar los de ImageNet."""
     if nombre == "resnet50":
-        m = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2)
+        m = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2 if preentrenado else None)
         m.fc = torch.nn.Linear(m.fc.in_features, len(CLASES))
     elif nombre == "vit_b_16":
-        m = models.vit_b_16(weights=models.ViT_B_16_Weights.IMAGENET1K_V1)
+        m = models.vit_b_16(weights=models.ViT_B_16_Weights.IMAGENET1K_V1 if preentrenado else None)
         m.heads.head = torch.nn.Linear(m.heads.head.in_features, len(CLASES))
     else:
         raise ValueError(nombre)
