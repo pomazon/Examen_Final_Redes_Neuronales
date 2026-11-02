@@ -1,0 +1,8 @@
+archivo,dataset,clase,ruta_original
+rocole_roya.jpg,rocole,roya,rocole/RoCoLe A robusta coffee leaf images dataset/Photos/C9P10H1.jpg
+rocole_sana.jpg,rocole,sana,rocole/RoCoLe A robusta coffee leaf images dataset/Photos/C5P4H1.jpg
+saposoa_ojo_gallo.jpg,saposoa,ojo_gallo,saposoa/Coffee leaf dataset by phytosanitary class/Ojo_Gallo/20251129_094950.jpg
+saposoa_roya.jpg,saposoa,roya,saposoa/Coffee leaf dataset by phytosanitary class/Roya/Roya 324.jpg
+saposoa_sana.jpg,saposoa,sana,saposoa/Coffee leaf dataset by phytosanitary class/Sanas/Sana 307.jpg
+uganda_roya.jpg,uganda,roya,uganda/A Machine  Learning Dataset for Classification of Common Coffee Leaf Diseases in Uganda/coffee dataset/leaf rust/1200_456.jpg
+uganda_sana.jpg,uganda,sana,uganda/A Machine  Learning Dataset for Classification of Common Coffee Leaf Diseases in Uganda/coffee dataset/Health leaves/1_938.jpg
