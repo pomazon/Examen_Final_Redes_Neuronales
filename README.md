@@ -45,7 +45,32 @@ Tres conjuntos públicos de Mendeley Data, con licencia CC BY 4.0. Detalle y cit
 
 ## Resultados
 
-Pendiente.
+Entrenamiento con Saposoa. Prueba externa en RoCoLe (Ecuador) y Uganda, solo sana contra roya. Media ± desviación en 3 semillas.
+
+| Modelo | Aumento | Saposoa test F1 | RoCoLe AUC | Uganda AUC | Minutos por corrida (T4) |
+|---|---|---|---|---|---|
+| Mejor línea base | — | | 0,750 | 0,767 | |
+| ResNet50 | básico | ≥ 0,98 | 0,831 ± 0,013 | 0,743 ± 0,142 | 1,6 |
+| ResNet50 | fuerte | ≥ 0,98 | 0,858 ± 0,006 | 0,779 ± 0,063 | 2,6 |
+| ResNet50 | fuerte + fondo | ≥ 0,98 | 0,858 ± 0,033 | 0,728 ± 0,064 | 4,8 |
+| ViT-B/16 | básico | ≥ 0,98 | 0,909 ± 0,011 | 0,717 ± 0,054 | 3,6 |
+| ViT-B/16 | fuerte | ≥ 0,98 | 0,920 ± 0,009 | 0,750 ± 0,052 | 4,0 |
+| ViT-B/16 | fuerte + fondo | ≥ 0,98 | 0,920 ± 0,009 | 0,777 ± 0,060 | 5,8 |
+
+Tabla completa en `results/resumen.csv`. Costo total: 1,12 horas de GPU T4 (`results/costo.csv`).
+
+- Dentro de Saposoa el problema es casi trivial; la dificultad está fuera de él.
+- ViT-B/16 generaliza mejor que ResNet50 a RoCoLe. Uganda es difícil para todos los modelos.
+- Sin reemplazo de fondo, los modelos aprenden a reconocer la clase por el fondo de Saposoa (`results/prueba_fondo/`). El reemplazo de fondo elimina ese atajo, pero no mejora la prueba externa: la caída se debe a que las hojas de campo se ven distintas, no al fondo.
+- En fotos de campo los modelos detectan casi toda la roya pero confunden muchas hojas sanas con enfermas (`results/errores/`).
+
+## Pesos y demostración
+
+Pesos de los 6 modelos de la semilla 0 (Google Drive, público): https://drive.google.com/drive/folders/1fIOa7MGDJUeVh-MrOiGy6_5snuy5TeF6?usp=sharing
+
+Demostración en Colab con ViT-B/16 (fuerte + fondo): [notebooks/demo.ipynb](notebooks/demo.ipynb)
+
+[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pomazon/Examen_Final_Redes_Neuronales/blob/main/notebooks/demo.ipynb)
 
 ## Equipo
 
