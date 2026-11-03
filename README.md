@@ -1,4 +1,4 @@
-# Clasificación de enfermedades en hojas de café
+# Clasificación de hojas de café sanas, con roya y con ojo de gallo en fotos de otros países: ResNet50 y ViT-B/16 entrenados con fotos de Saposoa (Perú)
 
 Proyecto final del curso MIA-203 Redes Neuronales y Aprendizaje Profundo (UNI, FIIS).
 
