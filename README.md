@@ -36,6 +36,7 @@ python src/gradcam.py --modelos resnet50_basico resnet50_fuerte resnet50_fondo v
 python src/errores.py --modelos resnet50_basico resnet50_fuerte resnet50_fondo vit_b_16_basico vit_b_16_fuerte vit_b_16_fondo
 python src/costo.py
 python src/ejemplos.py
+python src/figuras_articulo.py
 python src/prueba_fondo.py --modelos resnet50_basico resnet50_fuerte resnet50_fondo vit_b_16_basico vit_b_16_fuerte vit_b_16_fondo
 ```
 
