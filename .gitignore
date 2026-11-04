@@ -4,7 +4,7 @@ data/processed/
 *.zip
 *.rar
 
-# Pesos de modelos: van en Hugging Face
+# Pesos de modelos: van en Google Drive (enlace en el README)
 *.pt
 *.pth
 *.ckpt
@@ -15,3 +15,6 @@ data/processed/
 # Archivos temporales
 __pycache__/
 .ipynb_checkpoints/
+
+# Pares de duplicados: archivo grande, se regenera con src/duplicados.py
+results/duplicados/pares.csv
