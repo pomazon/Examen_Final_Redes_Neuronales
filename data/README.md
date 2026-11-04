@@ -16,7 +16,9 @@ Los tres conjuntos están en Mendeley Data con licencia **Creative Commons Attri
 | RoCoLe: A robusta coffee leaf images dataset (Ecuador) | Prueba externa | J. Parraga-Alava, K. Cusme, A. Loor, E. Santander | 2019 | https://doi.org/10.17632/c5yvn32dzg.2 |
 | A Machine Learning Dataset for Classification of Common Coffee Leaf Diseases in Uganda | Prueba externa | S. Chelangat, R. Anirwoth, K. N. Mayanja, A. Sserwadda | 2025 | https://doi.org/10.17632/k36wnd6knb.1 |
 
-Artículo asociado a RoCoLe: Parraga-Alava, J. et al. (2019). *RoCoLe: A robusta coffee leaf images dataset for evaluation of machine learning based methods in plant diseases recognition*. Data in Brief, 25, 104414.
+Artículo asociado a RoCoLe: Parraga-Alava, J. et al. (2019). *RoCoLe: A robusta coffee leaf images dataset for evaluation of machine learning based methods in plant diseases recognition*. Data in Brief, 25, 104414. https://doi.org/10.1016/j.dib.2019.104414
+
+Artículo de los autores de Saposoa: Santa-María, J. C. y Rodríguez, C. (2026). *Automatic detection of coffee leaf diseases through pattern recognition*. Revista Científica de Sistemas e Informática, 6(1), e1349. https://doi.org/10.51252/rcsi.v6i1.1349
 
 Los autores de los datos no respaldan ni avalan este proyecto.
 

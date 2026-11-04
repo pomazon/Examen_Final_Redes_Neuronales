@@ -16,29 +16,99 @@ results/     tablas, figuras y logs del artículo
 
 ## Cómo reproducir
 
-En una máquina con Python 3 y `unrar` instalado:
+### Requisitos
+
+- Python 3.10 o más reciente (se usó 3.13 en Google Colab) y `unrar`.
+- Una GPU para entrenar. Se usó una NVIDIA T4 de Colab: las 18 corridas toman 1.12 horas. Sin GPU funciona, pero mucho más lento.
+- Unos 7 GB libres para los datos.
+
+En Colab, `notebooks/Examen_Final_Redes_Neuronales.ipynb` ejecuta todo en orden.
+
+### 1. Instalar
 
 ```
 git clone https://github.com/pomazon/Examen_Final_Redes_Neuronales.git
 cd Examen_Final_Redes_Neuronales
 pip install -r requirements.txt
+```
+
+### 2. Datos, limpieza y particiones
+
+```
 python src/descargar_datos.py --destino data/raw
 python src/inventario.py --raiz data/raw --salida results/inventario
 python src/ver_muestras.py --inventario results/inventario/inventario.csv --raiz data/raw
 python src/duplicados.py --inventario results/inventario/inventario.csv --raiz data/raw
 python src/particiones.py --inventario results/inventario/inventario.csv --pares results/duplicados/pares.csv
 python src/preparar_imagenes.py --splits data/splits.csv --raiz data/raw --destino data/processed/imagenes
+```
+
+`data/splits.csv` ya está en el repositorio: es la partición usada en el artículo (semilla 42).
+
+### 3. Línea base
+
+```
 python src/linea_base.py --splits data/splits.csv --imagenes data/processed/imagenes
+```
+
+### 4. Entrenamiento y evaluación
+
+Cada corrida entrena un modelo y lo evalúa en Saposoa, RoCoLe y Uganda. Guarda las métricas en `results/entrenamiento/` y los pesos en `data/processed/modelos/`.
+
+```
 python src/ver_mascaras.py --splits data/splits.csv --imagenes data/processed/imagenes
-python src/entrenar.py --config configs/resnet50_basico.yaml --semilla 0   # cada config y semilla 0, 1, 2
+for config in resnet50_basico resnet50_fuerte resnet50_fondo vit_b_16_basico vit_b_16_fuerte vit_b_16_fondo; do
+  for semilla in 0 1 2; do
+    python src/entrenar.py --config configs/$config.yaml --semilla $semilla
+  done
+done
 python src/resumen.py
-python src/gradcam.py --modelos resnet50_basico resnet50_fuerte resnet50_fondo vit_b_16_basico vit_b_16_fuerte vit_b_16_fondo
-python src/errores.py --modelos resnet50_basico resnet50_fuerte resnet50_fondo vit_b_16_basico vit_b_16_fuerte vit_b_16_fondo
 python src/costo.py
+```
+
+Semillas: 0, 1 y 2 para el entrenamiento y el random forest; 42 para la partición. En GPU algunas operaciones no son exactamente deterministas, así que al repetir el entrenamiento las cifras pueden cambiar levemente en el tercer decimal.
+
+### 5. Interpretación
+
+Usa los modelos de la semilla 0. Para no reentrenar, se pueden bajar los pesos publicados:
+
+```
+gdown --folder https://drive.google.com/drive/folders/1fIOa7MGDJUeVh-MrOiGy6_5snuy5TeF6 -O data/processed/modelos
+```
+
+```
+MODELOS="resnet50_basico resnet50_fuerte resnet50_fondo vit_b_16_basico vit_b_16_fuerte vit_b_16_fondo"
+python src/gradcam.py --modelos $MODELOS
+python src/errores.py --modelos $MODELOS
+python src/prueba_fondo.py --modelos $MODELOS
+```
+
+### 6. Figuras del artículo
+
+```
 python src/ejemplos.py
 python src/figuras_articulo.py
-python src/prueba_fondo.py --modelos resnet50_basico resnet50_fuerte resnet50_fondo vit_b_16_basico vit_b_16_fuerte vit_b_16_fondo
 ```
+
+`figuras_articulo.py` solo necesita lo que ya está en `results/` y `data/ejemplos/`, así que funciona sin descargar los datos. El diagrama de la arquitectura está en `results/articulo/arquitectura.drawio` y se edita con draw.io.
+
+### De cada tabla y figura del artículo a su comando
+
+| En el artículo | Comando | Archivo |
+|---|---|---|
+| Tabla I (fotos por conjunto) | `particiones.py` | `results/particiones/conteo.csv` |
+| Tabla II (líneas base y modelos) | `linea_base.py`, `entrenar.py` y `resumen.py` | `results/resumen.csv`, `results/linea_base/metricas.csv` |
+| Tabla III (prueba de fondo y Grad-CAM) | `prueba_fondo.py` y `gradcam.py` | `results/prueba_fondo/prueba_fondo.csv`, `results/gradcam/cam_en_hoja.csv` |
+| Tabla IV (clase asignada en fotos de campo) | `errores.py` | `results/errores/confusion_*.csv` |
+| Fig. 1 (fotos casi iguales) | `duplicados.py` y `figuras_articulo.py` | `results/articulo/duplicados.pdf` |
+| Fig. 2 (ejemplos) | `ejemplos.py` y `figuras_articulo.py` | `results/articulo/ejemplos.pdf` |
+| Fig. 3 (máscara y prueba de fondo) | `figuras_articulo.py` | `results/articulo/fondo.pdf` |
+| Fig. 4 (arquitectura) | draw.io | `results/articulo/arquitectura.drawio` |
+| Fig. 5 (curvas de entrenamiento) | `entrenar.py` y `figuras_articulo.py` | `results/articulo/curvas.pdf` |
+| Fig. 6 (Grad-CAM) | `gradcam.py` y `figuras_articulo.py` | `results/articulo/gradcam.pdf` |
+| Fig. 7 (errores) | `errores.py` y `figuras_articulo.py` | `results/articulo/errores.pdf` |
+| Costo de GPU | `costo.py` | `results/costo.csv` |
+| Revisión de fuga (6.9 % frente a 8.2 %) | `particiones.py` | Se imprime al ejecutarlo |
 
 ## Datos
 
@@ -46,32 +116,39 @@ Tres conjuntos públicos de Mendeley Data, con licencia CC BY 4.0. Detalle y cit
 
 ## Resultados
 
-Entrenamiento con Saposoa. Prueba externa en RoCoLe (Ecuador) y Uganda, solo sana contra roya. Media ± desviación en 3 semillas.
+El modelo se entrena con fotos de Saposoa y clasifica tres clases: sana, roya y ojo de gallo. En RoCoLe (Ecuador) y Uganda solo hay hojas sanas y con roya, así que ahí se mide roya frente a sana con el AUC. Media ± desviación estándar de 3 semillas. La fila "Mejor línea base" toma el mejor valor de cada columna: en Saposoa, una regresión logística sobre el vector de ResNet50 sin ajustar; en RoCoLe y Uganda, un random forest sobre ese mismo vector. Todas las líneas base están en `results/resumen.csv`.
 
-| Modelo | Aumento | Saposoa test F1 | RoCoLe AUC | Uganda AUC | Minutos por corrida (T4) |
+| Modelo | Aumento | Saposoa F1 | RoCoLe AUC | Uganda AUC | Minutos por corrida (T4) |
 |---|---|---|---|---|---|
-| Mejor línea base | — | | 0,750 | 0,767 | |
-| ResNet50 | básico | ≥ 0,98 | 0,831 ± 0,013 | 0,743 ± 0,142 | 1,6 |
-| ResNet50 | fuerte | ≥ 0,98 | 0,858 ± 0,006 | 0,779 ± 0,063 | 2,6 |
-| ResNet50 | fuerte + fondo | ≥ 0,98 | 0,858 ± 0,033 | 0,728 ± 0,064 | 4,8 |
-| ViT-B/16 | básico | ≥ 0,98 | 0,909 ± 0,011 | 0,717 ± 0,054 | 3,6 |
-| ViT-B/16 | fuerte | ≥ 0,98 | 0,920 ± 0,009 | 0,750 ± 0,052 | 4,0 |
-| ViT-B/16 | fuerte + fondo | ≥ 0,98 | 0,920 ± 0,009 | 0,777 ± 0,060 | 5,8 |
+| Mejor línea base | — | 1.000 | 0.750 | 0.767 | |
+| ResNet50 | básico | 1.000 ± 0.000 | 0.831 ± 0.013 | 0.743 ± 0.142 | 1.6 |
+| ResNet50 | fuerte | 1.000 ± 0.000 | 0.858 ± 0.006 | 0.779 ± 0.063 | 2.6 |
+| ResNet50 | fuerte + fondo | 0.995 ± 0.005 | 0.858 ± 0.033 | 0.728 ± 0.064 | 4.8 |
+| ViT-B/16 | básico | 1.000 ± 0.000 | 0.909 ± 0.011 | 0.717 ± 0.054 | 3.6 |
+| ViT-B/16 | fuerte | 0.994 ± 0.007 | 0.920 ± 0.009 | 0.750 ± 0.052 | 4.0 |
+| ViT-B/16 | fuerte + fondo | 0.990 ± 0.008 | 0.920 ± 0.009 | 0.777 ± 0.060 | 5.8 |
 
-Tabla completa en `results/resumen.csv`. Costo total: 1,12 horas de GPU T4 (`results/costo.csv`).
+Tabla completa en `results/resumen.csv`. Costo total: 1.12 horas de GPU T4 (`results/costo.csv`).
 
 - Dentro de Saposoa el problema es casi trivial; la dificultad está fuera de él.
 - ViT-B/16 generaliza mejor que ResNet50 a RoCoLe. Uganda es difícil para todos los modelos.
 - Sin reemplazo de fondo, los modelos aprenden a reconocer la clase por el fondo de Saposoa (`results/prueba_fondo/`). El reemplazo de fondo elimina ese atajo, pero no mejora la prueba externa: la caída se debe a que las hojas de campo se ven distintas, no al fondo.
 - En fotos de campo los modelos detectan casi toda la roya pero confunden muchas hojas sanas con enfermas (`results/errores/`).
+- El modelo siempre elige una de las tres clases: una hoja con otra enfermedad también terminaría como sana, roya u ojo de gallo.
 
 ## Pesos y demostración
 
 Pesos de los 6 modelos de la semilla 0 (Google Drive, público): https://drive.google.com/drive/folders/1fIOa7MGDJUeVh-MrOiGy6_5snuy5TeF6?usp=sharing
 
+El modelo de la demostración es `vit_b_16_fondo_s0.pt` (ViT-B/16 con aumento fuerte y cambio de fondo): tiene el mejor AUC en RoCoLe, empatado con ViT-B/16 fuerte, y no usa el fondo como atajo.
+
 Demostración en Colab con ViT-B/16 (fuerte + fondo): [notebooks/demo.ipynb](notebooks/demo.ipynb)
 
 [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pomazon/Examen_Final_Redes_Neuronales/blob/main/notebooks/demo.ipynb)
+
+## Uso de herramientas de IA
+
+Se usó Claude (Anthropic) como asistente para escribir y depurar el código y para orientar los pasos del proyecto. Toda la ejecución de los experimentos y el análisis de los resultados los hizo el equipo.
 
 ## Equipo
 
