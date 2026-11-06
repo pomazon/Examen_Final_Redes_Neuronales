@@ -11,7 +11,7 @@ data/        fuentes, licencias y descarga de los datos
 src/         código del proyecto
 notebooks/   notebook de Colab que ejecuta el proyecto
 configs/     hiperparámetros de cada experimento
-results/     tablas, figuras y logs del artículo
+results/     tablas, figuras y logs del artículo 
 ```
 
 ## Cómo reproducir
