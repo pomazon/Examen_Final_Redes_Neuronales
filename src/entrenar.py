@@ -86,6 +86,12 @@ def probabilidades(modelo, cargador, dispositivo):
 
 
 def main():
+    """Entrena un modelo de clasificación usando una configuración YAML.
+
+    El flujo sigue la estrategia descrita en el artículo: se usa Saposoa train para
+    entrenar, Saposoa val para escoger la mejor época y luego se evalúa sobre Saposoa,
+    RoCoLe y Uganda. Las salidas se guardan tanto en resultados como en pesos de modelo.
+    """
     p = argparse.ArgumentParser()
     p.add_argument("--config", required=True)
     p.add_argument("--semilla", type=int, default=0)
@@ -125,6 +131,9 @@ def main():
     inicio = time.time()
     historial, mejor = [], (np.inf, None, None)
     y_val = np.array([CLASES.index(c) for c in partes["saposoa_val"]["clase"]])
+    # El entrenamiento recorre todas las épocas y guarda la mejor según pérdida en validación.
+    # Esta elección es útil porque el F1 puede saturarse rápidamente mientras la pérdida sigue
+    # reflejando aún diferencias de calidad entre épocas.
     for epoca in range(1, cfg["epocas"] + 1):
         modelo.train()
         total, n = 0.0, 0
@@ -151,6 +160,7 @@ def main():
     minutos = (time.time() - inicio) / 60
 
     modelo.load_state_dict(mejor[2])
+    # Se guarda el mejor checkpoint para reutilizarlo luego en interpretabilidad o demostración.
     torch.save(mejor[2], os.path.join(args.modelos, f"{nombre}_s{args.semilla}.pt"))
 
     resultados = {"config": nombre, **cfg, "semilla": args.semilla, "mejor_epoca": mejor[1],
