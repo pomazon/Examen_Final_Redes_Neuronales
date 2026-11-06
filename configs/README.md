@@ -2,6 +2,10 @@
 
 Un archivo por experimento: modelo, tipo de aumento de datos e hiperparámetros. Se usan con `python src/entrenar.py --config configs/<archivo>.yaml --semilla <s>`.
 
+La carpeta `configs/` centraliza los hiperparámetros de cada corrida para facilitar la
+reproducción y comparar cambios de arquitectura o aumento sin reescribir el código del
+entrenamiento.
+
 | Archivo | Modelo | Aumento |
 |---|---|---|
 | resnet50_basico.yaml | ResNet50 | recorte del 70 al 100 % y volteo horizontal |

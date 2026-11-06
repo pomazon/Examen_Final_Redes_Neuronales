@@ -1,5 +1,8 @@
 # Notebooks
 
+La carpeta `notebooks/` reúne la ejecución interactiva del proyecto, tanto para una corrida
+completa en Colab como para una demostración más ligera con pesos ya entrenados.
+
 | Notebook | Qué hace |
 |---|---|
 | `Examen_Final_Redes_Neuronales.ipynb` | Ejecuta el proyecto de principio a fin en Colab: datos, particiones, línea base, entrenamiento, interpretación y costo |

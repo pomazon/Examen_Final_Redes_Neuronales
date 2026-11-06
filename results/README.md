@@ -2,6 +2,9 @@
 
 Tablas, figuras y registros que se usan en el artículo. Cada carpeta la genera un script de `src/` (ver la tabla "De cada tabla y figura del artículo a su comando" en el README principal).
 
+Esta carpeta refleja la salida reproducible del flujo completo del proyecto: desde la
+revisión de datos hasta la generación de tablas y figuras finales para el artículo.
+
 | Carpeta o archivo | Qué contiene | Script |
 |---|---|---|
 | `inventario/` | Lista de todas las fotos descargadas (tamaño, md5, si se pueden abrir, clase original) y muestras | `inventario.py`, `ver_muestras.py` |
