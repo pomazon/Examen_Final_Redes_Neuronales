@@ -69,7 +69,8 @@ class GradCAM:
 def cargar(nombre, carpeta_modelos, semilla, dispositivo):
     # Se lee la configuración del experimento para reconstruir el tipo de modelo
     # y cargar exactamente los pesos del checkpoint correcto.
-    cfg = yaml.safe_load(open(f"configs/{nombre}.yaml"))
+    with open(f"configs/{nombre}.yaml", "r", encoding="utf-8") as fh:
+        cfg = yaml.safe_load(fh)
     m = crear_modelo(cfg["modelo"], preentrenado=False)
     m.load_state_dict(torch.load(os.path.join(carpeta_modelos, f"{nombre}_s{semilla}.pt"),
                                  map_location=dispositivo))

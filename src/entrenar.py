@@ -174,7 +174,8 @@ def main():
             predicciones.append(partes[k][["dataset", "ruta", "clase"]].assign(
                 evaluacion=k, **{f"p_{c}": pr[:, i] for i, c in enumerate(CLASES)}))
 
-    json.dump(resultados, open(os.path.join(carpeta, "metricas.json"), "w"), indent=2, ensure_ascii=False)
+    with open(os.path.join(carpeta, "metricas.json"), "w", encoding="utf-8") as fh:
+        json.dump(resultados, fh, indent=2, ensure_ascii=False)
     pd.DataFrame(historial).to_csv(os.path.join(carpeta, "historial.csv"), index=False)
     pd.concat(predicciones).to_csv(os.path.join(carpeta, "predicciones.csv"), index=False)
 

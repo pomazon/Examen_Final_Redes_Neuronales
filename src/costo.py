@@ -24,7 +24,10 @@ def main():
 
     # Cada archivo metricas.json ya contiene el tiempo de entrenamiento de una corrida.
     # Aquí se agregan todas las ejecuciones para resumir costo por configuración y hardware.
-    filas = [json.load(open(f)) for f in glob.glob(os.path.join(args.entrenamiento, "*", "semilla_*", "metricas.json"))]
+    filas = []
+    for f in glob.glob(os.path.join(args.entrenamiento, "*", "semilla_*", "metricas.json")):
+        with open(f, "r", encoding="utf-8") as fh:
+            filas.append(json.load(fh))
     df = pd.DataFrame(filas)
     tabla = df.groupby(["config", "gpu"]).agg(corridas=("semilla", "count"),
                                               minutos_por_corrida=("minutos_entrenamiento", "mean"),

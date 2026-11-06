@@ -77,7 +77,8 @@ def main():
 
     filas = []
     for nombre in args.modelos:
-        cfg = yaml.safe_load(open(f"configs/{nombre}.yaml"))
+        with open(f"configs/{nombre}.yaml", "r", encoding="utf-8") as fh:
+            cfg = yaml.safe_load(fh)
         m = crear_modelo(cfg["modelo"], preentrenado=False)
         m.load_state_dict(torch.load(os.path.join(args.carpeta_modelos, f"{nombre}_s{args.semilla}.pt"),
                                      map_location=dispositivo))
