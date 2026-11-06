@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clasificador de hojas · MIA-203</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header class="cabecera">
+    <div class="cabecera__contenido">
+      <div>
+        <h1>Clasificador de hojas</h1>
+        <p class="subtitulo">Rocole · Saposoa · Uganda — ResNet50 / ViT-B/16 (fine-tuning)</p>
+      </div>
+      <span class="badge" id="estadoBadge" aria-live="polite">● Sin conexión</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- ENTRADA -->
+    <section class="panel" aria-labelledby="titulo-entrada">
+      <h2 id="titulo-entrada">1. Imagen de entrada</h2>
+
+      <label class="campo">
+        <span>Modelo</span>
+        <select id="selectModelo">
+          <option value="vit_b_16_fondo" selected>ViT-B/16 · fondo (mejor AUC)</option>
+          <option value="vit_b_16_basico">ViT-B/16 · básico</option>
+          <option value="vit_b_16_fuerte">ViT-B/16 · fuerte</option>
+          <option value="resnet50_basico">ResNet50 · básico (mejor F1 RoCoLe)</option>
+          <option value="resnet50_fondo">ResNet50 · fondo</option>
+          <option value="resnet50_fuerte">ResNet50 · fuerte</option>
+        </select>
+      </label>
+      <p class="ayuda" id="infoModelo"></p>
+
+      <div id="dropZone" class="dropzone" role="button" tabindex="0" aria-label="Subir imagen">
+        <input type="file" id="fileInput" accept="image/*" hidden />
+        <div class="dropzone__icono" aria-hidden="true">⬆</div>
+        <p class="dropzone__texto">Arrastra una hoja aquí o <span class="enlace">haz clic para elegir</span></p>
+        <p class="dropzone__ayuda">JPG o PNG · máximo 10 MB</p>
+      </div>
+
+      <div id="previewContenedor" class="preview" hidden>
+        <img id="preview" alt="Imagen seleccionada" />
+        <button id="btnQuitar" class="btn btn--texto" type="button">Quitar imagen</button>
+      </div>
+
+      <div class="acciones">
+        <button id="btnPredecir" class="btn btn--primario" type="button" disabled>Predecir</button>
+        <label class="checkbox">
+          <input type="checkbox" id="chkGradcam" />
+          <span>Mostrar Grad-CAM</span>
+        </label>
+      </div>
+
+      <details class="config">
+        <summary>Configuración avanzada</summary>
+        <label class="campo">
+          <span>URL del backend</span>
+          <input type="url" id="inputApi" placeholder="http://localhost:8000/predict" />
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="chkDemo" />
+          <span>Modo demo (sin backend)</span>
+        </label>
+      </details>
+    </section>
+
+    <!-- SALIDA -->
+    <section class="panel" aria-labelledby="titulo-salida">
+      <h2 id="titulo-salida">2. Resultado</h2>
+
+      <div id="estadoVacio" class="vacio">
+        <p>Sube una imagen y presiona <strong>Predecir</strong>.</p>
+      </div>
+
+      <div id="estadoCarga" class="carga" hidden>
+        <div class="spinner" aria-hidden="true"></div>
+        <p>Analizando imagen…</p>
+      </div>
+
+      <div id="estadoError" class="error" hidden role="alert">
+        <p id="errorMensaje"></p>
+        <button id="btnReintentar" class="btn btn--texto" type="button">Reintentar</button>
+      </div>
+
+      <div id="estadoResultado" hidden>
+        <div class="resultadoPrincipal">
+          <p class="etiqueta">Predicción (3 clases · Saposoa)</p>
+          <p class="clase" id="clasePredicha">—</p>
+          <p class="confianza" id="confianzaTexto">—</p>
+        </div>
+
+        <div class="barras" id="barras" aria-label="Probabilidades por clase"></div>
+
+        <details class="binario" id="binarioWrap" hidden>
+          <summary>Vista binaria (RoCoLe / Uganda)</summary>
+          <div class="binario__fila">
+            <span>Roya</span>
+            <div class="barraItem__pista"><div class="barraItem__relleno" id="barraRoyaBin"></div></div>
+            <span class="barraItem__valor" id="valRoyaBin">—</span>
+          </div>
+          <div class="binario__fila">
+            <span>Sana</span>
+            <div class="barraItem__pista"><div class="barraItem__relleno" id="barraSanaBin"></div></div>
+            <span class="barraItem__valor" id="valSanaBin">—</span>
+          </div>
+          <p class="ayuda">
+            p(roya) / [p(roya) + p(sana)]. Ignora ojo de gallo. Es la métrica usada en RoCoLe y Uganda.
+          </p>
+        </details>
+
+        <div id="gradcamContenedor" class="gradcam" hidden>
+          <h3>Grad-CAM</h3>
+          <img id="gradcamImg" alt="Mapa de activación Grad-CAM" />
+          <p class="ayuda">Regiones que más influyeron en la decisión.</p>
+          <p id="gradcamError" class="ayuda" style="color:#b3261e" hidden></p>
+        </div>
+
+        <p class="meta" id="metaResultado"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Proyecto académico MIA-203 · Redes Neuronales y Aprendizaje Profundo · UNI-FIIS</p>
+    <p class="pie__aviso">Uso educativo. No reemplaza el diagnóstico de un especialista fitosanitario.</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
