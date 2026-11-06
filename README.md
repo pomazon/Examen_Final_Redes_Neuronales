@@ -7,7 +7,7 @@ Entrenamos modelos con fotos de hojas de café de Saposoa (San Martín, Perú) y
 ## Estructura
 
 ```
-articulo/    artículo en PDF y su fuente LaTeX
+articulo/    artículo en PDF
 data/        fuentes, licencias y descarga de los datos
 src/         código del proyecto
 notebooks/   notebook de Colab que ejecuta el proyecto y demostración
