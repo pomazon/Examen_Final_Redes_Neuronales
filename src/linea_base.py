@@ -32,11 +32,13 @@ SEMILLAS = [0, 1, 2]
 
 
 def hist_hsv(pixeles):
+    """Histogramas HSV normalizados para describir color de una imagen o región."""
     h, _ = np.histogramdd(pixeles.reshape(-1, 3), bins=(8, 4, 4), range=((0, 256),) * 3)
     return h.ravel() / max(h.sum(), 1)
 
 
 def color_textura(im):
+    """Vector de color + textura global de una hoja, útil como línea base clásica."""
     im = im.resize((224, 224))
     gris = np.array(im.convert("L"))
     lbp = local_binary_pattern(gris, 8, 1, "uniform")
@@ -45,6 +47,7 @@ def color_textura(im):
 
 
 def solo_borde(im, ancho=0.1):
+    """Extrae color del borde de la imagen para comprobar si el fondo delata la clase."""
     hsv = np.array(im.resize((224, 224)).convert("HSV"))
     b = int(224 * ancho)
     mascara = np.ones((224, 224), bool)
@@ -54,6 +57,7 @@ def solo_borde(im, ancho=0.1):
 
 @torch.no_grad()
 def resnet50(rutas):
+    """Genera embeddings fijos usando ResNet50 preentrenada en ImageNet."""
     dispositivo = "cuda" if torch.cuda.is_available() else "cpu"
     modelo = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2)
     modelo.fc = torch.nn.Identity()
@@ -68,8 +72,10 @@ def resnet50(rutas):
 
 
 def caracteristicas(df, carpeta, cache):
+    """Calcula y cachea las tres familias de características usadas como líneas base."""
     if os.path.exists(cache):
         return dict(np.load(cache))
+
     rutas = [os.path.join(carpeta, r) for r in df["ruta"]]
     ct, bo = [], []
     for k, r in enumerate(rutas, 1):
@@ -81,6 +87,9 @@ def caracteristicas(df, carpeta, cache):
             print(f"\r  color y textura: {k}/{len(rutas)}", end="")
     print("\n  resnet50...")
     feats = {"color_textura": np.array(ct), "solo_borde": np.array(bo), "resnet50": resnet50(rutas)}
+    directorio = os.path.dirname(cache)
+    if directorio:
+        os.makedirs(directorio, exist_ok=True)
     np.savez(cache, **feats)
     return feats
 
