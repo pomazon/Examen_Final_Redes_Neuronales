@@ -26,6 +26,12 @@ from metricas import CLASES, evaluar
 
 
 class Hojas(Dataset):
+    """Dataset de imágenes para clasificación multinomial.
+
+    Cuando se activa el aumento de fondo, la máscara de cada hoja se calcula una sola vez
+    y se reutiliza entre épocas para evitar recomputar trabajo redundante.
+    """
+
     def __init__(self, df, carpeta, transform, fondo=None):
         self.rutas = [os.path.join(carpeta, r) for r in df["ruta"]]
         self.y = [CLASES.index(c) for c in df["clase"]]
@@ -45,7 +51,11 @@ class Hojas(Dataset):
 
 
 def crear_modelo(nombre, preentrenado=True):
-    """preentrenado=False sirve para cargar luego pesos ya entrenados sin descargar los de ImageNet."""
+    """Crea el modelo solicitado.
+
+    preentrenado=False sirve para cargar pesos ya entrenados sin volver a descargar
+    los pesos de ImageNet antes de iniciar el fine-tuning.
+    """
     if nombre == "resnet50":
         m = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2 if preentrenado else None)
         m.fc = torch.nn.Linear(m.fc.in_features, len(CLASES))
@@ -85,7 +95,8 @@ def main():
     p.add_argument("--modelos", default="data/processed/modelos")
     args = p.parse_args()
 
-    cfg = yaml.safe_load(open(args.config))
+    with open(args.config, "r", encoding="utf-8") as f:
+        cfg = yaml.safe_load(f) or {}
     nombre = os.path.splitext(os.path.basename(args.config))[0]
     carpeta = os.path.join(args.salida, nombre, f"semilla_{args.semilla}")
     os.makedirs(carpeta, exist_ok=True)

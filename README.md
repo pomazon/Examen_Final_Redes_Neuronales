@@ -14,6 +14,18 @@ configs/     hiperparámetros de cada experimento
 results/     tablas, figuras y logs del artículo 
 ```
 
+## Flujo rápido
+
+Este repositorio está pensado para seguir un flujo reproducible y modular:
+
+1. Descargar y revisar los datos en `data/`.
+2. Generar particiones y prepararlas para entrenamiento.
+3. Ejecutar una línea base para validar la dificultad del problema.
+4. Entrenar los modelos configurados en `configs/`.
+5. Evaluar resultados, comparar métricas y producir figuras para el artículo.
+
+> Si solo quieres poner a andar el proyecto sin revisar cada detalle, empieza por `notebooks/Examen_Final_Redes_Neuronales.ipynb` o ejecuta los pasos en orden listados abajo.
+
 ## Cómo reproducir
 
 ### Requisitos
