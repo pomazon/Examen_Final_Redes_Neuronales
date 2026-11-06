@@ -7,12 +7,18 @@ Entrenamos modelos con fotos de hojas de café de Saposoa (San Martín, Perú) y
 ## Estructura
 
 ```
+articulo/    artículo en PDF y su fuente LaTeX
 data/        fuentes, licencias y descarga de los datos
 src/         código del proyecto
-notebooks/   notebook de Colab que ejecuta el proyecto
+notebooks/   notebook de Colab que ejecuta el proyecto y demostración
 configs/     hiperparámetros de cada experimento
-results/     tablas, figuras y logs del artículo 
+results/     tablas, figuras y logs del artículo
+docs/        prueba de repetibilidad en una RTX 5050
+scripts/     scripts de esa prueba
+web/         página usada para la demostración en la exposición
 ```
+
+Artículo: [articulo/Equipo2_Paper.pdf](articulo/Equipo2_Paper.pdf)
 
 ## Flujo rápido
 
@@ -78,7 +84,7 @@ python src/resumen.py
 python src/costo.py
 ```
 
-Semillas: 0, 1 y 2 para el entrenamiento y el random forest; 42 para la partición. En la auditoría local con una RTX 5050, dos entrenamientos de ViT-B/16 con cambio de fondo y semilla 0 alcanzaron AUC de 0,936 y 0,859 en RoCoLe. Al repetir el experimento con el modo determinista activado, ambas corridas alcanzaron un AUC de 0,909 y produjeron historiales, predicciones y pesos idénticos.
+Semillas: 0, 1 y 2 para el entrenamiento y el random forest; 42 para la partición. En la auditoría local con una RTX 5050, dos entrenamientos de ViT-B/16 con cambio de fondo y semilla 0 alcanzaron AUC de 0.936 y 0.859 en RoCoLe. Al repetir el experimento con el modo determinista activado, ambas corridas alcanzaron un AUC de 0.909 y produjeron historiales, predicciones y pesos idénticos.
 
 ### 5. Interpretación
 
@@ -150,7 +156,7 @@ Tabla completa en `results/resumen.csv`. Costo total: 1.12 horas de GPU T4 (`res
 
 ### Auditoría local en RTX 5050
 
-Christian André Urviola García reprodujo entrenamientos de ResNet50 y ViT-B/16 en una RTX 5050 y evaluó la etiqueta final que el modelo asigna a cada fotografía. En la corrida determinista de ViT-B/16 con cambio de fondo y semilla 0, el modelo acertó 362 de 1.312 imágenes de RoCoLe (27,59 %) al elegir entre sana, roya y ojo de gallo. En esas mismas imágenes obtuvo un AUC de 0,909 al comparar únicamente roya frente a sana. Las dos cifras responden a preguntas distintas: qué etiqueta recibe cada foto y qué tan bien el modelo ordena las hojas con roya frente a las sanas.
+Christian André Urviola García reprodujo entrenamientos de ResNet50 y ViT-B/16 en una RTX 5050 y evaluó la etiqueta final que el modelo asigna a cada fotografía. En la corrida determinista de ViT-B/16 con cambio de fondo y semilla 0, el modelo acertó 362 de 1312 imágenes de RoCoLe (27.59 %) al elegir entre sana, roya y ojo de gallo. En esas mismas imágenes obtuvo un AUC de 0.909 al comparar únicamente roya frente a sana. Las dos cifras responden a preguntas distintas: qué etiqueta recibe cada foto y qué tan bien el modelo ordena las hojas con roya frente a las sanas.
 
 El [informe de auditoría](docs/auditoria_rtx5050/README.md) incluye el entorno, el comando de ejecución y los resultados de la comparación.
 
@@ -166,7 +172,14 @@ Demostración en Colab con ViT-B/16 (fuerte + fondo): [notebooks/demo.ipynb](not
 
 ## Uso de herramientas de IA
 
-Se usó Claude (Anthropic) como asistente para escribir y depurar el código y para orientar los pasos del proyecto. Toda la ejecución de los experimentos y el análisis de los resultados los hizo el equipo.
+Se usó Claude (Anthropic) como asistente en cuatro puntos:
+
+1. Código: escribir y depurar los scripts de `src/`, el notebook de demostración y la página de `web/`.
+2. Orientación de los pasos: cómo ordenar el trabajo y qué técnicas aplicar en cada etapa.
+3. Redacción y forma: ordenar la documentación del equipo y darle forma de artículo y de diapositivas.
+4. Figuras: el código que las genera y el diagrama de la arquitectura.
+
+Los integrantes ejecutaron todos los experimentos, revisaron las cifras contra `results/`, interpretaron los resultados y sacaron las conclusiones.
 
 ## Equipo
 
