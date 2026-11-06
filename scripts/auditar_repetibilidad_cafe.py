@@ -105,6 +105,7 @@ def main():
     entorno = os.environ.copy()
     entorno["CUBLAS_WORKSPACE_CONFIG"] = ":4096:8"
     entorno["PYTHONHASHSEED"] = str(args.semilla)
+    # Cada corrida inicia en un proceso nuevo con la misma configuración y semilla.
     for letra in ("A", "B"):
         base, _, _ = rutas(args, letra)
         print(f"\nIniciando corrida {letra}, salida separada: {base}", flush=True)
@@ -130,6 +131,7 @@ def main():
         print("  ", d)
     if len(difs) > 15:
         print(f"  ... y {len(difs)-15} diferencias adicionales")
+    # Comparamos los archivos completos con SHA-256 para detectar diferencias incluso si las métricas redondeadas coinciden.
     for archivo in ("historial.csv", "predicciones.csv"):
         iguales = sha256(rA / archivo) == sha256(rB / archivo)
         print(archivo, "IDENTICO" if iguales else "DIFERENTE")
@@ -139,6 +141,7 @@ def main():
     if pesoA.exists() and pesoB.exists():
         print("Archivo de pesos .pt:", "IDENTICO EN BYTES" if sha256(pesoA) == sha256(pesoB) else "DIFERENTE EN BYTES")
     print("Datos conservados en:", args.destino)
+    # La conclusión se basa en las métricas y las predicciones. El historial y los pesos se informan por separado.
     if not difs and sha256(rA / "predicciones.csv") == sha256(rB / "predicciones.csv"):
         print("CONCLUSION: Repetibilidad observada bajo este modo determinista, en este equipo.")
     else:
