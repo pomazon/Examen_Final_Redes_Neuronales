@@ -177,7 +177,6 @@ Se usó Claude (Anthropic) como asistente en cuatro puntos:
 1. Código: escribir y depurar los scripts de `src/`, el notebook de demostración y la página de `web/`.
 2. Orientación de los pasos: cómo ordenar el trabajo y qué técnicas aplicar en cada etapa.
 3. Redacción y forma: ordenar la documentación del equipo y darle forma de artículo y de diapositivas.
-4. Figuras: el código que las genera y el diagrama de la arquitectura.
 
 Los integrantes ejecutaron todos los experimentos, revisaron las cifras contra `results/`, interpretaron los resultados y sacaron las conclusiones.
 
