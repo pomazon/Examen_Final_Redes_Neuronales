@@ -6,6 +6,10 @@ Los datos no se guardan en este repositorio. Se descargan con:
 python src/descargar_datos.py --destino data/raw
 ```
 
+Este directorio documenta qué se usa, de dónde viene y cómo se transforman los datos antes
+de entrar al entrenamiento. La idea es mantener la reproducibilidad del proyecto sin
+modificar los archivos originales descargados.
+
 ## Fuentes y licencias
 
 Los tres conjuntos están en Mendeley Data con licencia **Creative Commons Attribution 4.0 International (CC BY 4.0)**: https://creativecommons.org/licenses/by/4.0/
@@ -35,6 +39,10 @@ Se fija la versión de cada conjunto: si los autores publican una nueva, los res
 ## Cambios respecto a los originales
 
 CC BY 4.0 exige indicar los cambios. Los datos originales no se modifican: se descargan tal cual y los cambios se aplican sobre copias.
+
+La documentación aquí refleja la etapa de preparación del proyecto, donde se normalizan
+las etiquetas, se descartan duplicados y se reducen las imágenes para dejar un conjunto
+de trabajo que sea consistente con la partición y el entrenamiento.
 
 - **Etiquetas unificadas** en tres clases: sana, roya y ojo de gallo. RoCoLe: `healthy` → sana; `rust_level_1` a `rust_level_4` → roya. Uganda: `Health leaves` → sana; `leaf rust` → roya.
 - **Clases excluidas** por no existir en Saposoa: `red_spider_mite` (RoCoLe) y `phoma` (Uganda).
