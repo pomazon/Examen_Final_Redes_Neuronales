@@ -4,6 +4,9 @@ Revisa cada imagen y guarda una tabla con su dataset, clase, tamaño, huella md5
 puede abrir. Imprime un resumen: imágenes por clase, tamaños, archivos que no se pueden
 leer, copias exactas y archivos que no son imágenes.
 
+Este script prepara la base para el resto del flujo: sin un inventario limpio, la
+partición y la evaluación pueden quedar sesgadas o duplicadas.
+
 Uso:
     python src/inventario.py --raiz data/raw --salida results/inventario
 """
@@ -19,6 +22,7 @@ EXT_IMG = {".jpg", ".jpeg", ".png"}
 
 
 def titulo(texto):
+    """Imprime un encabezado claro para cada sección del resumen final."""
     print("\n" + "=" * 70 + "\n" + texto + "\n" + "=" * 70)
 
 
@@ -45,6 +49,7 @@ def revisar(ruta):
 
 
 def main():
+    """Recorre cada imagen y arma el inventario global del dataset."""
     p = argparse.ArgumentParser()
     p.add_argument("--raiz", default="data/raw")
     p.add_argument("--salida", default="results/inventario")
