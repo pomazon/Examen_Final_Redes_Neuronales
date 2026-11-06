@@ -1,5 +1,8 @@
 """Junta los resultados de todos los entrenamientos y de la línea base en una tabla.
 
+Este script consolida las métricas de cada corrida en una única vista resumida para
+comparar modelos y líneas base en Saposoa, RoCoLe y Uganda.
+
 Uso:
     python src/resumen.py
 """
@@ -14,10 +17,17 @@ CONJUNTOS = ["saposoa_test", "rocole", "uganda"]
 
 
 def media_desv(s):
+    """Formatea una serie como media ± desviación estándar para la tabla final."""
     return f"{s.mean():.3f} ± {s.std(ddof=1) if len(s) > 1 else 0:.3f}"
 
 
 def main():
+    """Agrupa todas las métricas por método y evaluación.
+
+    Las métricas de modelos entrenados se leen desde `results/entrenamiento/*/semilla_*/metricas.json`;
+    las de la línea base se leen desde `results/linea_base/metricas_por_semilla.csv` y se añaden a la
+    misma tabla final para que quede lista para el artículo.
+    """
     p = argparse.ArgumentParser()
     p.add_argument("--entrenamiento", default="results/entrenamiento")
     p.add_argument("--linea_base", default="results/linea_base/metricas_por_semilla.csv")
@@ -26,7 +36,8 @@ def main():
 
     filas = []
     for f in glob.glob(os.path.join(args.entrenamiento, "*", "semilla_*", "metricas.json")):
-        r = json.load(open(f))
+        with open(f, "r", encoding="utf-8") as fh:
+            r = json.load(fh)
         for c in CONJUNTOS:
             filas.append({"metodo": r["config"], "semilla": r["semilla"], "evaluacion": c,
                           "minutos": r["minutos_entrenamiento"], **r[c]})
