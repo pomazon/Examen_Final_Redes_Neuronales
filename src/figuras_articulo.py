@@ -1,5 +1,9 @@
 """Figuras del artículo que se arman a partir de los resultados.
 
+Este archivo genera los PDFs finales usados en el artículo. Las figuras se construyen
+con información ya almacenada en `data/ejemplos/`, `results/entrenamiento/` y
+`results/gradcam/`, por lo que no requiere re-entrenar modelos.
+
     ejemplos.pdf  una foto de prueba de cada conjunto y clase (data/ejemplos/)
     fondo.pdf     máscara de la hoja, fondo aleatorio y versiones de la prueba de fondo
     gradcam.pdf   recorte de results/gradcam/gradcam.png (5 fotos, 3 modelos)
@@ -24,7 +28,7 @@ SAL = "results/articulo"
 os.makedirs(SAL, exist_ok=True)
 plt.rcParams.update({"font.family": "serif", "font.size": 7})
 
-# Fig ejemplos de datos
+# Fig. de ejemplos de datos: una muestra representativa por conjunto y clase.
 orden = [("saposoa","sana","Saposoa · sana"),("saposoa","roya","Saposoa · roya"),("saposoa","ojo_gallo","Saposoa · ojo de gallo"),
          ("rocole","sana","RoCoLe · sana"),("rocole","roya","RoCoLe · roya"),("uganda","sana","Uganda · sana"),("uganda","roya","Uganda · roya")]
 fig, ax = plt.subplots(1, 7, figsize=(7.1, 1.3))
@@ -41,7 +45,8 @@ for a,(d,c,t) in zip(ax, orden):
     a.imshow(im); a.set_title(t, fontsize=6.5); a.axis("off")
 fig.tight_layout(pad=0.4); fig.savefig(f"{SAL}/ejemplos.pdf", dpi=200, bbox_inches="tight", pad_inches=0.02); plt.close(fig)
 
-# Fig versiones de fondo
+# Fig. de versiones de fondo: muestra cómo la máscara y el reemplazo aleatorio del fondo
+# pueden revelar si el modelo se basó en el contexto y no en la hoja misma.
 from aumentos import mascara_hoja, FondoAleatorio
 from scipy import ndimage
 im = Image.open(f"{R}/data/ejemplos/saposoa_roya.jpg").convert("RGB")
@@ -60,7 +65,8 @@ for a_,(p,t) in zip(ax.ravel(), paneles):
     a_.imshow(p, cmap="gray"); a_.set_title(t, fontsize=6.5); a_.axis("off")
 fig.tight_layout(pad=0.2); fig.savefig(f"{SAL}/fondo.pdf", dpi=200); plt.close(fig)
 
-# Fig Grad-CAM recortado
+# Fig. de Grad-CAM recortado: se aprovecha el collage ya generado para construir una
+# vista compacta de varias imágenes y modelos en una sola figura.
 g = np.array(Image.open(f"{R}/results/gradcam/gradcam.png").convert("RGB"))
 H, W = g.shape[:2]; rh, cw = H/11, W/7
 filas = [(0,"Saposoa\nojo de gallo"),(1,"Saposoa\nroya"),(2,"Saposoa\nsana"),(4,"RoCoLe\nroya"),(8,"Uganda\nroya")]
@@ -90,7 +96,7 @@ def recorte(a):
     cols = np.where(m[filas.min():filas.max() + 1].mean(0) > 0.6)[0]
     return a[filas.min():filas.max() + 1, cols.min():cols.max() + 1]
 
-# Curvas de entrenamiento
+# Curvas de entrenamiento: resumen de pérdida por época para cada configuración.
 nombres = {"basico": "básico", "fuerte": "fuerte", "fondo": "fuerte + fondo"}
 colores = {"basico": "#4C72B0", "fuerte": "#DD8452", "fondo": "#55A868"}
 fig, ejes = plt.subplots(1, 2, figsize=(3.45, 1.75), sharey=True)
@@ -106,7 +112,7 @@ ejes[0].set_ylabel("pérdida (entropía cruzada)")
 fig.legend(*ejes[0].get_legend_handles_labels(), fontsize=6, frameon=False, ncol=3, loc="upper center", bbox_to_anchor=(0.55, 1.15))
 fig.tight_layout(pad=0.3); fig.savefig(f"{SAL}/curvas.pdf", bbox_inches="tight", pad_inches=0.02); plt.close(fig)
 
-# Pares casi iguales
+# Pares casi iguales: resalta ejemplos que parecen duplicados o imágenes muy parecidas.
 def par(png, fila, nfilas):
     a = np.array(Image.open(png).convert("RGB")); H, W = a.shape[:2]; rh = H / nfilas
     banda = a[int(fila * rh + 0.12 * rh):int((fila + 1) * rh)]
@@ -122,7 +128,7 @@ for k, (png, fila, nf, txt) in enumerate(casos):
     ejes[2 * k].set_title(txt, fontsize=6.5, loc="left", x=0.15)
 fig.tight_layout(pad=0.2, w_pad=0.3); fig.savefig(f"{SAL}/duplicados.pdf", dpi=200, bbox_inches="tight", pad_inches=0.02); plt.close(fig)
 
-# Ejemplos de errores (ViT-B/16 fuerte + fondo, semilla 0)
+# Ejemplos de errores del mejor modelo generalizador (ViT-B/16 fuerte + fondo, semilla 0).
 a = np.array(Image.open(f"{R}/results/errores/errores_vit_b_16_fondo.png").convert("RGB"))
 W = a.shape[1] / 9
 e = pd.read_csv(f"{R}/results/errores/errores_vit_b_16_fondo.csv")

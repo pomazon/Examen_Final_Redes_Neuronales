@@ -6,6 +6,9 @@ Hace dos cosas:
    esa fracción es baja.
 2. Figura con las mismas imágenes de Saposoa, RoCoLe y Uganda vistas por cada modelo.
 
+La lógica de cálculo y visualización no se altera aquí: se agrega documentación para
+hacer más claro qué representa el análisis y cómo se usa para interpretar los modelos.
+
 Uso:
     python src/gradcam.py --modelos resnet50_basico resnet50_fondo vit_b_16_basico vit_b_16_fondo
 """
@@ -28,7 +31,11 @@ from metricas import CLASES
 
 
 class GradCAM:
-    """Grad-CAM sobre la última capa convolucional (ResNet50) o el último bloque (ViT)."""
+    """Grad-CAM sobre la última capa convolucional (ResNet50) o el último bloque (ViT).
+
+    El objetivo es producir un mapa de atención sobre la imagen para saber si el modelo
+    considera la hoja o el fondo al tomar la decisión.
+    """
 
     def __init__(self, modelo, tipo):
         self.modelo, self.tipo = modelo.eval(), tipo
@@ -60,6 +67,8 @@ class GradCAM:
 
 
 def cargar(nombre, carpeta_modelos, semilla, dispositivo):
+    # Se lee la configuración del experimento para reconstruir el tipo de modelo
+    # y cargar exactamente los pesos del checkpoint correcto.
     cfg = yaml.safe_load(open(f"configs/{nombre}.yaml"))
     m = crear_modelo(cfg["modelo"], preentrenado=False)
     m.load_state_dict(torch.load(os.path.join(carpeta_modelos, f"{nombre}_s{semilla}.pt"),
@@ -125,6 +134,8 @@ def main():
     print("(concentración = fracción / área de la hoja; 1 = el modelo mira la hoja tanto como al azar)")
     print(tabla.round(3).to_string(index=False))
 
+    # La figura final ordena por fila: imagen real y luego la misma imagen con el mapa de atención
+    # de cada modelo, para comparar de forma directa qué región activó la decisión.
     fig, ejes = plt.subplots(len(muestra), len(args.modelos) + 1,
                              figsize=(2.1 * (len(args.modelos) + 1), 2.3 * len(muestra)))
     for i, r in muestra.iterrows():
