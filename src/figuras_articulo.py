@@ -33,6 +33,7 @@ orden = [("saposoa","sana","Saposoa · sana"),("saposoa","roya","Saposoa · roya
          ("rocole","sana","RoCoLe · sana"),("rocole","roya","RoCoLe · roya"),("uganda","sana","Uganda · sana"),("uganda","roya","Uganda · roya")]
 fig, ax = plt.subplots(1, 7, figsize=(7.1, 1.3))
 for a,(d,c,t) in zip(ax, orden):
+    # La foto sana de Uganda se recupera de la figura de Grad-CAM ya generada.
     if (d, c) == ("uganda", "sana"):
         # La foto de data/ejemplos es un acercamiento donde no se distingue la hoja;
         # se usa otra foto de Uganda sana, tomada de la figura de Grad-CAM.
@@ -53,6 +54,7 @@ im = Image.open(f"{R}/data/ejemplos/saposoa_roya.jpg").convert("RGB")
 m = mascara_hoja(im); a = np.array(im, float)
 f = FondoAleatorio(1.0, 3)
 cands = [np.array(f(im, m), float) for _ in range(40)]
+# Medimos la variación de color fuera de la máscara para ilustrar dos fondos de distinto contraste.
 fondo_std = [c[~m].std() for c in cands]
 alea = [Image.fromarray(cands[int(np.argmin(fondo_std))].astype(np.uint8)), Image.fromarray(cands[int(np.argmax(fondo_std))].astype(np.uint8))]
 hoja = ndimage.binary_dilation(m, iterations=6); cf = np.median(a[~hoja], axis=0)
@@ -70,6 +72,7 @@ fig.tight_layout(pad=0.2); fig.savefig(f"{SAL}/fondo.pdf", dpi=200); plt.close(f
 g = np.array(Image.open(f"{R}/results/gradcam/gradcam.png").convert("RGB"))
 H, W = g.shape[:2]; rh, cw = H/11, W/7
 filas = [(0,"Saposoa\nojo de gallo"),(1,"Saposoa\nroya"),(2,"Saposoa\nsana"),(4,"RoCoLe\nroya"),(8,"Uganda\nroya")]
+# Los índices seleccionan la foto y tres configuraciones del mosaico original.
 cols = [(0,"Imagen"),(1,"ResNet50\nbásico"),(3,"ResNet50\nfuerte + fondo"),(6,"ViT-B/16\nfuerte + fondo")]
 fig, ax = plt.subplots(len(filas), len(cols), figsize=(3.45, 4.35))
 for i,(r,rt) in enumerate(filas):
@@ -103,6 +106,7 @@ fig, ejes = plt.subplots(1, 2, figsize=(3.45, 1.75), sharey=True)
 for eje, (mod, tit) in zip(ejes, [("resnet50", "ResNet50"), ("vit_b_16", "ViT-B/16")]):
     for aum in ["basico", "fuerte", "fondo"]:
         h = pd.concat([pd.read_csv(f) for f in glob.glob(f"{R}/results/entrenamiento/{mod}_{aum}/semilla_*/historial.csv")])
+        # Cada punto de la curva resume la misma época en las corridas disponibles.
         g = h.groupby("epoca").mean()
         eje.plot(g.index, g["perdida_val"], color=colores[aum], lw=1.2, label=nombres[aum])
         eje.plot(g.index, g["perdida_train"], color=colores[aum], lw=0.8, ls="--")

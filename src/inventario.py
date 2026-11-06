@@ -31,6 +31,7 @@ def etiquetas_rocole(raiz):
     xlsx = glob.glob(os.path.join(raiz, "rocole", "*", "Annotations", "*classes*.xlsx"))
     if not xlsx:
         return {}
+    # En RoCoLe la etiqueta proviene de las anotaciones y se cruza por nombre de archivo.
     t = pd.read_excel(xlsx[0])
     return dict(zip(t["File"], t["Multiclass.Label"]))
 
@@ -38,6 +39,7 @@ def etiquetas_rocole(raiz):
 def revisar(ruta):
     """Devuelve md5, ancho, alto y error (None si la imagen se abre completa)."""
     with open(ruta, "rb") as f:
+        # La huella identifica copias exactas aunque tengan nombres distintos.
         md5 = hashlib.md5(f.read()).hexdigest()
     try:
         with Image.open(ruta) as im:
@@ -110,6 +112,7 @@ def main():
     print(pd.DataFrame(otros).to_string(index=False) if otros else "Ninguno")
 
     titulo("IMÁGENES UTILIZABLES (legibles, sin copias, sin clases en conflicto)")
+    # Para el recuento depurado dejamos una copia por huella y excluimos las huellas con etiquetas contradictorias.
     util = ok[~ok["md5"].isin(conflicto)].drop_duplicates("md5")
     print(pd.crosstab(util["dataset"], util["clase_original"].fillna("sin etiqueta"),
                       margins=True, margins_name="total").to_string())

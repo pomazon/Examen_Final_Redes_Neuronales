@@ -42,6 +42,7 @@ def versiones(im):
     a = np.array(im, float)
     hoja = ndimage.binary_dilation(m, iterations=6)  # margen para no dejar bordes de hoja
     color_fondo = np.median(a[~hoja], axis=0)
+    # Conservamos la hoja sobre gris; en la segunda versión rellenamos la zona de la hoja con el color del fondo.
     gris = np.where(m[..., None], a, 128.0)
     sin_hoja = np.where(hoja[..., None], color_fondo, a)
     return (Image.fromarray(gris.astype(np.uint8)), Image.fromarray(sin_hoja.astype(np.uint8)))
@@ -67,6 +68,7 @@ def main():
     for r in test.itertuples():
         im = Image.open(os.path.join(args.imagenes, r.ruta)).convert("RGB")
         v = versiones(im)
+        # Excluimos la imagen de las tres versiones si su máscara falla, para comparar siempre las mismas fotos.
         if v is None:
             continue
         conjuntos["original"].append(im)
@@ -83,6 +85,7 @@ def main():
         m.load_state_dict(torch.load(os.path.join(args.carpeta_modelos, f"{nombre}_s{args.semilla}.pt"),
                                      map_location=dispositivo))
         m.eval().to(dispositivo)
+        # Usamos los mismos pesos en las tres versiones para medir cómo cambia la predicción al cambiar el fondo o retirar la hoja.
         for version, imagenes in conjuntos.items():
             proba = []
             with torch.no_grad():

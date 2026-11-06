@@ -104,6 +104,7 @@ def main():
     dispositivo = "cuda" if torch.cuda.is_available() else "cpu"
     print("Dispositivo:", dispositivo)
     modelo = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2)
+    # Quitamos la capa clasificadora para comparar las imágenes por sus características visuales.
     modelo.fc = torch.nn.Identity()
     modelo.eval().to(dispositivo)
 
@@ -117,7 +118,9 @@ def main():
         v = vectores([os.path.join(args.raiz, r) for r in sub["ruta"]], modelo, dispositivo)
         np.savez(os.path.join(args.vectores, f"vectores_{ds}.npz"), v=v, rutas=sub["ruta"].values)
 
+        # Con vectores normalizados, el producto escalar mide similitud coseno.
         s = v @ v.T
+        # Conservamos una sola orientación de cada par y excluimos la comparación de una foto consigo misma.
         i, j = np.triu_indices(len(v), k=1)
         m = s[i, j] >= args.minimo
         pares = pd.DataFrame({"dataset": ds,

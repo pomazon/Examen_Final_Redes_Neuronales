@@ -33,6 +33,7 @@ def main():
     areas = []
     for k, r in enumerate(df["ruta"], 1):
         m = mascara_hoja(Image.open(os.path.join(args.imagenes, r)).convert("RGB"))
+        # La media de una máscara booleana es la fracción de píxeles que ocupa la hoja; NaN indica que la máscara falló.
         areas.append(np.nan if m is None else m.mean())
         if k % 200 == 0:
             print(f"\r  {k}/{len(df)}", end="")
@@ -51,6 +52,7 @@ def main():
              ("más grande", ok.nlargest(3, "area")),
              ("descartada", df[df["area"].isna()].head(3))]
     filas = [(t, r) for t, sub in casos for _, r in sub.iterrows()]
+    # Activamos el reemplazo en todos los ejemplos con máscara para inspeccionar su contorno.
     fondo = FondoAleatorio(prob=1.0, semilla=0)
 
     fig, ejes = plt.subplots(len(filas), 3, figsize=(7, 2.3 * len(filas)))

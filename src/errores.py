@@ -32,6 +32,7 @@ def leer(nombre, carpeta):
     """Carga todas las predicciones de un modelo y etiqueta la clase predicha."""
     archivos = glob.glob(os.path.join(carpeta, nombre, "semilla_*", "predicciones.csv"))
     df = pd.concat([pd.read_csv(f).assign(semilla=f.split("semilla_")[1][0]) for f in archivos])
+    # La decisión final considera las tres clases, incluso en conjuntos externos que solo tienen roya y sana.
     df["pred"] = np.array(CLASES)[df[[f"p_{c}" for c in CLASES]].values.argmax(1)]
     df["confianza"] = df[[f"p_{c}" for c in CLASES]].max(axis=1)
     return df
@@ -57,6 +58,7 @@ def main():
             reales = sorted(sub["clase"].unique())
             m = pd.crosstab(sub["clase"], sub["pred"]).reindex(index=reales, columns=CLASES, fill_value=0)
             m.to_csv(os.path.join(args.salida, f"confusion_{nombre}_{conj}.csv"))
+            # Cada fila representa una clase real. El color muestra fracciones dentro de esa clase.
             frac = m.div(m.sum(axis=1), axis=0)
             eje.imshow(frac.values, cmap="Blues", vmin=0, vmax=1)
             for (i, j), v in np.ndenumerate(m.values):
@@ -74,6 +76,7 @@ def main():
     df = leer(nombre, args.entrenamiento)
     df = df[df["semilla"] == str(args.semilla)]
     ext = df[df["evaluacion"] != "saposoa_test"].copy()
+    # Para seleccionar ejemplos de error externo comparamos solo roya con sana.
     ext["pred_2"] = np.where(ext["p_roya"] >= ext["p_sana"], "roya", "sana")
     errores = ext[ext["pred_2"] != ext["clase"]].sort_values("confianza", ascending=False)
     errores.to_csv(os.path.join(args.salida, f"errores_{nombre}.csv"), index=False)
@@ -81,6 +84,7 @@ def main():
     print(f"\n{nombre}, semilla {args.semilla}: errores entre sana y roya en la prueba externa")
     print(pd.crosstab([errores["dataset"], errores["clase"]], errores["pred_2"]).to_string())
 
+    # Por conjunto y clase real se muestran hasta tres errores, ordenados por la mayor probabilidad entre las tres clases.
     muestra = errores.groupby(["dataset", "clase"]).head(3)
     if muestra.empty:
         print("Sin errores para mostrar")

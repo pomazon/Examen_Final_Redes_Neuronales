@@ -41,6 +41,7 @@ def color_textura(im):
     """Vector de color + textura global de una hoja, útil como línea base clásica."""
     im = im.resize((224, 224))
     gris = np.array(im.convert("L"))
+    # Los patrones binarios locales describen la textura; el histograma HSV resume el color.
     lbp = local_binary_pattern(gris, 8, 1, "uniform")
     h_lbp, _ = np.histogram(lbp, bins=10, range=(0, 10))
     return np.concatenate([hist_hsv(np.array(im.convert("HSV"))), h_lbp / h_lbp.sum()])
@@ -51,6 +52,7 @@ def solo_borde(im, ancho=0.1):
     hsv = np.array(im.resize((224, 224)).convert("HSV"))
     b = int(224 * ancho)
     mascara = np.ones((224, 224), bool)
+    # Al excluir el centro, medimos cuánta información de clase queda en el borde.
     mascara[b:-b, b:-b] = False
     return hist_hsv(hsv[mascara])
 
@@ -60,6 +62,7 @@ def resnet50(rutas):
     """Genera embeddings fijos usando ResNet50 preentrenada en ImageNet."""
     dispositivo = "cuda" if torch.cuda.is_available() else "cpu"
     modelo = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2)
+    # Usamos ResNet50 como extractor de características para los clasificadores clásicos.
     modelo.fc = torch.nn.Identity()
     modelo.eval().to(dispositivo)
     t = transforms.Compose([transforms.Resize(224), transforms.CenterCrop(224), transforms.ToTensor(),
@@ -116,6 +119,7 @@ def main():
 
         # Regresión logística: C elegido con validación (macro-F1)
         mejor = None
+        # Elegimos la regularización con el F1 macro de validación en Saposoa.
         for C in [0.01, 0.1, 1, 10]:
             m = make_pipeline(StandardScaler(), LogisticRegression(C=C, max_iter=5000))
             m.fit(X[tr], y[tr])

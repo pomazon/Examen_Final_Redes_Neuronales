@@ -22,13 +22,16 @@ def main():
     os.makedirs(args.destino, exist_ok=True)
 
     df = pd.read_csv(args.splits)
+    # Los ejemplos se eligen entre las fotos de prueba de Saposoa y las de evaluación externa.
     df = df[df["particion"].isin(["test", "externa"])]
     filas = []
     for (dataset, clase), grupo in df.groupby(["dataset", "clase"]):
+        # Fijamos la semilla para poder reconstruir la misma selección a partir de las mismas particiones.
         r = grupo.sample(1, random_state=0).iloc[0]
         nombre = f"{dataset}_{clase}.jpg"
         shutil.copy(os.path.join(args.imagenes, r["ruta"]), os.path.join(args.destino, nombre))
         filas.append({"archivo": nombre, "dataset": dataset, "clase": clase, "ruta_original": r["ruta"]})
+    # El registro de fuentes permite rastrear cada ejemplo hasta su foto y etiqueta originales.
     tabla = pd.DataFrame(filas)
     tabla.to_csv(os.path.join(args.destino, "fuentes.csv"), index=False)
     print(tabla.to_string(index=False))

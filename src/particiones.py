@@ -47,6 +47,7 @@ def orden_captura(ruta):
 
 def agrupar(n, i, j):
     """Agrupa imágenes conectadas por similitud: dos fotos quedan en el mismo grupo si están enlazadas."""
+    # Los pares encadenados se reúnen en un mismo grupo aunque no todos sean vecinos directos.
     padre = list(range(n))
 
     def raiz(k):
@@ -70,6 +71,7 @@ def repartir(unidades, semilla):
     asignado = {}
     for idx in rng.permutation(len(unidades)):
         u, t = unidades[idx]
+        # Asignamos el bloque completo a la partición a la que todavía le faltan más fotos.
         destino = max(falta, key=falta.get)
         asignado[u] = destino
         falta[destino] -= t
@@ -165,6 +167,7 @@ def main():
         azar = (v[a] * v[b]).sum(axis=1)[a != b]
         print(f"  {clase:10s} consecutivas: {vecinas.mean():.3f}   al azar: {azar.mean():.3f}")
 
+    # Este reparto alternativo permite medir el efecto de separar fotos por bloques; no sustituye al reparto publicado.
     aleatoria = sap.copy()
     for clase, sub in aleatoria.groupby("clase"):
         asign = repartir([(r, 1) for r in sub["ruta"]], args.semilla)

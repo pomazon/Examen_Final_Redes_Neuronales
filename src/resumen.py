@@ -35,12 +35,14 @@ def main():
     args = p.parse_args()
 
     filas = []
+    # Cada archivo contiene una configuración y una semilla. Separamos sus métricas por conjunto de evaluación.
     for f in glob.glob(os.path.join(args.entrenamiento, "*", "semilla_*", "metricas.json")):
         with open(f, "r", encoding="utf-8") as fh:
             r = json.load(fh)
         for c in CONJUNTOS:
             filas.append({"metodo": r["config"], "semilla": r["semilla"], "evaluacion": c,
                           "minutos": r["minutos_entrenamiento"], **r[c]})
+    # Incorporamos los clasificadores clásicos cuando están disponibles sus resultados por semilla.
     if os.path.exists(args.linea_base):
         lb = pd.read_csv(args.linea_base)
         lb["metodo"] = "base_" + lb["caracteristicas"] + "_" + lb["modelo"].str.split(" ").str[0]
@@ -54,6 +56,7 @@ def main():
             if c in t:
                 tabla[(nombre, c)] = t[c]
     tabla = pd.DataFrame(tabla)
+    # Contamos semillas distintas por método para que las evaluaciones en varios conjuntos no inflen el total.
     tabla["semillas"] = df.groupby("metodo")["semilla"].nunique()
     tabla["minutos"] = df.groupby("metodo")["minutos"].mean().round(1)
     tabla.to_csv(args.salida)

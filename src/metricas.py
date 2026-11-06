@@ -22,6 +22,7 @@ def evaluar(y, proba, dataset):
     y = np.asarray(y)
     proba = np.asarray(proba, dtype=np.float64)
 
+    # En Saposoa la predicción es la clase de mayor probabilidad entre las tres.
     if dataset == "saposoa":
         pred = np.array(CLASES)[proba.argmax(axis=1)]
         return {
@@ -31,7 +32,9 @@ def evaluar(y, proba, dataset):
         }
 
     p_roya, p_sana = proba[:, 1], proba[:, 2]
+    # En los conjuntos externos comparamos roya y sana con su probabilidad relativa.
     puntaje = p_roya / (p_roya + p_sana + 1e-12)
+    # El umbral da la etiqueta binaria; el AUC usa el puntaje continuo antes del corte.
     pred = np.where(puntaje >= 0.5, "roya", "sana")
     return {
         "exactitud": accuracy_score(y, pred),

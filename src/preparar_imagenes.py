@@ -23,6 +23,7 @@ def reducir(origen, destino, lado):
     with Image.open(origen) as im:
         im.draft("RGB", (lado, lado))  # decodifica el JPEG ya reducido: mucho más rápido
         im = im.convert("RGB")
+        # Tomamos el lado corto como referencia y mantenemos la proporción; las fotos pequeñas conservan su tamaño.
         escala = lado / min(im.size)
         if escala < 1:
             im = im.resize((round(im.width * escala), round(im.height * escala)), Image.LANCZOS)
@@ -42,6 +43,7 @@ def main():
 
     df = pd.read_csv(args.splits)
     tamanos = []
+    # Procesamos las rutas incluidas en el archivo de particiones para mantener la correspondencia con cada etiqueta.
     for k, ruta in enumerate(df["ruta"], 1):
         tamanos.append(reducir(os.path.join(args.raiz, ruta), os.path.join(args.destino, ruta), args.lado))
         if k % 200 == 0 or k == len(df):

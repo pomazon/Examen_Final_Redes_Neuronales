@@ -30,6 +30,7 @@ def descargar(url, ruta):
         total = int(r.headers.get("Content-Length", 0))
         leido = 0
         while True:
+            # Leemos por bloques para descargar el archivo sin cargarlo completo en memoria.
             bloque = r.read(1 << 20)
             if not bloque:
                 break
@@ -62,6 +63,7 @@ def main():
 
     for nombre in args.solo or DATASETS:
         carpeta = os.path.join(args.destino, nombre)
+        # Una carpeta con contenido se considera descargada; este paso no comprueba su integridad.
         if os.path.isdir(carpeta) and os.listdir(carpeta):
             print(f"{nombre}: ya está descargado, se omite")
             continue
@@ -70,6 +72,7 @@ def main():
 
         print(f"{nombre}: descargando")
         descargar(DATASETS[nombre], ruta_zip)
+        # Comprobamos el formato descargado antes de intentar extraerlo.
         if not zipfile.is_zipfile(ruta_zip):
             sys.exit(f"{nombre}: lo descargado no es un zip. Revisar la URL.")
 

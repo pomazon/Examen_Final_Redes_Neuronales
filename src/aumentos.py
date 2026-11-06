@@ -28,6 +28,7 @@ def mascara_hoja(im):
     """
     lab = color.rgb2lab(np.asarray(im, float) / 255)
     ab = lab[..., 1:]
+    # Tomamos el color del borde como referencia del fondo claro de Saposoa.
     borde = np.concatenate([ab[:8].reshape(-1, 2), ab[-8:].reshape(-1, 2),
                             ab[:, :8].reshape(-1, 2), ab[:, -8:].reshape(-1, 2)])
     distancia = np.linalg.norm(ab - np.median(borde, axis=0), axis=-1)
@@ -63,6 +64,7 @@ class FondoAleatorio:
         if mascara is None or self.rng.random() > self.prob:
             return im
         a = np.array(im, float)
+        # Suavizamos el contorno de la máscara para mezclar el fondo nuevo con el borde de la hoja.
         alfa = ndimage.gaussian_filter(mascara.astype(float), 1.5)[..., None]
         mezcla = alfa * a + (1 - alfa) * self.fondo(*a.shape[:2])
         return Image.fromarray(mezcla.clip(0, 255).astype(np.uint8))
@@ -70,6 +72,7 @@ class FondoAleatorio:
 
 def transformacion(tipo, tam=224):
     final = [transforms.ToTensor(), transforms.Normalize(MEDIA, DESV)]
+    # En validación y prueba usamos un recorte central para evaluar siempre la misma vista.
     if tipo == "evaluacion":
         return transforms.Compose([transforms.Resize(tam), transforms.CenterCrop(tam)] + final)
     if tipo == "basico":

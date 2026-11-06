@@ -39,6 +39,7 @@ class GradCAM:
 
     def __init__(self, modelo, tipo):
         self.modelo, self.tipo = modelo.eval(), tipo
+        # Elegimos una capa que aún conserva la ubicación de regiones o parches de la imagen.
         capa = modelo.layer4[-1] if tipo == "resnet50" else modelo.encoder.layers[-1].ln_1
         capa.register_forward_hook(self._guardar)
 
@@ -60,8 +61,10 @@ class GradCAM:
         self.modelo.zero_grad()
         logits.gather(1, clase[:, None]).sum().backward()
         a, g = self._a_mapa(self.activacion), self._a_mapa(self.gradiente)
+        # Ponderamos cada canal por su gradiente medio y conservamos su contribución positiva a la clase predicha.
         cam = F.relu((g.mean(dim=(2, 3), keepdim=True) * a).sum(1, keepdim=True))
         cam = F.interpolate(cam, size=x.shape[-2:], mode="bilinear", align_corners=False)[:, 0]
+        # Normalizamos cada mapa por separado para visualizarlo sobre su imagen.
         cam = cam / (cam.flatten(1).max(1).values[:, None, None] + 1e-8)
         return cam.detach().cpu().numpy(), proba.detach().cpu().numpy()
 
@@ -120,6 +123,7 @@ def main():
             for c, m in zip(cam, mascaras[i:i + 32]):
                 if m is not None:
                     dentro.append((c * m).sum() / (c.sum() + 1e-8))
+        # La fracción media ocupada por la hoja sirve como referencia para interpretar cuánto mapa cae dentro de ella.
         area = np.mean([m.mean() for m in mascaras if m is not None])
         filas.append({"modelo": nombre, "imagenes": len(dentro),
                       "fraccion_cam_en_hoja": np.mean(dentro), "desv": np.std(dentro),

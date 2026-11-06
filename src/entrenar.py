@@ -34,6 +34,7 @@ class Hojas(Dataset):
 
     def __init__(self, df, carpeta, transform, fondo=None):
         self.rutas = [os.path.join(carpeta, r) for r in df["ruta"]]
+        # Usamos el orden de CLASES tanto para la pérdida como para interpretar las probabilidades.
         self.y = [CLASES.index(c) for c in df["clase"]]
         self.transform, self.fondo = transform, fondo
         self.mascaras = {}  # cada máscara se calcula una vez y se reutiliza en las épocas siguientes
@@ -56,6 +57,7 @@ def crear_modelo(nombre, preentrenado=True):
     preentrenado=False sirve para cargar pesos ya entrenados sin volver a descargar
     los pesos de ImageNet antes de iniciar el fine-tuning.
     """
+    # Adaptamos la última capa de cada arquitectura al número de clases del proyecto.
     if nombre == "resnet50":
         m = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V2 if preentrenado else None)
         m.fc = torch.nn.Linear(m.fc.in_features, len(CLASES))
@@ -112,6 +114,7 @@ def main():
 
     df = pd.read_csv(args.splits)
     conjunto = df["dataset"].where(df["dataset"] != "saposoa", "saposoa_" + df["particion"])
+    # Solo las imágenes de saposoa_train se usan para actualizar los pesos.
     partes = {c: df[conjunto == c] for c in ["saposoa_train", "saposoa_val", "saposoa_test", "rocole", "uganda"]}
 
     fondo = FondoAleatorio(cfg.get("prob_fondo", 0.8), args.semilla) if cfg["aumento"] == "fondo" else None
@@ -119,12 +122,14 @@ def main():
     tr = DataLoader(Hojas(partes["saposoa_train"], args.imagenes, transformacion(cfg["aumento"]), fondo),
                     batch_size=cfg["lote"], shuffle=True, num_workers=2, generator=g, drop_last=True,
                     persistent_workers=True)
+    # El resto de los conjuntos usa la transformación de evaluación, sin aumentos aleatorios.
     ev = {k: DataLoader(Hojas(v, args.imagenes, transformacion("evaluacion")), batch_size=64, num_workers=2)
           for k, v in partes.items() if k != "saposoa_train"}
 
     modelo = crear_modelo(cfg["modelo"]).to(dispositivo)
     opt = torch.optim.AdamW(modelo.parameters(), lr=cfg["lr"], weight_decay=cfg["peso_decay"])
     sched = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=cfg["epocas"])
+    # En CUDA, el escalado ayuda a mantener la precisión de los gradientes durante el entrenamiento con precisión mixta.
     escalador = torch.amp.GradScaler(enabled=dispositivo == "cuda")
     perdida_fn = torch.nn.CrossEntropyLoss()
 
@@ -155,6 +160,7 @@ def main():
         print(f"  época {epoca:2d}  pérdida train {total / n:.4f}  pérdida val {perdida_val:.4f}  F1 val {f1_val:.3f}")
         # Se elige la época con menor pérdida en validación: el F1 llega a 1,0 en pocas
         # épocas y deja de distinguir entre ellas; la pérdida sigue siendo informativa.
+        # Copiamos los pesos en ese momento para que las épocas posteriores no alteren el mejor estado.
         if perdida_val < mejor[0]:
             mejor = (perdida_val, epoca, copy.deepcopy(modelo.state_dict()))
     minutos = (time.time() - inicio) / 60
@@ -166,6 +172,7 @@ def main():
     resultados = {"config": nombre, **cfg, "semilla": args.semilla, "mejor_epoca": mejor[1],
                   "minutos_entrenamiento": round(minutos, 2),
                   "gpu": torch.cuda.get_device_name(0) if dispositivo == "cuda" else "cpu"}
+    # Guardamos las probabilidades por imagen para reconstruir las matrices de confusión sin reentrenar.
     predicciones = []
     for k, ds in [("saposoa_val", "saposoa"), ("saposoa_test", "saposoa"), ("rocole", "rocole"), ("uganda", "uganda")]:
         pr = probabilidades(modelo, ev[k], dispositivo)

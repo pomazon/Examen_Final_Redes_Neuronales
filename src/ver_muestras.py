@@ -28,12 +28,14 @@ def main():
     args = p.parse_args()
 
     df = pd.read_csv(args.inventario)
+    # La cuadrícula incluye solo imágenes legibles que tienen una etiqueta de origen.
     df = df[df["legible"]].dropna(subset=["clase_original"])
     grupos = list(df.groupby(["dataset", "clase_original"]))
 
     fig, ejes = plt.subplots(len(grupos), args.por_clase,
                              figsize=(2 * args.por_clase, 2.2 * len(grupos)))
     for fila, ((ds, clase), sub) in zip(ejes, grupos):
+        # Si un grupo tiene pocas fotos, mostramos las disponibles sin repetirlas para llenar la fila.
         muestra = sub.sample(min(args.por_clase, len(sub)), random_state=args.semilla)
         for eje in fila:
             eje.axis("off")

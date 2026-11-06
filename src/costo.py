@@ -29,11 +29,13 @@ def main():
         with open(f, "r", encoding="utf-8") as fh:
             filas.append(json.load(fh))
     df = pd.DataFrame(filas)
+    # Agrupamos los registros por configuración y GPU para comparar tiempos entre equipos.
     tabla = df.groupby(["config", "gpu"]).agg(corridas=("semilla", "count"),
                                               minutos_por_corrida=("minutos_entrenamiento", "mean"),
                                               minutos_total=("minutos_entrenamiento", "sum")).round(1)
     tabla.to_csv(args.salida)
     print(tabla.to_string())
+    # La suma cuenta cada entrenamiento una vez, incluidas las distintas semillas.
     total = df["minutos_entrenamiento"].sum()
     print(f"\nTotal: {len(df)} corridas, {total:.0f} minutos = {total / 60:.2f} horas de GPU")
     print("No incluye: descarga, inventario, duplicados, línea base ni Grad-CAM (minutos, sobre todo en CPU)")
