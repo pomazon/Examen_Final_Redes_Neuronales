@@ -6,6 +6,9 @@
 - Los errores más seguros (el modelo se equivoca con alta probabilidad) del modelo
   indicado, con una figura de ejemplos.
 
+La lógica es puramente de postprocesamiento y se usa para interpretar con claridad a
+qué se equivoca cada modelo sin volver a entrenar nada.
+
 Uso:
     python src/errores.py --modelos resnet50_basico resnet50_fondo vit_b_16_basico vit_b_16_fondo
 """
@@ -26,6 +29,7 @@ CONJUNTOS = ["saposoa_test", "rocole", "uganda"]
 
 
 def leer(nombre, carpeta):
+    """Carga todas las predicciones de un modelo y etiqueta la clase predicha."""
     archivos = glob.glob(os.path.join(carpeta, nombre, "semilla_*", "predicciones.csv"))
     df = pd.concat([pd.read_csv(f).assign(semilla=f.split("semilla_")[1][0]) for f in archivos])
     df["pred"] = np.array(CLASES)[df[[f"p_{c}" for c in CLASES]].values.argmax(1)]

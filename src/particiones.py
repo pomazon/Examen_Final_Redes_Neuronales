@@ -9,6 +9,10 @@ RoCoLe y Uganda (prueba externa):
     Se unen las fotos casi iguales (similitud mayor o igual al umbral de cada
     dataset) y se deja una por grupo.
 
+Este script es central para la reproducibilidad: la limpieza y partición definen la
+base del entrenamiento y deben mantenerse estables. Aquí solo se documenta el propósito
+sin tocar la lógica de asignación.
+
 Uso:
     python src/particiones.py --inventario results/inventario/inventario.csv \
         --pares results/duplicados/pares.csv --vectores data/processed
@@ -32,11 +36,17 @@ PROPORCION = {"train": 0.70, "val": 0.15, "test": 0.15}
 
 
 def orden_captura(ruta):
-    """'Sana 257.jpg' -> 257 ; '20251129_132523.jpg' -> 20251129132523"""
+    """Devuelve el número de captura del nombre del archivo para ordenar fotos por secuencia.
+
+    Ejemplos:
+      'Sana 257.jpg' -> 257
+      '20251129_132523.jpg' -> 20251129132523
+    """
     return int("".join(re.findall(r"\d+", os.path.basename(ruta))) or 0)
 
 
 def agrupar(n, i, j):
+    """Agrupa imágenes conectadas por similitud: dos fotos quedan en el mismo grupo si están enlazadas."""
     padre = list(range(n))
 
     def raiz(k):

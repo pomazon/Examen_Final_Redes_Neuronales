@@ -10,6 +10,9 @@ Lectura:
       el modelo puede reconocer la clase mirando solo el fondo: usa un atajo.
     - Si con fondo_gris el F1 cae respecto del original, el modelo depende del fondo.
 
+Aquí se deja documentado el objetivo del análisis para seguir sin perder el contexto
+experimental de la prueba.
+
 Uso:
     python src/prueba_fondo.py --modelos resnet50_basico resnet50_fondo vit_b_16_basico vit_b_16_fondo
 """
