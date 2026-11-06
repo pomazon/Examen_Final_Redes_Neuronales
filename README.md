@@ -78,7 +78,7 @@ python src/resumen.py
 python src/costo.py
 ```
 
-Semillas: 0, 1 y 2 para el entrenamiento y el random forest; 42 para la partición. En GPU algunas operaciones no son exactamente deterministas, así que al repetir el entrenamiento las cifras pueden cambiar levemente en el tercer decimal.
+Semillas: 0, 1 y 2 para el entrenamiento y el random forest; 42 para la partición. En la auditoría local con una RTX 5050, dos entrenamientos de ViT-B/16 con cambio de fondo y semilla 0 alcanzaron AUC de 0,936 y 0,859 en RoCoLe. Al repetir el experimento con el modo determinista activado, ambas corridas alcanzaron un AUC de 0,909 y produjeron historiales, predicciones y pesos idénticos.
 
 ### 5. Interpretación
 
@@ -147,6 +147,12 @@ Tabla completa en `results/resumen.csv`. Costo total: 1.12 horas de GPU T4 (`res
 - Sin reemplazo de fondo, los modelos aprenden a reconocer la clase por el fondo de Saposoa (`results/prueba_fondo/`). El reemplazo de fondo elimina ese atajo, pero no mejora la prueba externa: la caída se debe a que las hojas de campo se ven distintas, no al fondo.
 - En fotos de campo los modelos detectan casi toda la roya pero confunden muchas hojas sanas con enfermas (`results/errores/`).
 - El modelo siempre elige una de las tres clases: una hoja con otra enfermedad también terminaría como sana, roya u ojo de gallo.
+
+### Auditoría local en RTX 5050
+
+Christian André Urviola García reprodujo entrenamientos de ResNet50 y ViT-B/16 en una RTX 5050 y evaluó la etiqueta final que el modelo asigna a cada fotografía. En la corrida determinista de ViT-B/16 con cambio de fondo y semilla 0, el modelo acertó 362 de 1.312 imágenes de RoCoLe (27,59 %) al elegir entre sana, roya y ojo de gallo. En esas mismas imágenes obtuvo un AUC de 0,909 al comparar únicamente roya frente a sana. Las dos cifras responden a preguntas distintas: qué etiqueta recibe cada foto y qué tan bien el modelo ordena las hojas con roya frente a las sanas.
+
+El [informe de auditoría](docs/auditoria_rtx5050/README.md) incluye el entorno, el comando de ejecución y los resultados de la comparación.
 
 ## Pesos y demostración
 
