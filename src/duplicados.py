@@ -5,6 +5,9 @@ ImageNet (sin su última capa) y se comparan los vectores por similitud coseno.
 Guarda los pares parecidos y una figura con ejemplos por tramo de similitud, para
 elegir a ojo el umbral a partir del cual dos fotos se consideran la misma.
 
+La lógica de comparación no cambia; aquí solo se dejan notas para aclarar el objetivo
+analítico del script.
+
 Uso:
     python src/duplicados.py --inventario results/inventario/inventario.csv --raiz data/raw
 """
@@ -31,6 +34,8 @@ TRANSFORMAR = transforms.Compose([
 
 
 class Imagenes(Dataset):
+    """Dataset simple para extraer embeddings de cada imagen usando una ResNet50."""
+
     def __init__(self, rutas):
         self.rutas = rutas
 
@@ -45,6 +50,7 @@ class Imagenes(Dataset):
 
 @torch.no_grad()
 def vectores(rutas, modelo, dispositivo):
+    """Genera embeddings normalizados para comparar similitud coseno entre imágenes."""
     datos = DataLoader(Imagenes(rutas), batch_size=64, num_workers=2)
     salida = []
     for x in datos:
@@ -64,6 +70,7 @@ def miniatura(ruta):
 
 
 def figura(pares, raiz, salida, titulo):
+    """Dibuja un panel con pares parecidos y su valor de similitud."""
     fig, ejes = plt.subplots(len(pares), 2, figsize=(5, 2.3 * len(pares)))
     ejes = np.atleast_2d(ejes)
     for fila, (_, p) in zip(ejes, pares.iterrows()):
@@ -81,6 +88,7 @@ def figura(pares, raiz, salida, titulo):
 
 
 def main():
+    """Busca duplicados y fotos casi iguales dentro de cada dataset."""
     p = argparse.ArgumentParser()
     p.add_argument("--inventario", default="results/inventario/inventario.csv")
     p.add_argument("--raiz", default="data/raw")
