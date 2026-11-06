@@ -1,5 +1,8 @@
 """Descarga los tres conjuntos de hojas de café desde Mendeley Data y los descomprime.
 
+Este paso es el punto de partida del proyecto: si la descarga y la estructura de carpetas
+quedan correctas, el resto del flujo puede ejecutarse de forma reproducible.
+
 Uso:
     python src/descargar_datos.py --destino data/raw
     python src/descargar_datos.py --destino data/raw --solo uganda
@@ -21,6 +24,7 @@ DATASETS = {
 
 
 def descargar(url, ruta):
+    """Descarga un archivo de datos y muestra progreso en MB para seguir la transferencia."""
     pedido = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(pedido) as r, open(ruta, "wb") as f:
         total = int(r.headers.get("Content-Length", 0))
@@ -37,7 +41,7 @@ def descargar(url, ruta):
 
 
 def extraer_rar(carpeta):
-    # Saposoa trae un .rar dentro del zip.
+    # Saposoa trae un .rar dentro del zip, por eso se hace una extracción adicional.
     rars = [os.path.join(d, a) for d, _, fs in os.walk(carpeta)
             for a in fs if a.lower().endswith(".rar")]
     if not rars:

@@ -1,5 +1,9 @@
 """Figura con imágenes al azar de cada dataset y clase, para revisar los datos a ojo.
 
+Se usa como comprobación visual rápida de que la limpieza y las etiquetas del inventario
+son coherentes antes de entrenar. No modifica los datos, solo ayuda a detectar errores
+obvios a simple vista.
+
 Uso:
     python src/ver_muestras.py --inventario results/inventario/inventario.csv --raiz data/raw
 """
@@ -14,6 +18,7 @@ from PIL import Image
 
 
 def main():
+    """Genera una vista visual por dataset y clase para revisión rápida del inventario."""
     p = argparse.ArgumentParser()
     p.add_argument("--inventario", default="results/inventario/inventario.csv")
     p.add_argument("--raiz", default="data/raw")

@@ -4,6 +4,9 @@ Las fotos originales pesan ~5,5 GB y miden hasta 6 112 px. Los modelos usan 224 
 Se reduce cada imagen para que su lado menor mida 320 px (las de Uganda, de 256 px,
 no se agrandan) y se guarda como JPEG de calidad 95 con la misma ruta relativa.
 
+Este paso no cambian las etiquetas ni la partición, solo acelera la carga y reduce el
+espacio de trabajo sin cambiar la información semántica de las fotos.
+
 Uso:
     python src/preparar_imagenes.py --splits data/splits.csv --raiz data/raw \
         --destino data/processed/imagenes
@@ -16,6 +19,7 @@ from PIL import Image
 
 
 def reducir(origen, destino, lado):
+    """Reduce una imagen a un lado mínimo dado y la guarda como JPEG optimizado."""
     with Image.open(origen) as im:
         im.draft("RGB", (lado, lado))  # decodifica el JPEG ya reducido: mucho más rápido
         im = im.convert("RGB")
@@ -28,6 +32,7 @@ def reducir(origen, destino, lado):
 
 
 def main():
+    """Prepara una versión reducida y reutilizable de todas las imágenes del proyecto."""
     p = argparse.ArgumentParser()
     p.add_argument("--splits", default="data/splits.csv")
     p.add_argument("--raiz", default="data/raw")
