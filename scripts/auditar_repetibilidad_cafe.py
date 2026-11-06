@@ -1,7 +1,10 @@
 """Audita repetibilidad local del entrenamiento del proyecto de roya del cafe.
 
 Ejecutar desde la raiz del repositorio, con el entorno con CUDA activo:
-    python auditar_repetibilidad_cafe.py
+    python scripts/auditar_repetibilidad_cafe.py
+
+Las rutas predeterminadas corresponden al equipo de la auditoría.
+Consulta --help para indicar otras rutas.
 
 No cambia archivos del repositorio ni los resultados existentes. Ejecuta dos
 entrenamientos en carpetas nuevas, con modo determinista estricto, y compara
@@ -68,6 +71,7 @@ def sha256(path):
 
 
 def diferencias(a, b, ruta="", ignorar=None):
+    # El tiempo puede variar entre corridas aunque las predicciones coincidan.
     ignorar = ignorar or {"minutos_entrenamiento"}
     if isinstance(a, dict) and isinstance(b, dict):
         for clave in sorted(set(a) | set(b)):
